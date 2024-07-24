@@ -11,3 +11,21 @@ window.addEventListener('scroll', function (){
     }
 })
 
+
+document.getElementById('copy-link').addEventListener('click', function(){
+    const url = window.location.href
+    const tempTextarea = document.createElement('textarea')
+    tempTextarea.value = url
+    document.body.appendChild(tempTextarea)
+
+    tempTextarea.select()
+    tempTextarea.setSelectionRange(0,99999)
+    document.execCommand('copy')
+    document.body.removeChild(tempTextarea)
+    Swal.fire({
+        title: "Link gekopieerd!",
+        text: "De link is naar het klembord gekopieerd",
+        icon: "success"
+    })
+})
+

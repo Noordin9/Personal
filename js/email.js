@@ -20,8 +20,8 @@ function sendMail(){
         message => {
             if (message === 'OK'){
                 Swal.fire({
-                    title: "Thank you!",
-                    text: "Message sent successfully",
+                    title: "Bedankt!",
+                    text: "Bericht verzonden",
                     icon: "success"
                 });
             }
