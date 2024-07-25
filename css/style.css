@@ -164,6 +164,7 @@ header .info-text .scroll ::before {
     box-shadow: 0 5px 15px rgba(0,0,0,0.35);
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     border: 1px solid transparent;
     transition: all 0.3s ease;
@@ -172,7 +173,6 @@ header .info-text .scroll ::before {
 #about .card:hover, #features .card:hover, #contact .card:hover {
     border-color: #fff;
     box-shadow: none;
-
 }
 
 #about .card img {
