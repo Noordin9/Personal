@@ -79,7 +79,7 @@ header .info-text h3 {
 
 header .info-text .scroll{
     position: absolute;
-    bottom: 10%;
+    bottom: 7.5%;
     left: 50%;
     color: #6A5C14A5;
     transform: translate(0,-50%);
@@ -346,14 +346,20 @@ header .info-text .scroll ::before {
         font-size: 1.1rem;
     }
 
+    header .scroll{
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     #about .card{
         flex-direction: column;
         align-items: center;
     }
 
     #about.card img{
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 130px;
+        max-height: 130px;
     }
     #contact .card{
         flex-direction: column;
