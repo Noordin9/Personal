@@ -8,5 +8,6 @@
     <orderEntry type="library" name="particles.js" level="application" />
     <orderEntry type="library" name="smtp" level="application" />
     <orderEntry type="library" name="sweetalert2" level="application" />
+    <orderEntry type="library" name="normalize" level="application" />
   </component>
 </module>

@@ -32,6 +32,7 @@ header #particles {
     left: 0;
 }
 
+
 header .info-text {
     display: flex;
     flex-direction: column;
@@ -201,7 +202,7 @@ header .info-text .scroll ::before {
     line-height: 1.8rem;
 }
 
-#features .feature-cards {
+#features .feature-cards, #contact .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -373,7 +374,7 @@ header .info-text .scroll ::before {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
     padding: 2rem;
     background-color: #020830;
@@ -381,6 +382,7 @@ header .info-text .scroll ::before {
     box-shadow: 0 5px 15px rgba(0, 0, 0,0.35);
     border: 1px solid transparent;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 #contact form:hover, #features .socials:hover {
