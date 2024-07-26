@@ -358,8 +358,8 @@ header .info-text .scroll ::before {
     }
 
     #about.card img{
-        max-width: 130px;
-        max-height: 130px;
+        max-width: 80px;
+        max-height: 80px;
     }
     #contact .card{
         flex-direction: column;
