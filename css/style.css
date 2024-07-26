@@ -177,7 +177,6 @@ header .info-text .scroll ::before {
 
 #about .card img {
     max-width: 200px;
-    max-height: 200px;
     border-radius: 20%;
 }
 
@@ -313,9 +312,6 @@ header .info-text .scroll ::before {
     to {opacity: 1}
 }
 
-
-
-
 .scroll-top{
     display: none;
     position: fixed;
@@ -355,11 +351,14 @@ header .info-text .scroll ::before {
     #about .card{
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     #about.card img{
-        max-width: 60px;
-        max-height: 60px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+
     }
     #contact .card{
         flex-direction: column;
