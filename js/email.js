@@ -13,7 +13,7 @@ function sendMail(){
     Email.send({
         SecureToken : 'a2239e1b-4233-404e-8d40-cc2d2b8f973a',
         To : 'mnoordinali@gmail.com',
-        From : "mnoordinali@gmail.com",
+        From : "info@noordin.dev",
         Subject : subject.value,
         Body : bodyMessage
     }).then(
