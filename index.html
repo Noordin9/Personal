@@ -1,297 +1,182 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Noordin A Mohamed</title>
+    <link rel="icon" href="assets/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/Sankofa.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Noordin A Mohamed </title>
+    <script src="js/app.js"></script>
 </head>
 <body>
-
-    <header>
-        <div id="particles"></div>
-        <div class="info-text">
-            <h1> Noordin A Mohamed </h1>
-            <h3 id="description"> Software development student op zoek naar een meewerkstage </h3>
-            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+<header>
+    <div class="container nav-container">
+        <div class="logo">noordin.app</div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
-<!--        !!LEFT OUT FOR FUTURE WORKS!!
-            <div class="languages"
-            <button class="eng-lang" onclick="changeLang()">
-               <img src="assets/eng.png" alt="English">
-            </button>
-           <button class="nl-lang" onclick="changeLang()">
-            <img src="assets/nl.png" alt="Dutch">
-           </button>
-       </div>  -->
-    </header>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#projects" class="nav-item" data-section="projects">Projecten</a></li>
+            <li><a href="#about" class="nav-item" data-section="about">Over mij</a></li>
+            <li><a href="#contact" class="nav-item" data-section="contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-available"><i class="fas fa-circle"></i> Beschikbaar voor stage / werk</span>
+                </div>
+                <h1>Mijn projecten<br>als developer</h1>
+                <p class="hero-desc">Ik ben een gemotiveerde softwarestudent die graag functionele en toegankelijke websites bouwt. Hieronder een selectie van projecten waar ik aan heb gewerkt tijdens mijn studie en vrije tijd.</p>
+                <div class="view-projects-btn">
+                    <a href="#projects" class="btn-outline" id="heroViewProjects">Bekijk projecten <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tech-stack">
+                    <span>JavaScript</span><span>React</span><span>Java</span><span>Python</span>
+                    <span>MySQL</span><span>PHP</span><span>CSS</span><span>HTML</span>
+                </div>
+            </div>
+            <div class="hero-right"></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-sub">// geselecteerd werk</div>
+                <h2 class="section-title">Projecten</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Hoyo Schoonmaak -->
+                <div class="project-card" id="hoyoCard">
+                    <div class="project-img">
+                        <img class="preview-image" src="assets/hoyo-schoonmaak-preview.png" alt="Hoyo Schoonmaak" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=Hoyo+Preview'">
+                        <div class="hover-overlay">
+                            <a href="https://hoyo-schoonmaak.nl" target="_blank" class="visit-site-btn">
+                                <i class="fas fa-arrow-right"></i> Bezoek site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">hoyo-schoonmaak.nl <i class="fas fa-external-link-alt"></i></div>
+                        <div class="project-domain">Hoyo Schoonmaak · Live website</div>
+                        <p class="project-desc">Professionele schoonmaakwebsite met offerteformulier en dienstoverzicht. Hover voor live preview.</p>
+                        <div class="project-tags"><span>Webdesign</span><span>Zakelijk</span><span>Live demo</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Huis&Aanbod -->
+                <div class="project-card" id="huisCard">
+                    <div class="project-img">
+                        <img class="preview-image" src="assets/Huis-en-aanbod-preview.png" alt="Huis&Aanbod" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=Huis+Preview'">
+                        <div class="hover-overlay">
+                            <a href="https://huisenaanbod.nl" target="_blank" class="visit-site-btn">
+                                <i class="fas fa-arrow-right"></i> Bezoek site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">Huis&Aanbod <i class="fas fa-external-link-alt"></i></div>
+                        <div class="project-domain">Huis & Aanbod · Live website</div>
+                        <p class="project-desc">Platform voor makelaars om woningen te adverteren.</p>
+                        <div class="project-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 3: BestSeller (beeldgalerij) -->
+                <div class="project-card" id="bestsellerCard">
+                    <div class="project-img" data-gallery="bestseller">
+                        <img class="preview-image" src="assets/BestSeller1.png" alt="BestSeller preview" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=BestSeller+Preview'">
+                        <div class="hover-overlay">
+                            <div class="gallery-btn">
+                                <i class="fas fa-images"></i> Bekijk galerij
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">BestSeller</div>
+                        <div class="project-domain">Bordspel · Economie</div>
+                        <p class="project-desc">Een digitaal bordspel bestemd voor HU-economie en Copenhagen Business School studenten.</p>
+                        <div class="project-tags"><span>UI/UX</span><span>React</span><span>Node/JS</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 4: OVApp (beeldgalerij) -->
+                <div class="project-card" id="ovappCard">
+                    <div class="project-img" data-gallery="ovapp">
+                        <img class="preview-image" src="assets/OVApp1.png" alt="OVApp preview" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=OVApp+Preview'">
+                        <div class="hover-overlay">
+                            <div class="gallery-btn">
+                                <i class="fas fa-images"></i> Bekijk galerij
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">OVApp</div>
+                        <div class="project-domain">Openbaar vervoer · Planner</div>
+                        <p class="project-desc">Reisplanner voor trein en bus met real-time vertrektijden en routekaarten.</p>
+                        <div class="project-tags"><span>Java</span><span>FXML</span><span>API</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="about">
-        <div class="header">
-            <h1 id="aboutMe"> Over mij </h1>
-            <a href="#contact" class="scroll">Contact</a>
-        </div>
-
-        <div class="card">
-            <img src="assets/logo.png" alt="picture of Noordin">
-            <div class="info">
-
-                <p id="profile">
-                    Gemotiveerde en leergierige Software Development student met een solide basis in Java, JavaFX, JavaScript, Node.js, Socket.io, HTML, CSS en React. Ik ben geïnteresseerd in het volledige ontwikkelproces,
-                    van het opstellen van een concept tot het realiseren van een volledig werkende applicatie. Voor mij is softwareontwikkeling een boeiende en creatieve bezigheid.
-                    Mijn focus ligt graag op front-end development en ik ben vastberaden om mijn deployment skills te verbeteren. Daarnaast sta ik open om meer te leren over backend development. Ik ben op zoek naar een uitdagende
-                    stageplek om mijn technische vaardigheden verder te ontwikkelen en praktijkervaring op te doen binnen een professioneel team.
-                </p>
+        <div class="container">
+            <div class="section-head">
+                <div class="section-sub">// over mij</div>
+                <h2 class="section-title">Wie ik ben</h2>
             </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <div class="header">
-            <h1 id="portfolio"> Projecten </h1>
-            <a href="https://github.com/The-Proffesionals/OVApp" target="_blank">Zie OV App op <i class='bx bxl-github' ></i> </a>
-        </div>
-
-        <div class="feature-cards">
-            <div class="card">
-                <div class="info">
-                    <i class='bx bx-code-alt'></i>
-                    <h1 id="projects">Portfolio</h1>
-                    <p id="projectDescription">
-                        Ontdek voorbeelden van mijn creatieve inspanningen. Hieronder zie je twee schoolprojecten: de OV App, waarbij ik Java en JavaFX heb gebruikt, en BestSeller, waarvoor ik React, Node.js, Express, Socket.io en MySQL heb ingezet.
-                        Ik heb meerdere vergelijkbare projecten afgerond, elk met een focus op creativiteit, oog voor detail en het leveren van visueel verbluffende en boeiende ervaringen.
-                        Ik ben van plan om mijn overige projecten hier te tonen zodra ik toestemming van school heb ontvangen. Voor nu hoop ik dat deze twee projecten voldoende zijn om een indruk van mijn vaardigheden te geven.
-                    </p>
-
-                    <div class="slideshow-container">
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp1.png" alt="screenshot1">
-                            <p>
-                                Dit project was bedoeld om mensen met een visuele beperking te helpen deelnemen aan het openbaar vervoer.
-                                De app moest felle kleuren gebruiken en beschikbaar zijn in meerdere talen; Engels en Nederlands.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp2.png" alt="screenshot2">
-                            <p>
-                                Vanwege de visuele beperkingen van de doelgroep zorgde ik ervoor dat de gebruikerservaring aansloot bij hun wensen en behoeften.
-                                Daarom heb ik bijvoorbeeld een felgekleurde hover-effect gebruikt om de positie van de cursor duidelijk aan te geven.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp3.png" alt="screenshot3">
-                            <p>
-                                Ik heb de doelgroep geinterviewd en enkele gebruikerstests uitgevoerd om te zorgen dat het ontwerp van de app aan hun behoefte voldoet.
-                                De positionering en kleur van elke knop werd bepaald na uitgebreid testen en overleggen met het team en de opdrachtgever. De datum (kalender)
-                                en tijd zijn realtime.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp4.png" alt="screenshot4">
-                            <p>
-                                Een vereiste die we van de klant ontvingen, was dat de gebruiker een reis (bestemming + vertrek, geen reistijden) kan toevoegen aan een lijst met favorieten.
-                                We voldeden graag aan die behoeften.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp5.png" alt="screenshot5">
-                            <p>
-                                Het was nooit de bedoeling dat de applicatie veel zou lijken op de NS Reisplanner, maar de resultaten van de uitgebreide gebruikerstests en feedback
-                                van de doelgroep maakten ons duidelijk dat de app in deze specifieke kleuren moest zijn.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp6.png" alt="screenshot6">
-                            <p>
-                                De gebruiker kon ook de geschiedenis van de afgelopen 6 reizen opslaan. Elke pagina kreeg een knop om terug te gaan naar de vorige pagina en, indien gewenst,
-                                direct naar het startscherm. Met de doelgroep in gedachten wordt de tekst in de reisgeschiedenis (zoals de foto's hierboven) groter bij hover.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>OV App</h1>
-                            <img src="assets/OVApp7.png" alt="screenshot7">
-                            <p>
-                                Net als de reisgeschiedenis kon de gebruiker ook 6 favoriete reizen opslaan. Als er op een reis geklikt werd, werd de gebruiker naar de reisplanner geleid. Hetzelfde geldt voor de
-                                reisgeschiedenis; tekst wordt groter bij hover.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller1.png" alt="screenshot1">
-                            <p> Voor Hogeschool Utrecht en Copenhagen Business School heb ik een bordspel ontwikkeld dat in december door Commerciele Economie
-                                studenten gebruikt gaat worden. </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller2.png" alt="screenshot2">
-                            <p> Het spel moest in 3 talen beschikbaar zijn. Deens, Engels en Nederlands. </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller3.png" alt="screenshot3">
-                            <p>
-                                De persoon die het spel aanmaakt, hierna te noemen moderator of docent in de rol van moderator, zou het aantal spelers en
-                                rondes kiezen na het klikken op 'Maak spel'/'Create game'.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller4.png" alt="screenshot4">
-                            <p>
-                                Na het klikken op 'doorgaan', krijgt de moderator een kamercode die hij deelt met de spelers. Als het aantal spelers dat zich
-                                heeft aangemeld niet overeenkomt met het gekozen aantal, wordt de moderator gewaarschuwd en kan hij geen spel starten.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller5.png" alt="screenshot5">
-                            <p>
-                                De deelnemende spelers klikken op 'doe mee met spel', vullen de kamercode in, kiezen een van de zes strategieën en typen een gebruikersnaam.
-                                Voor eenvoud koos ik 2 als gebruikersnaam.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller6.png" alt="screenshot6">
-                            <p>
-                                Deze tweede gebruiker/speler moest hetzelfde doen. Niemand kan dezelfde strategie hebben. Voor eenvoud koos ik in dit geval 1 als gebruikersnaam.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller7.png" alt="screenshot7">
-                            <p>
-                                Als de gebruiker/speler op 'start' klikt, komt hij in de kamer waar een spelbord dynamisch wordt gegenereerd op basis van het aantal spelers.
-                                Ze zien een leaderboard met hun namen en strategieën. Ze kunnen op een vraagtekenknop klikken om de spelregels uitgelegd te krijgen en kunnen de taal
-                                wijzigen waarin ze het spel spelen.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller8.png" alt="screenshot8">
-                            <p>
-                                Wanneer alle spelers zijn toegevoegd in de kamer, kan de moderator het spel starten en verdwijnt de melding links onderaan op het scherm van de speler.
-                            </p>
-                        </div>
-                        <div class="slide fade">
-                            <h1>BestSeller</h1>
-                            <img src="assets/BestSeller9.png" alt="screenshot9">
-                            <p>
-                                De moderator, net als de speler die niet aan de beurt is, kan op het scherm (onder de dobbelsteen) zien dat het de beurt is van de andere speler om de
-                                dobbelsteen te gooien en een vraag te beantwoorden. Het leaderboard en het spelbord geven ook geanimeerde aanwijzingen wie er aan de beurt is.
-                            </p>
-                        </div>
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h3>Leren door te bouwen</h3>
+                    <p>Ik ben een enthousiaste softwareontwikkelaar in opleiding. Ik vind het geweldig om van een idee een werkende, mooie website te maken — van de eerste regel code tot de laatste pixel.</p>
+                    <p>Op dit moment verdiep ik me in full-stack ontwikkeling en leer ik steeds betere gebruikerservaringen te creëren. Naast mijn studie werk ik aan eigen projecten.</p>
+                    <p>Ik ben op zoek naar een uitdagende stage of startersfunctie waarin ik kan groeien en écht verschil kan maken.</p>
+                </div>
+                <div class="contact-links" id="contact">
+                    <div class="contact-item">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:mnoordinali@gmail.com">mnoordinali@gmail.com</a>
                     </div>
-                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="info">
-                    <i class='bx bxs-graduation'></i>
-                    <h1 id="hardSkills">Hard skills</h1>
-                    <i class='bx bxl-javascript' ></i>
-                    <i class='bx bxl-css3' ></i>
-                    <i class='bx bxl-html5' ></i>
-                    <p>Deze website is met JS, HTML en CSS gebouwd</p>
-                    <i class='bx bxl-nodejs' ></i>
-                    <i class='bx bxl-react' ></i><p> Voor de Best Seller, heb ik Node, React, Express en Socket.io gebruikt</p>
-                    <i class='bx bxl-java'></i>
-                    <p> Voor de OVApp die ik hier eerder heb laten zien heb ik gebruik gemaakt van Java en JavaFX.
-                    Druk op Zie meer om verwezen te worden naar de project repository</p>
-                    <i class='bx bx-line-chart-down' ></i><p> Alle projecten die ik in teamverband heb opgepakt (OV App en The Best Seller bordspel) zijn in een agile setting opgepakt.
-                    Ik heb onder meer ervaring met Trello en BitBucket</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="info">
-                    <i class='bx bx-user-pin'></i>
-                    <h1>Soft skills</h1>
-                    <i class='bx bxs-group' ></i>
-                    <i class="material-symbols-outlined">hearing</i>
-                    <i class="material-symbols-outlined">record_voice_over</i>
-                    <br>
-                    <p> Ik ben een teamspeler die effectief samenwerkt met collega's
-                        om gezamenlijke doelen te bereiken. Met mijn actieve luistervaardigheden begrijp ik de behoeften en ideeën van klanten en teamleden volledig, waardoor ik waardevolle
-                        input kan leveren. Bovendien communiceer ik helder en duidelijk, wat essentieel is om technische concepten begrijpelijk te maken voor alle betrokkenen.</p>
-
-                </div>
-                <div class="card">
-                    <div class="info">
-                        <h1 style="margin-top: 2rem">Social media</h1>
-                        <div class="socials">
-                            <a href="https://www.linkedin.com/in/noordin-a-mohamed-ab22bb29b?/" target="_blank">
-                                <i class='bx bxl-linkedin'></i>
-                            </a>
-                            <a href="https://github.com/Noordin9" target="_blank">
-                                <i class='bx bxl-github' ></i>
-                            </a>
-                            <a href="https://www.facebook.com/noordinali.mohamed" target="_blank">
-                                <i class='bx bxl-facebook' ></i>
-                            </a>
-                        </div>
-                            <i id='copy-link' class='bx bxs-share-alt'></i>
-                        <p>Deel deze website!</p>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Noordin9" target="_blank" rel="noopener noreferrer">github.com/Noordin9</a>
                     </div>
-
+                    <div class="get-in-touch-btn">
+                        <a href="mailto:mnoordinali@gmail.com" class="btn-primary" id="getInTouchBtn"><i class="fas fa-paper-plane"></i> Neem contact op</a>
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.75rem; color: #6A7C8F; text-align: center;">
+                        <i class="fas fa-map-pin"></i> UTC+1 · op zoek naar stage / werk
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+</main>
 
-    <section id="contact">
-        <div class="header">
-            <h1> Contactgegevens:</h1>
-        </div>
-
-        <div class="card">
-            <div class="info">
-                <p> Naam: Noordin A Mohamed </p>
-                <p> Telefoonnummer: +31615151078 </p>
-                <p> E-mail: mnoordinali@gmail.com / noordin.mohamed@student.hu.nl </p>
-                <br>
-                <p> Als u liever door mij benaderd wilt worden, dan kunt u uw gegevens hieronder achterlaten: </p>
-            </div>
-            <form action="#">
-                <label>
-                    <input type="text" id="name" placeholder="Naam" required autocomplete="off">
-                    <input type="email" id="email" placeholder="E-mail" required autocomplete="off">
-                    <input type="tel" id="tel" placeholder="Telefoonnummer" required autocomplete="off">
-                    <input type="text" id="subject" placeholder="Onderwerp" required autocomplete="off">
-                    <textarea id="message" placeholder="Bericht"></textarea>
-                </label>
-                <button type="submit" class="submit"> Verstuur </button>
-            </form>
-        </div>
-
-    </section>
-
-
-
-    <button class="scroll-top" onclick="scrollToTop()">
-        <i class='bx bxs-up-arrow'></i>
-    </button>
-
-    <script src="js/email.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/slideshow.js"></script>
-    <script src="js/responsive.js"></script>
-
+<footer>
+    <div class="container">
+        <p>noordin.app © 2026 — gemaakt met <i class="fas fa-heart"></i> voor de webcommunity</p>
+    </div>
+</footer>
+<!-- Lightbox modal -->
+<div id="lightbox" class="lightbox-modal">
+    <div class="lightbox-content">
+        <button class="close-lightbox" id="closeLightbox">&times;</button>
+        <img id="lightboxImg" src="" alt="Screenshot">
+    </div>
+    <div class="lightbox-nav">
+        <button id="prevBtn"><i class="fas fa-chevron-left"></i> Vorige</button>
+        <button id="nextBtn">Volgende <i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
 </body>
 </html>
