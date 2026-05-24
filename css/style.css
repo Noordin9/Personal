@@ -268,6 +268,7 @@ header {
     color: #B9E6E2;
 }
 .about-wrapper {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -388,4 +389,5 @@ footer {
     .nav-links.active { left: 1rem; }
     .hamburger { display: block; }
     .projects-grid { grid-template-columns: 1fr; }
+    .contact-links { padding: 1.5rem;}
 }
