@@ -227,9 +227,6 @@
             huisCard.style.cursor = 'pointer';
         }
 
-        // Contact knop logging
-        const getInTouch = document.getElementById('getInTouchBtn');
-        if(getInTouch) getInTouch.addEventListener('click', (e) => console.log('📬 Contact knop geklikt'));
 
         // Tech stack hover effect
         document.querySelectorAll('.tech-stack span').forEach(span => {
@@ -237,6 +234,5 @@
             span.addEventListener('mouseleave', () => { span.style.transform = 'translateY(0px)'; span.style.backgroundColor = '#1A1F29'; });
         });
 
-        console.log("%c✨ Galerij-functionaliteit toegevoegd voor BestSeller en OVApp. Klik op de afbeelding om de modal te openen. ✨", "color: #00e87a; font-size: 12px;");
     });
 })();
