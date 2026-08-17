@@ -1,182 +1,1025 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="nl">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">-->
+<!--    <title>Noordin Mohamed</title>-->
+<!--    <link rel="icon" href="assets/sankofa.png">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
+<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <script src="js/app.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <div class="container nav-container">-->
+<!--        <div class="logo">noordin.app</div>-->
+<!--        <div class="hamburger" id="hamburger">-->
+<!--            <i class="fas fa-bars"></i>-->
+<!--        </div>-->
+<!--        <ul class="nav-links" id="navLinks">-->
+<!--            <li><a href="#projects" class="nav-item" data-section="projects">Projecten</a></li>-->
+<!--            <li><a href="#about" class="nav-item" data-section="about">Over mij</a></li>-->
+<!--            <li><a href="#contact" class="nav-item" data-section="contact">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<main>-->
+<!--    <section class="hero">-->
+<!--        <div class="container hero-grid">-->
+<!--            <div class="hero-content">-->
+<!--                <div class="hero-badge">-->
+<!--                    <span class="badge-available"><i class="fas fa-circle"></i> Beschikbaar voor stage / werk</span>-->
+<!--                </div>-->
+<!--                <h1>Mijn projecten<br>als developer</h1>-->
+<!--                <p class="hero-desc">Ik ben een gemotiveerde softwarestudent die graag functionele en toegankelijke websites bouwt. Hieronder een selectie van projecten waar ik aan heb gewerkt tijdens mijn studie en vrije tijd.</p>-->
+<!--                <div class="view-projects-btn">-->
+<!--                    <a href="#projects" class="btn-outline" id="heroViewProjects">Bekijk projecten <i class="fas fa-arrow-right"></i></a>-->
+<!--                </div>-->
+<!--                <div class="tech-stack">-->
+<!--                    <span>JavaScript</span><span>React</span><span>Java</span><span>Python</span>-->
+<!--                    <span>MySQL</span><span>PHP</span><span>CSS</span><span>HTML</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="hero-right"></div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    <section id="projects">-->
+<!--        <div class="container">-->
+<!--            <div class="section-head">-->
+<!--                <div class="section-sub">// geselecteerd werk</div>-->
+<!--                <h2 class="section-title">Projecten</h2>-->
+<!--            </div>-->
+<!--            <div class="projects-grid">-->
+<!--                &lt;!&ndash; Project 1: Hoyo Schoonmaak &ndash;&gt;-->
+<!--                <div class="project-card" id="hoyoCard">-->
+<!--                    <div class="project-img">-->
+<!--                        <img class="preview-image" src="assets/hoyo-schoonmaak-preview.png" alt="Hoyo Schoonmaak" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=Hoyo+Preview'">-->
+<!--                        <div class="hover-overlay">-->
+<!--                            <a href="https://hoyo-schoonmaak.nl" target="_blank" class="visit-site-btn">-->
+<!--                                <i class="fas fa-arrow-right"></i> Bezoek site-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="project-content">-->
+<!--                        <div class="project-title">hoyo-schoonmaak.nl <i class="fas fa-external-link-alt"></i></div>-->
+<!--                        <div class="project-domain">Hoyo Schoonmaak · Live website</div>-->
+<!--                        <p class="project-desc">Professionele schoonmaakwebsite met offerteformulier en dienstoverzicht</p>-->
+<!--                        <div class="project-tags"><span>Webdesign</span><span>Zakelijk</span><span>Live demo</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash; Project 2: Huis&Aanbod &ndash;&gt;-->
+<!--                <div class="project-card" id="huisCard">-->
+<!--                    <div class="project-img">-->
+<!--                        <img class="preview-image" src="assets/Huis-en-aanbod-preview.png" alt="Huis&Aanbod" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=Huis+Preview'">-->
+<!--                        <div class="hover-overlay">-->
+<!--                            <a href="https://huisenaanbod.nl" target="_blank" class="visit-site-btn">-->
+<!--                                <i class="fas fa-arrow-right"></i> Bezoek site-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="project-content">-->
+<!--                        <div class="project-title">Huis&Aanbod <i class="fas fa-external-link-alt"></i></div>-->
+<!--                        <div class="project-domain">Huis & Aanbod · Live website</div>-->
+<!--                        <p class="project-desc">Platform voor makelaars om woningen te adverteren</p>-->
+<!--                        <div class="project-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash; Project 3: BestSeller &ndash;&gt;-->
+<!--                <div class="project-card" id="bestsellerCard">-->
+<!--                    <div class="project-img" data-gallery="bestseller">-->
+<!--                        <img class="preview-image" src="assets/BestSeller1.png" alt="BestSeller preview" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=BestSeller+Preview'">-->
+<!--                        <div class="hover-overlay">-->
+<!--                            <div class="gallery-btn">-->
+<!--                                <i class="fas fa-images"></i> Bekijk galerij-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="project-content">-->
+<!--                        <div class="project-title">BestSeller</div>-->
+<!--                        <div class="project-domain">Bordspel · Economie</div>-->
+<!--                        <p class="project-desc">Een digitaal bordspel bestemd voor HU-economie en Copenhagen Business School studenten</p>-->
+<!--                        <div class="project-tags"><span>UI/UX</span><span>React</span><span>Node/JS</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash; Project 4: OVApp  &ndash;&gt;-->
+<!--                <div class="project-card" id="ovappCard">-->
+<!--                    <div class="project-img" data-gallery="ovapp">-->
+<!--                        <img class="preview-image" src="assets/OVApp1.png" alt="OVApp preview" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=OVApp+Preview'">-->
+<!--                        <div class="hover-overlay">-->
+<!--                            <div class="gallery-btn">-->
+<!--                                <i class="fas fa-images"></i> Bekijk galerij-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="project-content">-->
+<!--                        <div class="project-title">OVApp</div>-->
+<!--                        <div class="project-domain">Openbaar vervoer · Planner</div>-->
+<!--                        <p class="project-desc">Reisplanner voor trein en bus met real-time vertrektijden en routekaarten</p>-->
+<!--                        <div class="project-tags"><span>Java</span><span>FXML</span><span>API</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    <section id="about">-->
+<!--        <div class="container">-->
+<!--            <div class="section-head">-->
+<!--                <div class="section-sub">// over mij</div>-->
+<!--                <h2 class="section-title">Wie ik ben</h2>-->
+<!--            </div>-->
+<!--            <div class="about-wrapper">-->
+<!--                <div class="about-text">-->
+<!--                    <h3>Leren door te bouwen</h3>-->
+<!--                    <p>Ik ben een enthousiaste softwareontwikkelaar in opleiding. Ik vind het geweldig om van een idee een werkende, mooie website te maken — van de eerste regel code tot de laatste pixel.</p>-->
+<!--                    <p>Op dit moment verdiep ik me in full-stack ontwikkeling en leer ik steeds betere gebruikerservaringen te creëren. Naast mijn studie werk ik aan eigen projecten.</p>-->
+<!--                    <p>Ik ben op zoek naar een uitdagende stage of startersfunctie waarin ik kan groeien en écht verschil kan maken.</p>-->
+<!--                </div>-->
+<!--                <div class="contact-links" id="contact">-->
+<!--                    <div class="contact-item">-->
+<!--                        <i class="far fa-envelope"></i>-->
+<!--                        <a href="mailto:mnoordinali@gmail.com">mnoordinali@gmail.com</a>-->
+<!--                    </div>-->
+<!--                    <div class="contact-item">-->
+<!--                        <i class="fab fa-github"></i>-->
+<!--                        <a href="https://github.com/Noordin9" target="_blank" rel="noopener noreferrer">github.com/Noordin9</a>-->
+<!--                    </div>-->
+<!--                    <div class="get-in-touch-btn">-->
+<!--                        <a href="mailto:mnoordinali@gmail.com" class="btn-primary" id="getInTouchBtn"><i class="fas fa-paper-plane"></i> Neem contact op</a>-->
+<!--                    </div>-->
+<!--                    <div style="margin-top: 1rem; font-size: 0.75rem; color: #6A7C8F; text-align: center;">-->
+<!--                        <i class="fas fa-map-pin"></i> UTC+2 · op zoek naar stage / werk-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div class="container">-->
+<!--        <p>noordin.app © 2026 — gemaakt met <i class="fas fa-heart"></i> voor de webcommunity</p>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--&lt;!&ndash; Lightbox modal &ndash;&gt;-->
+<!--<div id="lightbox" class="lightbox-modal">-->
+<!--    <div class="lightbox-content">-->
+<!--        <button class="close-lightbox" id="closeLightbox">&times;</button>-->
+<!--        <img id="lightboxImg" src="" alt="Screenshot">-->
+<!--    </div>-->
+<!--    <div class="lightbox-nav">-->
+<!--        <button id="prevBtn"><i class="fas fa-chevron-left"></i> Vorige</button>-->
+<!--        <button id="nextBtn">Volgende <i class="fas fa-chevron-right"></i></button>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Noordin Mohamed</title>
-    <link rel="icon" href="assets/sankofa.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Test new positionering</title>
+
+    <meta
+            name="description"
+            content="Ontdek woningen, landen en verhalen voor iedereen die droomt van wonen buiten Nederland."
+    />
 </head>
+
 <body>
-<header>
-    <div class="container nav-container">
-        <div class="logo">noordin.app</div>
-        <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
+
+
+<header class="site-header">
+    <div class="container nav">
+
+        <a href="#" class="brand" aria-label="Huis en Aanbod">
+            <div class="brand-mark">
+                <img src="assets/IMG_8840.jpeg" alt="H&A logo" />
+            </div>
+
+            <div class="brand-name">
+<!--                Huis<span>&</span>Aanbod-->
+            </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <a href="#woningen">Kopen</a>
+            <a href="#woningen">Huren</a>
+            <a href="#bestemmingen">Bestemmingen</a>
+            <a href="#inspiratie">Inspiratie</a>
+<!--            <a href="#">Makelaars</a>-->
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="login-link">Inloggen voor makelaars</a>
+
+            <a href="#" class="button button-outline">
+                Woning aanbieden
+            </a>
+
+            <button
+                    class="mobile-toggle"
+                    id="mobileToggle"
+                    aria-label="Menu openen"
+                    aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#projects" class="nav-item" data-section="projects">Projecten</a></li>
-            <li><a href="#about" class="nav-item" data-section="about">Over mij</a></li>
-            <li><a href="#contact" class="nav-item" data-section="contact">Contact</a></li>
-        </ul>
+
     </div>
 </header>
 
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#woningen">Kopen</a>
+    <a href="#woningen">Huren</a>
+    <a href="#bestemmingen">Bestemmingen</a>
+    <a href="#inspiratie">Inspiratie</a>
+<!--    <a href="#">Makelaars</a>-->
+
+    <a href="#" class="button button-primary">
+        Woning aanbieden
+    </a>
+</div>
+
+
+
 <main>
     <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-available"><i class="fas fa-circle"></i> Beschikbaar voor stage / werk</span>
+        <div class="container hero-layout">
+
+            <div class="hero-copy">
+                <div class="hero-meta">
+                    <span class="hero-meta-line"></span>
+                    <span>SINDS 1993</span>
+                    <span>·</span>
+                    <span>32.470 WONINGEN</span>
+                    <span>·</span>
+                    <span>60+ LANDEN</span>
                 </div>
-                <h1>Mijn projecten<br>als developer</h1>
-                <p class="hero-desc">Ik ben een gemotiveerde softwarestudent die graag functionele en toegankelijke websites bouwt. Hieronder een selectie van projecten waar ik aan heb gewerkt tijdens mijn studie en vrije tijd.</p>
-                <div class="view-projects-btn">
-                    <a href="#projects" class="btn-outline" id="heroViewProjects">Bekijk projecten <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="tech-stack">
-                    <span>JavaScript</span><span>React</span><span>Java</span><span>Python</span>
-                    <span>MySQL</span><span>PHP</span><span>CSS</span><span>HTML</span>
+
+                <h1>
+                    Uw volgende leven
+                    ligt misschien
+                    <span class="orange-script">
+              verderop.
+            </span>
+                </h1>
+
+                <p class="hero-description">
+                    Misschien weet u al precies waar u wilt wonen.
+                    Misschien weet u alleen dat u weg wilt uit Nederland.
+                    Huis & Aanbod helpt u vanaf de eerste droom tot aan
+                    de voordeur.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#search" class="button button-primary">
+                        Zoek woningen
+                        <span>→</span>
+                    </a>
+
+                    <a href="#inspiratie" class="dream-link">
+                        Ik weet nog niet waar
+                        <span>→</span>
+                    </a>
                 </div>
             </div>
-            <div class="hero-right"></div>
-        </div>
-    </section>
 
-    <section id="projects">
-        <div class="container">
-            <div class="section-head">
-                <div class="section-sub">// geselecteerd werk</div>
-                <h2 class="section-title">Projecten</h2>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1: Hoyo Schoonmaak -->
-                <div class="project-card" id="hoyoCard">
-                    <div class="project-img">
-                        <img class="preview-image" src="assets/hoyo-schoonmaak-preview.png" alt="Hoyo Schoonmaak" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=Hoyo+Preview'">
-                        <div class="hover-overlay">
-                            <a href="https://hoyo-schoonmaak.nl" target="_blank" class="visit-site-btn">
-                                <i class="fas fa-arrow-right"></i> Bezoek site
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">hoyo-schoonmaak.nl <i class="fas fa-external-link-alt"></i></div>
-                        <div class="project-domain">Hoyo Schoonmaak · Live website</div>
-                        <p class="project-desc">Professionele schoonmaakwebsite met offerteformulier en dienstoverzicht</p>
-                        <div class="project-tags"><span>Webdesign</span><span>Zakelijk</span><span>Live demo</span></div>
-                    </div>
+            <div class="hero-visual">
+
+                <div class="sun-circle"></div>
+
+                <img
+                        class="hero-main-image"
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+                        alt="Mediterrane woning"
+                />
+
+                <div class="floating-card">
+                    <span class="tiny-label">Voor dromers</span>
+
+                    <strong>
+                        Waar zou u morgen wakker willen worden?
+                    </strong>
+
+                    <p>
+                        Ontdek landen, verhalen en praktische gidsen.
+                    </p>
                 </div>
 
-                <!-- Project 2: Huis&Aanbod -->
-                <div class="project-card" id="huisCard">
-                    <div class="project-img">
-                        <img class="preview-image" src="assets/Huis-en-aanbod-preview.png" alt="Huis&Aanbod" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=Huis+Preview'">
-                        <div class="hover-overlay">
-                            <a href="https://huisenaanbod.nl" target="_blank" class="visit-site-btn">
-                                <i class="fas fa-arrow-right"></i> Bezoek site
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">Huis&Aanbod <i class="fas fa-external-link-alt"></i></div>
-                        <div class="project-domain">Huis & Aanbod · Live website</div>
-                        <p class="project-desc">Platform voor makelaars om woningen te adverteren</p>
-                        <div class="project-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
-                    </div>
-                </div>
-
-                <!-- Project 3: BestSeller -->
-                <div class="project-card" id="bestsellerCard">
-                    <div class="project-img" data-gallery="bestseller">
-                        <img class="preview-image" src="assets/BestSeller1.png" alt="BestSeller preview" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=BestSeller+Preview'">
-                        <div class="hover-overlay">
-                            <div class="gallery-btn">
-                                <i class="fas fa-images"></i> Bekijk galerij
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">BestSeller</div>
-                        <div class="project-domain">Bordspel · Economie</div>
-                        <p class="project-desc">Een digitaal bordspel bestemd voor HU-economie en Copenhagen Business School studenten</p>
-                        <div class="project-tags"><span>UI/UX</span><span>React</span><span>Node/JS</span></div>
-                    </div>
-                </div>
-
-                <!-- Project 4: OVApp  -->
-                <div class="project-card" id="ovappCard">
-                    <div class="project-img" data-gallery="ovapp">
-                        <img class="preview-image" src="assets/OVApp1.png" alt="OVApp preview" onerror="this.src='https://placehold.co/600x400/1E2A36/00e87a?text=OVApp+Preview'">
-                        <div class="hover-overlay">
-                            <div class="gallery-btn">
-                                <i class="fas fa-images"></i> Bekijk galerij
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">OVApp</div>
-                        <div class="project-domain">Openbaar vervoer · Planner</div>
-                        <p class="project-desc">Reisplanner voor trein en bus met real-time vertrektijden en routekaarten</p>
-                        <div class="project-tags"><span>Java</span><span>FXML</span><span>API</span></div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
+
+    <section class="search-wrap" id="search">
         <div class="container">
-            <div class="section-head">
-                <div class="section-sub">// over mij</div>
-                <h2 class="section-title">Wie ik ben</h2>
-            </div>
-            <div class="about-wrapper">
-                <div class="about-text">
-                    <h3>Leren door te bouwen</h3>
-                    <p>Ik ben een enthousiaste softwareontwikkelaar in opleiding. Ik vind het geweldig om van een idee een werkende, mooie website te maken — van de eerste regel code tot de laatste pixel.</p>
-                    <p>Op dit moment verdiep ik me in full-stack ontwikkeling en leer ik steeds betere gebruikerservaringen te creëren. Naast mijn studie werk ik aan eigen projecten.</p>
-                    <p>Ik ben op zoek naar een uitdagende stage of startersfunctie waarin ik kan groeien en écht verschil kan maken.</p>
+            <div class="search-box">
+
+                <div class="search-tabs">
+                    <button class="search-tab active" data-type="koop">
+                        Kopen
+                    </button>
+
+                    <button class="search-tab" data-type="huur">
+                        Huren
+                    </button>
                 </div>
-                <div class="contact-links" id="contact">
-                    <div class="contact-item">
-                        <i class="far fa-envelope"></i>
-                        <a href="mailto:mnoordinali@gmail.com">mnoordinali@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/Noordin9" target="_blank" rel="noopener noreferrer">github.com/Noordin9</a>
-                    </div>
-                    <div class="get-in-touch-btn">
-                        <a href="mailto:mnoordinali@gmail.com" class="btn-primary" id="getInTouchBtn"><i class="fas fa-paper-plane"></i> Neem contact op</a>
-                    </div>
-                    <div style="margin-top: 1rem; font-size: 0.75rem; color: #6A7C8F; text-align: center;">
-                        <i class="fas fa-map-pin"></i> UTC+2 · op zoek naar stage / werk
-                    </div>
+
+                <div class="search-main">
+
+                    <label class="search-field">
+                        <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        >
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m20 20-3.5-3.5"></path>
+                        </svg>
+
+                        <input
+                                id="locationInput"
+                                type="text"
+                                placeholder="Zoek op land, streek of plaats — bijv. Algarve, Toscane of Valencia"
+                        />
+                    </label>
+
+                    <button
+                            class="button button-primary"
+                            id="searchButton"
+                    >
+                        Zoeken
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+                <div class="filters">
+
+                    <select class="filter" aria-label="Land">
+                        <option>Land</option>
+                        <option>Spanje</option>
+                        <option>Portugal</option>
+                        <option>Frankrijk</option>
+                        <option>Italië</option>
+                        <option>Zweden</option>
+                    </select>
+
+                    <select class="filter" aria-label="Prijsklasse">
+                        <option>Prijsklasse</option>
+                        <option>Tot €250.000</option>
+                        <option>€250.000 – €500.000</option>
+                        <option>€500.000 – €1.000.000</option>
+                        <option>Vanaf €1.000.000</option>
+                    </select>
+
+                    <select class="filter" aria-label="Woningtype">
+                        <option>Type woning</option>
+                        <option>Villa</option>
+                        <option>Appartement</option>
+                        <option>Finca</option>
+                        <option>Vrijstaand</option>
+                    </select>
+
+                    <select class="filter" aria-label="Slaapkamers">
+                        <option>Slaapkamers</option>
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                    </select>
+
+                    <button class="more-filters">
+                        Meer filters +
+                    </button>
+
                 </div>
             </div>
+        </div>
+    </section>
+
+
+
+    <section class="inspiration" id="inspiratie">
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-header-copy">
+                    <div class="eyebrow">
+                        Begin bij de droom
+                    </div>
+
+                    <h2>
+                        Nog geen idee waar?
+                        <span class="orange-script">Perfect.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Verhuizen naar het buitenland begint zelden met een
+                        postcode. Ontdek verhalen, bestemmingen en praktische
+                        gidsen die helpen ontdekken welk leven bij u past.
+                    </p>
+                </div>
+
+                <a href="#" class="text-link">
+                    Alle artikelen →
+                </a>
+            </div>
+
+
+            <div class="article-grid">
+
+                <article class="article-card">
+                    <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85"
+                            alt="Strand in Zuid-Europa"
+                    />
+
+                    <div class="article-content">
+              <span class="article-category">
+                Oriënteren
+              </span>
+
+                        <h3>
+                            Ik wil weg uit Nederland.
+                            Maar waar begin ik?
+                        </h3>
+
+                        <p>
+                            Zeven vragen die helpen ontdekken welk land,
+                            klimaat en dagelijks leven bij u passen.
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="article-card small">
+                    <img
+                            src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85"
+                            alt="Portugal"
+                    />
+
+                    <div class="article-content">
+              <span class="article-category">
+                Portugal
+              </span>
+
+                        <h3>
+                            Algarve of juist het rustige noorden?
+                        </h3>
+
+                        <p>
+                            Portugal is veel meer dan zon en zee.
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="article-card small">
+                    <img
+                            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=85"
+                            alt="Frankrijk"
+                    />
+
+                    <div class="article-content">
+              <span class="article-category">
+                Praktisch
+              </span>
+
+                        <h3>
+                            Wat kost wonen in Frankrijk echt?
+                        </h3>
+
+                        <p>
+                            Van boodschappen tot lokale belastingen.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="dream-guide">
+        <div class="container dream-guide-inner">
+
+            <div>
+                <div class="eyebrow">
+                    Uw buitenlandkompas
+                </div>
+
+                <h2>
+                    Eerst ontdekken
+                    <span class="orange-script">
+              welk leven
+            </span>
+                    bij u past.
+                </h2>
+
+                <p>
+                    Niet iedereen begint met “ik wil een villa in Málaga”.
+                    Daarom helpt Huis & Aanbod ook bij de vragen vóór de
+                    woningzoektocht.
+                </p>
+            </div>
+
+
+            <div class="question-grid">
+
+                <a href="#" class="question">
+            <span class="question-number">
+              01
+            </span>
+
+                    <strong>
+                        Waar vind ik veel zon zonder extreme hitte?
+                    </strong>
+                </a>
+
+
+                <a href="#" class="question">
+            <span class="question-number">
+              02
+            </span>
+
+                    <strong>
+                        Welk land is betaalbaar met mijn budget?
+                    </strong>
+                </a>
+
+
+                <a href="#" class="question">
+            <span class="question-number">
+              03
+            </span>
+
+                    <strong>
+                        Waar kan ik rustig wonen maar niet afgelegen?
+                    </strong>
+                </a>
+
+
+                <a href="#" class="question">
+            <span class="question-number">
+              04
+            </span>
+
+                    <strong>
+                        Waar wonen veel andere Nederlanders?
+                    </strong>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="destinations" id="bestemmingen">
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-header-copy">
+                    <div class="eyebrow">
+                        Verken bestemmingen
+                    </div>
+
+                    <h2>
+                        Waar zou u
+                        <span class="orange-script">
+                kunnen wonen?
+              </span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Bekijk niet alleen woningen, maar ontdek hoe het
+                        dagelijkse leven, klimaat en woonaanbod per land
+                        verschillen.
+                    </p>
+                </div>
+
+                <a href="#" class="text-link">
+                    Alle bestemmingen →
+                </a>
+            </div>
+
+
+            <div class="destination-grid">
+
+                <a href="#" class="destination-card">
+                    <img
+                            src="https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=900&q=85"
+                            alt="Spanje"
+                    />
+
+                    <div class="destination-info">
+                        <h3>Spanje</h3>
+                        <span>Zon, kust en levendige steden</span>
+                    </div>
+                </a>
+
+
+                <a href="#" class="destination-card">
+                    <img
+                            src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85"
+                            alt="Portugal"
+                    />
+
+                    <div class="destination-info">
+                        <h3>Portugal</h3>
+                        <span>Ruimte, oceaan en mild klimaat</span>
+                    </div>
+                </a>
+
+
+                <a href="#" class="destination-card">
+                    <img
+                            src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=85"
+                            alt="Italië"
+                    />
+
+                    <div class="destination-info">
+                        <h3>Italië</h3>
+                        <span>Dorpen, cultuur en buitenleven</span>
+                    </div>
+                </a>
+
+
+                <a href="#" class="destination-card">
+                    <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                            alt="Frankrijk"
+                    />
+
+                    <div class="destination-info">
+                        <h3>Frankrijk</h3>
+                        <span>Van Atlantische kust tot Provence</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="woningen">
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-header-copy">
+                    <div class="eyebrow">
+                        Uitgelicht aanbod
+                    </div>
+
+                    <h2>
+                        Huizen om van
+                        <span class="orange-script">
+                te dromen.
+              </span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Een selectie van bijzondere woningen uit het actuele
+                        aanbod.
+                    </p>
+                </div>
+
+                <a href="#" class="text-link">
+                    Bekijk alle woningen →
+                </a>
+            </div>
+
+
+            <div class="property-grid">
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
+                                alt="Villa in Spanje"
+                        />
+
+                        <span class="property-badge">
+                Nieuw
+              </span>
+
+                        <button
+                                class="favorite"
+                                aria-label="Toevoegen aan favorieten"
+                        >
+                            ♡
+                        </button>
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            Moraira · Spanje
+                        </div>
+
+                        <h3>
+                            Moderne villa vlak bij de Middellandse Zee
+                        </h3>
+
+                        <div class="property-price">
+                            € 675.000
+                        </div>
+
+                        <div class="property-meta">
+                            <span>3 slaapkamers</span>
+                            <span>2 badkamers</span>
+                            <span>184 m²</span>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                                src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=85"
+                                alt="Woning Portugal"
+                        />
+
+                        <span class="property-badge">
+                Uitgelicht
+              </span>
+
+                        <button
+                                class="favorite"
+                                aria-label="Toevoegen aan favorieten"
+                        >
+                            ♡
+                        </button>
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            Tavira · Portugal
+                        </div>
+
+                        <h3>
+                            Vrijstaande woning met tuin en zwembad
+                        </h3>
+
+                        <div class="property-price">
+                            € 495.000
+                        </div>
+
+                        <div class="property-meta">
+                            <span>4 slaapkamers</span>
+                            <span>3 badkamers</span>
+                            <span>220 m²</span>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                                alt="Huis in Frankrijk"
+                        />
+
+                        <span class="property-badge">
+                Onder optie
+              </span>
+
+                        <button
+                                class="favorite"
+                                aria-label="Toevoegen aan favorieten"
+                        >
+                            ♡
+                        </button>
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            Dordogne · Frankrijk
+                        </div>
+
+                        <h3>
+                            Karaktervolle woning met veel privacy
+                        </h3>
+
+                        <div class="property-price">
+                            € 389.000
+                        </div>
+
+                        <div class="property-meta">
+                            <span>4 slaapkamers</span>
+                            <span>2 badkamers</span>
+                            <span>196 m²</span>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+
+            <div class="section-header-copy">
+                <div class="eyebrow">
+                    Van droom naar voordeur
+                </div>
+
+                <h2>
+                    Zo helpt Huis & Aanbod.
+                </h2>
+
+                <p class="section-intro">
+                    Eén plek om u te oriënteren, woningen te ontdekken en
+                    rechtstreeks in contact te komen met de aanbieder.
+                </p>
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+            <span class="step-number">
+              01 — Ontdekken
+            </span>
+
+                    <h3>
+                        Vind uw richting
+                    </h3>
+
+                    <p>
+                        Lees verhalen, vergelijk bestemmingen en ontdek welk
+                        buitenlandleven bij uw wensen past.
+                    </p>
+                </div>
+
+
+                <div class="step">
+            <span class="step-number">
+              02 — Zoeken
+            </span>
+
+                    <h3>
+                        Bekijk het aanbod
+                    </h3>
+
+                    <p>
+                        Zoek gericht op land, prijs, type woning, slaapkamers
+                        en andere kenmerken die voor u belangrijk zijn.
+                    </p>
+                </div>
+
+
+                <div class="step">
+            <span class="step-number">
+              03 — Contact
+            </span>
+
+                    <h3>
+                        Spreek de aanbieder
+                    </h3>
+
+                    <p>
+                        Bewaar favorieten en bereik de makelaar of particuliere
+                        verkoper rechtstreeks.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="seller-cta">
+        <div class="container seller-inner">
+
+            <h2>
+                Verkoopt u een woning in Nederland
+                of daarbuiten?
+            </h2>
+
+            <a href="#" class="button">
+                Plaats uw woning →
+            </a>
+
         </div>
     </section>
 </main>
 
 <footer>
     <div class="container">
-        <p>noordin.app © 2026 — gemaakt met <i class="fas fa-heart"></i> voor de webcommunity</p>
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <div class="brand">
+                    <div class="brand-mark">
+                        <img src="./IMG_8840.jpeg" alt="" />
+                    </div>
+
+                    <div class="brand-name">
+                        Huis<span>&</span>Aanbod
+                    </div>
+                </div>
+
+                <p>
+                    Voor iedereen die droomt van een ander huis,
+                    een ander land of een ander leven.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <strong>Ontdekken</strong>
+
+                <a href="#">Inspiratie</a>
+                <a href="#">Bestemmingen</a>
+                <a href="#">Artikelen</a>
+                <a href="#">Emigreren</a>
+            </div>
+
+
+            <div class="footer-column">
+                <strong>Woningen</strong>
+
+                <a href="#">Kopen</a>
+                <a href="#">Huren</a>
+                <a href="#">Nieuw aanbod</a>
+                <a href="#">Makelaars</a>
+            </div>
+
+
+            <div class="footer-column">
+                <strong>Aanbieden</strong>
+
+                <a href="#">Woning verkopen</a>
+                <a href="#">Makelaar worden</a>
+                <a href="#">Tarieven</a>
+            </div>
+
+
+            <div class="footer-column">
+                <strong>Huis & Aanbod</strong>
+
+                <a href="#">Over ons</a>
+                <a href="#">Contact</a>
+                <a href="#">Voorwaarden</a>
+                <a href="#">Privacy</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+        <span>
+          © 2026 Huis & Aanbod
+        </span>
+
+            <span>
+          Wonen begint met dromen.
+        </span>
+        </div>
+
     </div>
 </footer>
-<!-- Lightbox modal -->
-<div id="lightbox" class="lightbox-modal">
-    <div class="lightbox-content">
-        <button class="close-lightbox" id="closeLightbox">&times;</button>
-        <img id="lightboxImg" src="" alt="Screenshot">
-    </div>
-    <div class="lightbox-nav">
-        <button id="prevBtn"><i class="fas fa-chevron-left"></i> Vorige</button>
-        <button id="nextBtn">Volgende <i class="fas fa-chevron-right"></i></button>
-    </div>
+
+
+<div class="toast" id="toast">
+    Demo
 </div>
+
+<script src="js/app.js"></script>
 </body>
 </html>
