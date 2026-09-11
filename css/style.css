@@ -392,8 +392,8 @@
 /*    .contact-links { padding: 1.5rem;}*/
 /*}*/
 :root{
-    --u: calc(100vw / 1536);
-
+    --fit: 0.9;
+    --u: calc(100vw / 1536 * var(--fit));
     --orange:#F26402;
     --orange-logo:#EC6106;
     --blue:#2EA1D9;
@@ -405,7 +405,7 @@
     --hairline:#E2DED7;
 }
 
-@media (min-width:1536px){ :root{ --u:1px; } }
+@media (min-width:1707px){ :root{ --u: calc(1px * var(--fit)); } }
 
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
@@ -431,7 +431,7 @@ img{display:block;}
     flex:1;
     display:flex;
     flex-direction:column;
-    width:min(100vw,1536px);
+    width:calc(1536 * var(--u));
     margin:0 auto;
     padding-bottom:calc(40 * var(--u));
     overflow:hidden;
