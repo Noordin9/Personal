@@ -181,844 +181,209 @@
 <!--</body>-->
 <!--</html>-->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css">
-
-
-    <title>Test new positionering</title>
-
-    <meta
-            name="description"
-            content="Ontdek woningen, landen en verhalen voor iedereen die droomt van wonen buiten Nederland."
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HUISenAANBOD — Tussen droom en besluit</title>
+    <meta name="description" content="Droom je van een ander huis, een andere plek of een ander leven? HUISenAANBOD helpt je">
+    <link rel="icon" href="assets/icon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87,700;87,800&family=Caveat:wght@500;600&family=Playfair+Display:wght@400;500;600&family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<div class="stage">
 
-<header class="site-header">
-    <div class="container nav">
-
-        <a href="#" class="brand" aria-label="Huis en Aanbod">
-            <div class="brand-mark">
-                <img src="assets/IMG_8840.jpeg" alt="H&A logo" />
+    <header class="masthead">
+        <div class="brand">
+            <a class="wordmark" href="/">HU<span class="dot-i">I<svg class="roof" viewBox="0 0 24 20" aria-hidden="true" style="margin-bottom: 60%"><path d="M12 0 L24 11 H19 V20 H5 V11 H0 Z" fill="#EC6106"/></svg></span>S<span class="en">en</span>AANBOD<span class="tld">.nl</span></a>
+            <div class="brand-rule"></div>
+            <div class="founded">
+                <span>Sinds</span>
+                <strong>1993</strong>
             </div>
+        </div>
 
-            <div class="brand-name">
-<!--                Huis<span>&</span>Aanbod-->
-            </div>
-        </a>
+        <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menu openen">
+            <svg class="bar-open" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 6.5 H21 M3 12 H21 M3 17.5 H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <svg class="bar-close" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5.5 5.5 L18.5 18.5 M18.5 5.5 L5.5 18.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+        </button>
 
-        <nav class="main-nav" aria-label="Hoofdnavigatie">
-            <a href="#woningen">Kopen</a>
-            <a href="#woningen">Huren</a>
-            <a href="#bestemmingen">Bestemmingen</a>
-            <a href="#inspiratie">Inspiratie</a>
-<!--            <a href="#">Makelaars</a>-->
+        <nav class="mainnav" id="mainnav" aria-label="Hoofdmenu">
+            <a href="/huizen">Huizen</a>
+            <a href="/magazine">Magazine</a>
+            <a href="/begeleiding">Begeleiding</a>
+            <a href="/over-ons">Over ons</a>
+            <a href="/voor-aanbieders">Voor aanbieders</a>
+            <a href="/contact">Contact</a>
         </nav>
 
-        <div class="nav-actions">
-            <a href="#" class="login-link">Inloggen voor makelaars</a>
-
-            <a href="#" class="button button-outline">
-                Woning aanbieden
+        <div class="account">
+            <div class="langpick">
+                <button class="lang" id="langbutton" aria-haspopup="true" aria-expanded="false" aria-controls="langmenu" aria-label="Taal wijzigen, huidige taal Nederlands">NL
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true">
+                        <path d="M1 1 L6 6 L11 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="langmenu" id="langmenu" role="menu" aria-labelledby="langbutton" hidden>
+                    <li role="none"><a role="menuitem" href="/" hreflang="nl" aria-current="true">Nederlands<span class="code">NL</span></a></li>
+                    <li role="none"><a role="menuitem" href="/en/" hreflang="en">English<span class="code">EN</span></a></li>
+                    <li role="none"><a role="menuitem" href="/de/" hreflang="de">Deutsch<span class="code">DE</span></a></li>
+                    <li role="none"><a role="menuitem" href="/fr/" hreflang="fr">Français<span class="code">FR</span></a></li>
+                    <li role="none"><a role="menuitem" href="/es/" hreflang="es">Español<span class="code">ES</span></a></li>
+                </ul>
+            </div>
+            <div class="account-rule"></div>
+            <a class="signin" href="/inloggen" aria-label="Inloggen">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle cx="12" cy="8.2" r="3.9" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M4.4 20c1.5-3.9 4.4-5.9 7.6-5.9s6.1 2 7.6 5.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="signin-label">Inloggen</span>
             </a>
-
-            <button
-                    class="mobile-toggle"
-                    id="mobileToggle"
-                    aria-label="Menu openen"
-                    aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
+    </header>
 
-    </div>
-</header>
-
-<div class="mobile-menu" id="mobileMenu">
-    <a href="#woningen">Kopen</a>
-    <a href="#woningen">Huren</a>
-    <a href="#bestemmingen">Bestemmingen</a>
-    <a href="#inspiratie">Inspiratie</a>
-<!--    <a href="#">Makelaars</a>-->
-
-    <a href="#" class="button button-primary">
-        Woning aanbieden
-    </a>
-</div>
-
-
-
-<main>
     <section class="hero">
-        <div class="container hero-layout">
+        <img class="hero-art" src="assets/landschap.jpg" alt="Kustlandschap met dorpen, een stad aan de horizon en drie rivieren die naar de drie onderdelen van HUISenAANBOD stromen">
 
-            <div class="hero-copy">
-                <div class="hero-meta">
-                    <span>SINDS 1993</span>
-                    <span>·</span>
-                    <span>32.470 WONINGEN</span>
-                    <span>·</span>
-                    <span>60+ LANDEN</span>
-                </div>
-
-                <h1>
-                    Uw volgende leven
-                    ligt misschien
-                    <span class="orange-script">
-              verderop.
-            </span>
-                </h1>
-
-                <p class="hero-description">
-                    Misschien weet u al precies waar u wilt wonen.
-                    Misschien weet u alleen dat u weg wilt uit Nederland.
-                    Huis & Aanbod helpt u vanaf de eerste droom tot aan
-                    de voordeur.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#search" class="button button-primary">
-                        Zoek woningen
-                        <span>→</span>
-                    </a>
-
-                    <a href="#inspiratie" class="dream-link">
-                        Ik weet nog niet waar
-                        <span>→</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-
-                <div class="sun-circle"></div>
-
-                <img
-                        class="hero-main-image"
-                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
-                        alt="Mediterrane woning"
-                />
-
-                <div class="floating-card">
-                    <span class="tiny-label">Voor dromers</span>
-
-                    <strong>
-                        Waar zou u morgen wakker willen worden?
-                    </strong>
-
-                    <p>
-                        Ontdek landen, verhalen en praktische gidsen.
-                    </p>
-                </div>
-
-            </div>
+        <div class="hero-copy">
+            <h1>Tussen droom<br> en <span class="keep-together">besluit<svg class="roof-inline" viewBox="0 0 24 20" aria-hidden="true"><path d="M12 0 L24 11 H19 V20 H5 V11 H0 Z" fill="#F26402"/></svg></span></h1>
+            <p>
+                Droom je van een ander huis, een andere plek<br>
+                of een ander leven? HUISenAANBOD helpt je<br>
+                ontdekken wat bij je past, je plannen verder te<br>
+                brengen en het huis te vinden dat daarbij aansluit.
+            </p>
         </div>
     </section>
 
-
-    <section class="search-wrap" id="search">
-        <div class="container">
-            <div class="search-box">
-
-                <div class="search-tabs">
-                    <button class="search-tab active" data-type="koop">
-                        Kopen
-                    </button>
-
-                    <button class="search-tab" data-type="huur">
-                        Huren
-                    </button>
-                </div>
-
-                <div class="search-main">
-
-                    <label class="search-field">
-                        <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                        >
-                            <circle cx="11" cy="11" r="7"></circle>
-                            <path d="m20 20-3.5-3.5"></path>
-                        </svg>
-
-                        <input
-                                id="locationInput"
-                                type="text"
-                                placeholder="Zoek op land, streek of plaats — bijv. Algarve, Toscane of Valencia"
-                        />
-                    </label>
-
-                    <button
-                            class="button button-primary"
-                            id="searchButton"
-                    >
-                        Zoeken
-                        <span>→</span>
-                    </button>
-
-                </div>
-
-                <div class="filters">
-
-                    <select class="filter" aria-label="Land">
-                        <option>Land</option>
-                        <option>Spanje</option>
-                        <option>Portugal</option>
-                        <option>Frankrijk</option>
-                        <option>Italië</option>
-                        <option>Zweden</option>
-                    </select>
-
-                    <select class="filter" aria-label="Prijsklasse">
-                        <option>Prijsklasse</option>
-                        <option>Tot €250.000</option>
-                        <option>€250.000 – €500.000</option>
-                        <option>€500.000 – €1.000.000</option>
-                        <option>Vanaf €1.000.000</option>
-                    </select>
-
-                    <select class="filter" aria-label="Woningtype">
-                        <option>Type woning</option>
-                        <option>Villa</option>
-                        <option>Appartement</option>
-                        <option>Finca</option>
-                        <option>Vrijstaand</option>
-                    </select>
-
-                    <select class="filter" aria-label="Slaapkamers">
-                        <option>Slaapkamers</option>
-                        <option>1+</option>
-                        <option>2+</option>
-                        <option>3+</option>
-                        <option>4+</option>
-                    </select>
-
-                    <button class="more-filters">
-                        Meer filters +
-                    </button>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="inspiration" id="inspiratie">
-        <div class="container">
-
-            <div class="section-header">
-
-                <div class="section-header-copy">
-                    <div class="eyebrow">
-                        Begin bij de droom
-                    </div>
-
-                    <h2>
-                        Nog geen idee waar?
-                        <span class="orange-script">Perfect.</span>
-                    </h2>
-
-                    <p class="section-intro">
-                        Verhuizen naar het buitenland begint zelden met een
-                        postcode. Ontdek verhalen, bestemmingen en praktische
-                        gidsen die helpen ontdekken welk leven bij u past.
-                    </p>
-                </div>
-
-                <a href="#" class="text-link">
-                    Alle artikelen →
-                </a>
-            </div>
-
-
-            <div class="article-grid">
-
-                <article class="article-card">
-                    <img
-                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85"
-                            alt="Strand in Zuid-Europa"
-                    />
-
-                    <div class="article-content">
-              <span class="article-category">
-                Oriënteren
-              </span>
-
-                        <h3>
-                            Ik wil weg uit Nederland.
-                            Maar waar begin ik?
-                        </h3>
-
-                        <p>
-                            Zeven vragen die helpen ontdekken welk land,
-                            klimaat en dagelijks leven bij u passen.
-                        </p>
-                    </div>
-                </article>
-
-
-                <article class="article-card small">
-                    <img
-                            src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85"
-                            alt="Portugal"
-                    />
-
-                    <div class="article-content">
-              <span class="article-category">
-                Portugal
-              </span>
-
-                        <h3>
-                            Algarve of juist het rustige noorden?
-                        </h3>
-
-                        <p>
-                            Portugal is veel meer dan zon en zee.
-                        </p>
-                    </div>
-                </article>
-
-
-                <article class="article-card small">
-                    <img
-                            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=85"
-                            alt="Frankrijk"
-                    />
-
-                    <div class="article-content">
-              <span class="article-category">
-                Praktisch
-              </span>
-
-                        <h3>
-                            Wat kost wonen in Frankrijk echt?
-                        </h3>
-
-                        <p>
-                            Van boodschappen tot lokale belastingen.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="dream-guide">
-        <div class="container dream-guide-inner">
-
-            <div>
-                <div class="eyebrow">
-                    Uw buitenlandkompas
-                </div>
-
-                <h2>
-                    Eerst ontdekken
-                    <span class="orange-script">
-              welk leven
-            </span>
-                    bij u past.
-                </h2>
-
-                <p>
-                    Niet iedereen begint met “ik wil een villa in Málaga”.
-                    Daarom helpt Huis & Aanbod ook bij de vragen vóór de
-                    woningzoektocht.
-                </p>
-            </div>
-
-
-            <div class="question-grid">
-
-                <a href="#" class="question">
-            <span class="question-number">
-              01
-            </span>
-
-                    <strong>
-                        Waar vind ik veel zon zonder extreme hitte?
-                    </strong>
-                </a>
-
-
-                <a href="#" class="question">
-            <span class="question-number">
-              02
-            </span>
-
-                    <strong>
-                        Welk land is betaalbaar met mijn budget?
-                    </strong>
-                </a>
-
-
-                <a href="#" class="question">
-            <span class="question-number">
-              03
-            </span>
-
-                    <strong>
-                        Waar kan ik rustig wonen maar niet afgelegen?
-                    </strong>
-                </a>
-
-
-                <a href="#" class="question">
-            <span class="question-number">
-              04
-            </span>
-
-                    <strong>
-                        Waar wonen veel andere Nederlanders?
-                    </strong>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="destinations" id="bestemmingen">
-        <div class="container">
-
-            <div class="section-header">
-
-                <div class="section-header-copy">
-                    <div class="eyebrow">
-                        Verken bestemmingen
-                    </div>
-
-                    <h2>
-                        Waar zou u
-                        <span class="orange-script">
-                kunnen wonen?
-              </span>
-                    </h2>
-
-                    <p class="section-intro">
-                        Bekijk niet alleen woningen, maar ontdek hoe het
-                        dagelijkse leven, klimaat en woonaanbod per land
-                        verschillen.
-                    </p>
-                </div>
-
-                <a href="#" class="text-link">
-                    Alle bestemmingen →
-                </a>
-            </div>
-
-
-            <div class="destination-grid">
-
-                <a href="#" class="destination-card">
-                    <img
-                            src="https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=900&q=85"
-                            alt="Spanje"
-                    />
-
-                    <div class="destination-info">
-                        <h3>Spanje</h3>
-                        <span>Zon, kust en levendige steden</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="destination-card">
-                    <img
-                            src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85"
-                            alt="Portugal"
-                    />
-
-                    <div class="destination-info">
-                        <h3>Portugal</h3>
-                        <span>Ruimte, oceaan en mild klimaat</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="destination-card">
-                    <img
-                            src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=85"
-                            alt="Italië"
-                    />
-
-                    <div class="destination-info">
-                        <h3>Italië</h3>
-                        <span>Dorpen, cultuur en buitenleven</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="destination-card">
-                    <img
-                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-                            alt="Frankrijk"
-                    />
-
-                    <div class="destination-info">
-                        <h3>Frankrijk</h3>
-                        <span>Van Atlantische kust tot Provence</span>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="featured" id="woningen">
-        <div class="container">
-
-            <div class="section-header">
-
-                <div class="section-header-copy">
-                    <div class="eyebrow">
-                        Uitgelicht aanbod
-                    </div>
-
-                    <h2>
-                        Huizen om van
-                        <span class="orange-script">
-                te dromen.
-              </span>
-                    </h2>
-
-                    <p class="section-intro">
-                        Een selectie van bijzondere woningen uit het actuele
-                        aanbod.
-                    </p>
-                </div>
-
-                <a href="#" class="text-link">
-                    Bekijk alle woningen →
-                </a>
-            </div>
-
-
-            <div class="property-grid">
-
-                <article class="property-card">
-
-                    <div class="property-image">
-                        <img
-                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
-                                alt="Villa in Spanje"
-                        />
-
-                        <span class="property-badge">
-                Nieuw
-              </span>
-
-                        <button
-                                class="favorite"
-                                aria-label="Toevoegen aan favorieten"
-                        >
-                            ♡
-                        </button>
-                    </div>
-
-                    <div class="property-content">
-
-                        <div class="property-location">
-                            Moraira · Spanje
-                        </div>
-
-                        <h3>
-                            Moderne villa vlak bij de Middellandse Zee
-                        </h3>
-
-                        <div class="property-price">
-                            € 675.000
-                        </div>
-
-                        <div class="property-meta">
-                            <span>3 slaapkamers</span>
-                            <span>2 badkamers</span>
-                            <span>184 m²</span>
-                        </div>
-
-                    </div>
-                </article>
-
-
-                <article class="property-card">
-
-                    <div class="property-image">
-                        <img
-                                src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=85"
-                                alt="Woning Portugal"
-                        />
-
-                        <span class="property-badge">
-                Uitgelicht
-              </span>
-
-                        <button
-                                class="favorite"
-                                aria-label="Toevoegen aan favorieten"
-                        >
-                            ♡
-                        </button>
-                    </div>
-
-                    <div class="property-content">
-
-                        <div class="property-location">
-                            Tavira · Portugal
-                        </div>
-
-                        <h3>
-                            Vrijstaande woning met tuin en zwembad
-                        </h3>
-
-                        <div class="property-price">
-                            € 495.000
-                        </div>
-
-                        <div class="property-meta">
-                            <span>4 slaapkamers</span>
-                            <span>3 badkamers</span>
-                            <span>220 m²</span>
-                        </div>
-
-                    </div>
-                </article>
-
-
-                <article class="property-card">
-
-                    <div class="property-image">
-                        <img
-                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
-                                alt="Huis in Frankrijk"
-                        />
-
-                        <span class="property-badge">
-                Onder optie
-              </span>
-
-                        <button
-                                class="favorite"
-                                aria-label="Toevoegen aan favorieten"
-                        >
-                            ♡
-                        </button>
-                    </div>
-
-                    <div class="property-content">
-
-                        <div class="property-location">
-                            Dordogne · Frankrijk
-                        </div>
-
-                        <h3>
-                            Karaktervolle woning met veel privacy
-                        </h3>
-
-                        <div class="property-price">
-                            € 389.000
-                        </div>
-
-                        <div class="property-meta">
-                            <span>4 slaapkamers</span>
-                            <span>2 badkamers</span>
-                            <span>196 m²</span>
-                        </div>
-
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="how-it-works">
-        <div class="container">
-
-            <div class="section-header-copy">
-                <div class="eyebrow">
-                    Van droom naar voordeur
-                </div>
-
-                <h2>
-                    Zo helpt Huis & Aanbod.
-                </h2>
-
-                <p class="section-intro">
-                    Eén plek om u te oriënteren, woningen te ontdekken en
-                    rechtstreeks in contact te komen met de aanbieder.
-                </p>
-            </div>
-
-
-            <div class="steps">
-
-                <div class="step">
-            <span class="step-number">
-              01 — Ontdekken
-            </span>
-
-                    <h3>
-                        Vind uw richting
-                    </h3>
-
-                    <p>
-                        Lees verhalen, vergelijk bestemmingen en ontdek welk
-                        buitenlandleven bij uw wensen past.
-                    </p>
-                </div>
-
-
-                <div class="step">
-            <span class="step-number">
-              02 — Zoeken
-            </span>
-
-                    <h3>
-                        Bekijk het aanbod
-                    </h3>
-
-                    <p>
-                        Zoek gericht op land, prijs, type woning, slaapkamers
-                        en andere kenmerken die voor u belangrijk zijn.
-                    </p>
-                </div>
-
-
-                <div class="step">
-            <span class="step-number">
-              03 — Contact
-            </span>
-
-                    <h3>
-                        Spreek de aanbieder
-                    </h3>
-
-                    <p>
-                        Bewaar favorieten en bereik de makelaar of particuliere
-                        verkoper rechtstreeks.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="seller-cta">
-        <div class="container seller-inner">
-
-            <h2>
-                Verkoopt u een woning in Nederland
-                of daarbuiten?
-            </h2>
-
-            <a href="#" class="button">
-                Plaats uw woning →
-            </a>
-
-        </div>
-    </section>
-</main>
-
-<footer>
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div class="footer-brand">
-
-                <div class="brand">
-                    <div class="brand-mark">
-                        <img src="assets/IMG_8840.jpeg" alt="" />
-                    </div>
-
-                    <div class="brand-name">
-                        Huis<span>&</span>Aanbod
-                    </div>
-                </div>
-
-                <p>
-                    Voor iedereen die droomt van een ander huis,
-                    een ander land of een ander leven.
-                </p>
-            </div>
-
-
-            <div class="footer-column">
-                <strong>Ontdekken</strong>
-
-                <a href="#">Inspiratie</a>
-                <a href="#">Bestemmingen</a>
-                <a href="#">Artikelen</a>
-                <a href="#">Emigreren</a>
-            </div>
-
-
-            <div class="footer-column">
-                <strong>Woningen</strong>
-
-                <a href="#">Kopen</a>
-                <a href="#">Huren</a>
-                <a href="#">Nieuw aanbod</a>
-                <a href="#">Makelaars</a>
-            </div>
-
-
-            <div class="footer-column">
-                <strong>Aanbieden</strong>
-
-                <a href="#">Woning verkopen</a>
-                <a href="#">Makelaar worden</a>
-                <a href="#">Tarieven</a>
-            </div>
-
-
-            <div class="footer-column">
-                <strong>Huis & Aanbod</strong>
-
-                <a href="#">Over ons</a>
-                <a href="#">Contact</a>
-                <a href="#">Voorwaarden</a>
-                <a href="#">Privacy</a>
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-        <span>
-          © 2026 Huis & Aanbod
-        </span>
-
-            <span>
-          Wonen begint met dromen.
-        </span>
-        </div>
+    <div class="pillars">
+
+        <a class="pillar p-huizen" href="/huizen">
+            <img class="pillar-art" src="assets/kaart-huizen.jpg" alt="">
+            <svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
+                <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#F26402" stroke="#F26402" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M15.6 45.2 V29.6 L28 18.8 L40.4 29.6 V45.2" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                <path d="M15.6 45.2 H24.6 M31.4 45.2 H40.4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M24.6 45.2 V37.2 a3.4 3.4 0 0 1 6.8 0 V45.2" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+            <h2>Huizen</h2>
+            <span class="pillar-rule"></span>
+            <p>Actueel woningaanbod in meer dan<br> 60 landen. Kopen of huren, van<br>appartement tot landhuis.</p>
+            <span class="pillar-cta">Bekijk woningen
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12 H20" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M14 6 L20 12 L14 18" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+        </a>
+
+        <a class="pillar p-magazine" href="/magazine">
+            <img class="pillar-art" src="assets/kaart-magazine.jpg" alt="">
+            <svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
+                <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#2EA1D9" stroke="#2EA1D9" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M28 24.6 C23.4 21.6 18.2 20.9 13.6 21.9 V42.9 C18.2 41.9 23.4 42.6 28 45.6 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M28 24.6 C32.6 21.6 37.8 20.9 42.4 21.9 V42.9 C37.8 41.9 32.6 42.6 28 45.6 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+                <g stroke="#fff" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M17.4 27.4 L24.2 28.6 M17.4 31.6 L24.2 32.6 M17.4 35.8 L24.2 36.6 M17.4 40 L24.2 40.6"/>
+                    <path d="M38.6 27.4 L31.8 28.6 M38.6 31.6 L31.8 32.6 M38.6 35.8 L31.8 36.6 M38.6 40 L31.8 40.6"/>
+                </g>
+            </svg>
+            <h2>Magazine</h2>
+            <span class="pillar-rule"></span>
+            <p>Inspirerende verhalen, ervaringen, <br>bestemmingen en praktische informatie<br>over wonen en leven in binnen- en<br>buitenland.</p>
+            <span class="pillar-cta">Ga naar het Magazine
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12 H20" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M14 6 L20 12 L14 18" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+        </a>
+
+        <a class="pillar p-begeleiding" href="/begeleiding">
+            <img class="pillar-art" src="assets/kaart-begeleiding.jpg" alt="">
+            <svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
+                <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#6AAA38" stroke="#6AAA38" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M13.4 44.6 C15.8 39 17.4 34.6 21.3 34.8 C25.2 35 26.8 39.2 30.7 39.3 C34.7 39.4 36.6 31.2 39.8 25.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M35.6 26.6 L40.3 23.6 L42.9 28.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2>Begeleiding</h2>
+            <span class="pillar-rule"></span>
+            <p>Coaching, persoonlijke begeleiding en <br>praktische tools voor als je droomt van <br>anders wonen of leven, maar nog niet<br> precies weet hoe.</p>
+            <span class="pillar-cta">Ontdek de begeleiding
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12 H20" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M14 6 L20 12 L14 18" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+        </a>
 
     </div>
-</footer>
 
+    <footer class="promise">
 
-<div class="toast" id="toast">
-    Demo
+        <div class="promise-lead">
+            <p>Al meer dan 30 jaar verbinden we mensen <br>met hun droomplek en nieuwe leven.</p>
+        </div>
+
+        <div class="promise-item">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="12.4" stroke="#EF773A" stroke-width="1.7"/>
+                <ellipse cx="16" cy="16" rx="5.3" ry="12.4" stroke="#EF773A" stroke-width="1.7"/>
+                <path d="M4.2 11.4 H27.8 M4.2 20.6 H27.8 M16 3.6 V28.4" stroke="#EF773A" stroke-width="1.7"/>
+            </svg>
+            <b>Wereldwijd</b>
+            <span>woningaanbod</span>
+        </div>
+
+        <div class="promise-item">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="9.6" r="4.3" stroke="#EF773A" stroke-width="1.7"/>
+                <path d="M9.2 22.6c0-3.9 3-6.6 6.8-6.6s6.8 2.7 6.8 6.6" stroke="#EF773A" stroke-width="1.7" stroke-linecap="round"/>
+                <circle cx="6.2" cy="13.4" r="3" stroke="#EF773A" stroke-width="1.6"/>
+                <path d="M1.6 23c0-3.1 2-5.2 4.6-5.2" stroke="#EF773A" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="25.8" cy="13.4" r="3" stroke="#EF773A" stroke-width="1.6"/>
+                <path d="M30.4 23c0-3.1-2-5.2-4.6-5.2" stroke="#EF773A" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <b>Duizenden</b>
+            <span>tevreden klanten</span>
+        </div>
+
+        <div class="promise-item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <g stroke="#EF773A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+                    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+                    <path d="m21 3 1 11h-2"/>
+                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+                    <path d="M3 4h8"/>
+                </g>
+            </svg>
+            <b>Samen met lokale</b>
+            <span>partners</span>
+        </div>
+
+        <div class="promise-item">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M16 2.8 L27.4 7.2 V16 c0 6.6 -4.7 11 -11.4 13.2 C9.3 27 4.6 22.6 4.6 16 V7.2 Z" stroke="#EF773A" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M11 16.2 L14.7 19.9 L21.4 12.4" stroke="#EF773A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <b>Betrouwbaar</b>
+            <span>en onafhankelijk</span>
+        </div>
+
+        <div class="promise-sign">
+            <p>Ervaring die<br>je verder brengt.</p>
+            <svg class="promise-swoosh" viewBox="0 0 160 19" fill="none" aria-hidden="true">
+                <path d="M3 5.5 C26 17.5 96 19.5 157 3" stroke="#EF8A45" stroke-width="2.6" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+    </footer>
+
 </div>
 
-<script src="js/app.js"></script>
 </body>
+<script src="js/app.js"></script>
 </html>
