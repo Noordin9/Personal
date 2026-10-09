@@ -394,15 +394,16 @@
 :root{
     --fit: 0.9;
     --u: calc(100vw / 1536 * var(--fit));
-    --orange:#F26402;
-    --orange-logo:#EC6106;
-    --blue:#2EA1D9;
-    --green:#6AAA38;
+    --orange:#EC7404;
+    --orange-logo:#EC7404;
+    --blue:#20B5E9;
+    --green:#58B718;
 
     --ink:#0B1A24;
     --body:#3C4952;
     --muted:#5A6771;
     --hairline:#E2DED7;
+    --pin-fade: 0.65;
 }
 
 @media (min-width:1707px){ :root{ --u: calc(1px * var(--fit)); } }
@@ -569,6 +570,16 @@ img{display:block;}
     background:linear-gradient(180deg,#FFFFFF 0%,#FCFCFC 100%);
 }
 .hero-art{flex:none;width:100%;height:calc(448 * var(--u));object-fit:fill;}
+.hero-pins{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(448 * var(--u));
+    z-index: 1;
+    pointer-events: none;
+}
+.hero-pins g{opacity: var(--pin-fade)}
 
 .hero-copy{
     position:absolute;
@@ -863,7 +874,7 @@ img{display:block;}
 
     /* hero — the landscape is the desktop composition, so below
        this width it is dropped and the copy is centred instead */
-    .hero-art{display:none;}
+    .hero-art, .hero-pins{display:none;}
     .hero{
         flex:0 0 auto;
         flex-direction:column;
