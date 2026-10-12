@@ -1,6 +1,6 @@
 /* Magazine page: article filters, "show more" and the region carousel. */
 (function () {
-    var PAGE = 9;
+    var PAGE = 6;
     var limit = PAGE;
     var active = 'Alles';
     var cards = Array.prototype.slice.call(document.querySelectorAll('.grid .card'));
