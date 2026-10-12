@@ -20,8 +20,7 @@
    stretch to fill the window like on the landing page. */
 .page-magazine .stage{flex:none;padding-bottom:0;overflow:visible;}
 .mainnav a[aria-current="page"]{border-bottom-color:var(--blue);color:var(--ink);}
-.page-magazine .logo-amp{fill:#2EA1D9;}
-
+.page-magazine .logo-house,.page-magazine .logo-amp{fill:#2EA1D9;}
 /* ---------- magazine base ---------- */
 
 .mag{
