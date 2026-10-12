@@ -1,9 +1,9 @@
 /* ============================================================
-MAGAZINE · SPANJE
-Loaded on magazine/spanje.html after style.css. Uses the tokens from
-                   style.css (--orange, --blue, --ink, --body, --muted, --hairline)
-and adds a few of its own for the magazine page.
-============================================================ */
+   MAGAZINE · SPANJE
+   Loaded on magazine/spanje.html after style.css. Uses the tokens from
+   style.css (--orange, --blue, --ink, --body, --muted, --hairline)
+   and adds a few of its own for the magazine page.
+   ============================================================ */
 
 :root{
     --blue-ink:#0E72A6;    /* darker brand blue: readable text and white-on-blue buttons */
@@ -20,6 +20,7 @@ and adds a few of its own for the magazine page.
    stretch to fill the window like on the landing page. */
 .page-magazine .stage{flex:none;padding-bottom:0;overflow:visible;}
 .mainnav a[aria-current="page"]{border-bottom-color:var(--blue);color:var(--ink);}
+.page-magazine .logo-amp{fill:#2EA1D9;}
 
 /* ---------- magazine base ---------- */
 

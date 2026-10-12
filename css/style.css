@@ -787,6 +787,15 @@ img{display:block;}
     margin-left:calc(4 * var(--u));
 }
 
+/* ---------- logo ---------- */
+.wordmark{display:block;line-height:0;}
+.wordmark .logo{display:block;height:calc(40 * var(--u));width:auto;}
+.logo-house,.logo-amp{fill:#E66D05;}
+.logo-letters{fill:#2B3A40;}
+@media (max-width:860px), (max-aspect-ratio:27/20){
+    .wordmark .logo{height:clamp(18px,4vw,28px);}
+}
+
 /* ---------- navigation toggle ---------- */
 
 .navtoggle{
