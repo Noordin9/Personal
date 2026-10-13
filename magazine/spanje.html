@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" data-header="a">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Huis kopen in Spanje — HUISenAANBOD Magazine</title>
     <meta name="description" content="Alles over een huis kopen in Spanje: kosten, het koopproces, de NIE, financiering en de Spaanse costa's. Artikelen en gidsen van HUISenAANBOD.">
     <link rel="icon" href="../assets/icon.jpeg">
+    <script>/* prototype: headervariant A/B vóór het tekenen toepassen */try{var h=new URLSearchParams(location.search).get('header')||localStorage.getItem('ha-header');if(h==='a'||h==='b')document.documentElement.setAttribute('data-header',h);}catch(e){}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87,700;87,800&family=Caveat:wght@500;600&family=Playfair+Display:wght@400;500;600&family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/magazine.css">
 </head>
@@ -16,90 +17,88 @@
 <body class="page-magazine">
 
 <!-- Same header as the landing page -->
-<div class="stage">
+<!-- Header variant A: bovenbalk -->
+<div class="topbar"><p><span class="slogan-part">Tussen Droom en Besluit</span> <span class="slogan-part"><small>· Sinds 1993</small></span></p></div>
 
-    <header class="masthead">
-        <div class="brand">
-            <a class="wordmark" href="../index.html" aria-label="HUISenAANBOD.nl"><svg class="logo" viewBox="376 267 1286 137" aria-hidden="true" focusable="false"><path class="logo-house" fill-rule="evenodd" d="M 378 355.347 L 378 311.923 393.75 301.643 C 437.123 273.335 444.237 268.881 445.324 269.353 C 445.971 269.633 460.9 279.456 478.5 291.182 L 510.5 312.5 510.5 355.5 L 510.5 398.5 444.25 398.636 L 378 398.772 378 355.347 Z"/><path class="logo-amp" fill-rule="evenodd" d="M 929 400.188 C 921.819 397.796 919.637 396.57 914.839 392.236 C 908.759 386.743 906.564 381.788 906.536 373.5 C 906.517 367.589 906.974 365.666 909.478 361.136 C 912.645 355.404 917.449 351.005 925.5 346.464 C 928.25 344.913 930.661 343.525 930.859 343.38 C 931.056 343.235 929.419 340.953 927.221 338.308 C 925.023 335.664 922.461 331.987 921.528 330.137 C 919.196 325.514 918.474 317.125 920.007 312.478 C 921.777 307.116 928.122 300.636 934.273 297.909 C 938.372 296.092 941.35 295.582 948.071 295.546 C 955.684 295.505 957.304 295.838 962.571 298.522 C 966.888 300.723 969.374 302.847 971.716 306.335 C 973.486 308.97 975.214 312.626 975.559 314.461 C 975.903 316.295 975.664 320.299 975.029 323.36 C 974.144 327.625 972.846 330.067 969.47 333.822 C 967.048 336.516 962.577 340.021 959.536 341.61 C 956.494 343.2 954.004 344.873 954.002 345.328 C 954.001 345.783 958.699 350.958 964.442 356.828 L 974.884 367.5 978.463 359.77 C 980.431 355.519 982.314 350.681 982.646 349.02 C 983.022 347.139 983.863 346.004 984.875 346.011 C 986.648 346.023 995.498 348.572 997.01 349.506 C 998.392 350.36 993.662 362.178 988.503 370.761 L 984.048 378.174 994.024 388.428 C 999.511 394.067 1004 398.978 1004 399.341 C 1004 399.703 999.937 400 994.972 400 L 985.943 400 980.824 394.5 C 978.009 391.475 975.331 389 974.873 389 C 974.415 389 971.669 390.804 968.77 393.008 C 961.173 398.786 954.206 401.162 943.5 401.629 C 936.628 401.928 933.199 401.588 929 400.188 Z M 955.686 385.999 C 958.989 384.348 962.496 382.11 963.478 381.025 C 965.217 379.103 965.053 378.822 957.215 370.276 C 952.788 365.449 947.159 359.548 944.705 357.161 L 940.244 352.823 936.872 354.56 C 930.876 357.648 927.146 361.068 925.05 365.396 C 921.799 372.112 922.614 378.757 927.317 383.877 C 930.672 387.531 934.839 388.918 942.59 388.961 C 948.516 388.994 950.667 388.507 955.686 385.999 Z M 950.973 332.219 C 958.296 327.242 961.328 322.694 960.671 317.672 C 960.046 312.903 957.946 310.527 952.527 308.457 C 949.105 307.15 947.522 307.052 944.222 307.94 C 941.833 308.584 939.081 310.303 937.573 312.096 C 932.953 317.586 934.537 325.535 941.789 333.25 C 943.211 334.762 944.627 335.986 944.937 335.969 C 945.247 335.953 947.963 334.265 950.973 332.219 Z"/><path class="logo-letters" fill-rule="evenodd" d="M 690.389 400.512 C 683.762 399.07 677.409 396.165 672.184 392.187 C 667.009 388.246 661.141 379.252 658.714 371.537 C 656.593 364.796 656.51 363.117 656.729 331.604 C 656.855 313.511 657.086 298.58 657.243 298.424 C 657.399 298.267 661.346 298.038 666.014 297.914 L 674.5 297.689 675 332.095 L 675.5 366.5 678.328 372.258 C 683.078 381.932 690.656 386 703.929 386 C 710.196 386 712.568 385.521 716.832 383.397 C 722.808 380.419 726.315 376.307 729.074 369.048 C 730.834 364.416 731 361.138 731 331.048 C 731 312.937 731.337 297.967 731.75 297.783 C 732.163 297.599 736.212 297.606 740.75 297.8 L 749 298.152 749 330.527 C 749 350.392 748.571 364.949 747.89 368.201 C 746.312 375.741 740.418 386.486 735.599 390.611 C 724.291 400.292 706.893 404.102 690.389 400.512 Z M 821.131 400.459 C 811.926 398.462 803.332 394.089 796.728 388.043 C 790.23 382.094 790.177 382.55 798.156 375.869 L 803.017 371.8 808.974 377.315 C 816.772 384.535 823.229 387 834.341 387 C 841.241 387 843.471 386.57 847.831 384.397 C 850.965 382.835 853.645 380.654 854.528 378.946 C 856.615 374.911 856.393 368.361 854.059 365.083 C 851.681 361.744 847.091 359.685 836 356.983 C 825.109 354.329 815.567 351.25 810.5 348.754 C 805.252 346.17 800.307 341.435 797.827 336.622 C 793.296 327.828 794.841 315.051 801.354 307.441 C 814.315 292.3 846.115 290.964 864.143 304.802 C 873.432 311.933 873.485 312.176 867 317.905 L 861.5 322.764 856.994 318.993 C 849.501 312.723 844.654 310.707 835.844 310.197 C 830.044 309.861 826.829 310.175 823.653 311.388 C 818.159 313.487 814.076 317.742 813.381 322.094 C 812.648 326.685 816.15 331.807 822.021 334.73 C 824.484 335.957 832.35 338.557 839.5 340.508 C 846.65 342.459 854.898 345.218 857.829 346.64 C 863.788 349.53 869.126 354.41 871.633 359.258 C 874.138 364.102 874.595 374.691 872.564 380.809 C 867.334 396.554 844.079 405.438 821.131 400.459 Z M 1488 401.047 C 1472.944 398.191 1460.488 390.744 1452.409 379.769 C 1446.928 372.323 1444.047 364.572 1442.998 354.44 C 1440.856 333.771 1449.007 315.83 1465.406 305.125 C 1474.792 298.998 1484.091 295.966 1495.5 295.315 C 1513.281 294.3 1529.031 300.04 1540.917 311.866 C 1553.943 324.827 1558.81 342.452 1554.46 360.907 C 1550.23 378.852 1535.533 393.976 1517 399.453 C 1510.507 401.372 1494.384 402.259 1488 401.047 Z M 1516.696 382.491 C 1528.097 376.871 1534.773 367.533 1536.894 354.24 C 1539.521 337.769 1531.006 321.022 1516.411 313.957 C 1509.615 310.667 1500.226 309.384 1492.56 310.697 C 1479.854 312.873 1470.147 319.893 1464.787 330.782 C 1461.674 337.105 1461.5 338.041 1461.5 348.479 C 1461.5 358.297 1461.788 360.113 1464.135 365.12 C 1467.667 372.653 1472.739 378.049 1479.849 381.839 C 1487.833 386.094 1492.092 387.008 1501.5 386.484 C 1508.101 386.117 1510.758 385.419 1516.696 382.491 Z M 550.458 398.75 C 550.195 398.062 550.097 375 550.24 347.5 L 550.5 297.5 556 297.187 C 559.025 297.015 562.962 297.148 564.75 297.483 L 568 298.091 568 319.045 L 568 340 597 340 L 626 340 626 319.073 L 626 298.147 634.588 297.823 C 639.311 297.646 643.361 297.688 643.588 297.917 C 643.815 298.146 644 321.226 644 349.206 L 644 400.078 635.25 399.789 L 626.5 399.5 626.231 377.338 L 625.962 355.175 609.731 354.838 C 600.804 354.652 587.763 354.658 580.75 354.85 L 568 355.201 568 376.964 L 568 398.728 563.36 399.364 C 556.075 400.363 550.983 400.12 550.458 398.75 Z M 764.63 399.211 C 764.362 398.776 764.335 375.714 764.57 347.961 L 764.998 297.5 773.249 297.5 L 781.5 297.5 781.759 348.75 L 782.018 400 773.568 400 C 768.921 400 764.898 399.645 764.63 399.211 Z M 1028 398.949 C 1028 398.371 1030.51 392.408 1033.577 385.699 C 1038.995 373.848 1043.743 363.253 1063.243 319.5 L 1072.602 298.5 1081.39 298 C 1086.69 297.698 1090.472 297.897 1090.921 298.5 C 1091.33 299.05 1094.175 305.35 1097.243 312.5 C 1100.311 319.65 1106.289 333.375 1110.527 343 C 1121.798 368.599 1135 399.128 1135 399.595 C 1135 399.818 1131.039 400 1126.197 400 L 1117.395 400 1112.414 388.75 L 1107.434 377.5 1080.963 377.234 L 1054.492 376.968 1050.094 387.234 C 1047.675 392.88 1045.259 398.062 1044.726 398.75 C 1043.503 400.325 1028 400.509 1028 398.949 Z M 1099.707 360.75 C 1098.615 356.074 1081.541 318.06 1080.849 318.763 C 1079.704 319.929 1062 360.259 1062 361.702 C 1062 362.721 1066.114 363 1081.117 363 L 1100.233 363 1099.707 360.75 Z M 1138 399.173 C 1138 398.675 1139.974 394.045 1142.386 388.884 C 1148.454 375.904 1158.762 352.953 1171.531 324 C 1177.473 310.525 1182.765 298.938 1183.29 298.25 C 1184.427 296.762 1195.677 296.546 1199.349 297.943 C 1200.713 298.461 1202.154 299.911 1202.552 301.164 C 1203.266 303.412 1215.128 330.657 1234.884 375.42 C 1240.448 388.026 1245 398.731 1245 399.209 C 1245 399.687 1241.072 399.948 1236.27 399.789 L 1227.54 399.5 1222.52 388.287 L 1217.5 377.074 1191.362 377.037 L 1165.224 377 1160.286 388.25 L 1155.347 399.5 1146.673 399.789 C 1141.903 399.948 1138 399.671 1138 399.173 Z M 1210.249 362.417 C 1210.57 362.097 1209.028 357.934 1206.823 353.167 C 1204.618 348.4 1200.635 339.225 1197.972 332.778 C 1195.309 326.33 1192.72 320.322 1192.219 319.426 C 1191.514 318.167 1190.338 320.037 1187.046 327.648 C 1184.703 333.067 1180.359 342.966 1177.393 349.647 C 1174.427 356.327 1172 362.065 1172 362.397 C 1172 363.172 1209.475 363.192 1210.249 362.417 Z M 1250 348.54 L 1250 297 1257.309 297 C 1261.655 297 1265.252 297.507 1266.182 298.25 C 1267.784 299.531 1290.5 328.655 1311 355.712 C 1317.325 364.06 1322.838 370.915 1323.25 370.945 C 1323.662 370.975 1324 354.575 1324 334.5 L 1324 298 1332.5 298 L 1341 298 1341 349 L 1341 400 1333.004 400 L 1325.008 400 1313.711 385.75 C 1307.499 377.913 1294.592 361.262 1285.03 348.75 C 1275.468 336.238 1267.297 326 1266.872 326 C 1266.446 326 1266.189 342.538 1266.299 362.75 L 1266.5 399.5 1258.25 399.79 L 1250 400.081 1250 348.54 Z M 1352.241 348.838 L 1352.5 297.5 1374.5 297.208 C 1401.552 296.849 1410.235 297.831 1419 302.244 C 1423.928 304.725 1426.272 306.67 1428.693 310.286 C 1432.545 316.04 1433.697 322.467 1432.11 329.343 C 1430.735 335.299 1427.323 340.096 1421.915 343.675 L 1417.992 346.271 1423.005 348.594 C 1428.627 351.198 1432.296 354.722 1435.103 360.21 C 1436.496 362.935 1436.993 365.989 1436.972 371.71 C 1436.95 377.825 1436.45 380.468 1434.647 384 C 1431.891 389.398 1426.13 394.016 1418.282 397.117 C 1412.804 399.281 1410.911 399.422 1382.241 399.789 L 1351.982 400.176 1352.241 348.838 Z M 1411.735 383.215 C 1417.414 380.211 1419.388 376.944 1419.45 370.447 C 1419.503 364.79 1417.735 361.384 1412.849 357.736 C 1409.529 355.258 1393.143 353.739 1379.25 354.622 L 1369 355.273 1369 369.97 C 1369 378.053 1369.338 385.006 1369.75 385.421 C 1370.162 385.836 1378.825 386.013 1389 385.815 C 1405.841 385.488 1407.88 385.255 1411.735 383.215 Z M 1407.368 337.58 C 1412.949 334.81 1415.202 330.732 1414.725 324.265 C 1414.296 318.468 1412.633 316.003 1407.508 313.571 C 1404.889 312.328 1400.523 312 1386.599 312 L 1369 312 1369 325.333 C 1369 332.667 1369.328 338.995 1369.73 339.396 C 1370.131 339.798 1377.894 339.985 1386.98 339.813 C 1400.84 339.55 1404.123 339.191 1407.368 337.58 Z M 1563.241 348.855 L 1563.5 297.5 1583 297.198 C 1593.725 297.032 1606.699 297.378 1611.832 297.967 C 1629.757 300.024 1644.164 307.998 1652.077 320.24 C 1657.015 327.881 1658.995 334.223 1659.714 344.708 C 1661.458 370.145 1647.973 389.548 1623 397.534 C 1618.49 398.976 1612.593 399.375 1590.241 399.752 L 1562.982 400.21 1563.241 348.855 Z M 1612.201 384.891 C 1619.537 383.356 1628.518 378.396 1632.062 373.922 C 1641.71 361.74 1643.502 343.875 1636.473 329.96 C 1633.633 324.339 1626.369 317.522 1620.176 314.665 C 1616.078 312.776 1613.366 312.467 1598.25 312.172 L 1581 311.835 1581 348.251 C 1581 368.279 1581.3 384.967 1581.667 385.333 C 1582.763 386.43 1606.487 386.087 1612.201 384.891 Z"/></svg></a>
-            <div class="brand-rule"></div>
-            <div class="founded">
-                <span>Sinds</span>
-                <strong>1993</strong>
-            </div>
-        </div>
+<header class="masthead">
+    <div class="brand">
+        <a class="wordmark" href="../index.html" aria-label="HUISenAANBOD.nl"><svg class="logo" viewBox="376 267 1286 137" aria-hidden="true" focusable="false"><path class="logo-house" fill-rule="evenodd" d="M 378 355.347 L 378 311.923 393.75 301.643 C 437.123 273.335 444.237 268.881 445.324 269.353 C 445.971 269.633 460.9 279.456 478.5 291.182 L 510.5 312.5 510.5 355.5 L 510.5 398.5 444.25 398.636 L 378 398.772 378 355.347 Z"/><path class="logo-amp" fill-rule="evenodd" d="M 929 400.188 C 921.819 397.796 919.637 396.57 914.839 392.236 C 908.759 386.743 906.564 381.788 906.536 373.5 C 906.517 367.589 906.974 365.666 909.478 361.136 C 912.645 355.404 917.449 351.005 925.5 346.464 C 928.25 344.913 930.661 343.525 930.859 343.38 C 931.056 343.235 929.419 340.953 927.221 338.308 C 925.023 335.664 922.461 331.987 921.528 330.137 C 919.196 325.514 918.474 317.125 920.007 312.478 C 921.777 307.116 928.122 300.636 934.273 297.909 C 938.372 296.092 941.35 295.582 948.071 295.546 C 955.684 295.505 957.304 295.838 962.571 298.522 C 966.888 300.723 969.374 302.847 971.716 306.335 C 973.486 308.97 975.214 312.626 975.559 314.461 C 975.903 316.295 975.664 320.299 975.029 323.36 C 974.144 327.625 972.846 330.067 969.47 333.822 C 967.048 336.516 962.577 340.021 959.536 341.61 C 956.494 343.2 954.004 344.873 954.002 345.328 C 954.001 345.783 958.699 350.958 964.442 356.828 L 974.884 367.5 978.463 359.77 C 980.431 355.519 982.314 350.681 982.646 349.02 C 983.022 347.139 983.863 346.004 984.875 346.011 C 986.648 346.023 995.498 348.572 997.01 349.506 C 998.392 350.36 993.662 362.178 988.503 370.761 L 984.048 378.174 994.024 388.428 C 999.511 394.067 1004 398.978 1004 399.341 C 1004 399.703 999.937 400 994.972 400 L 985.943 400 980.824 394.5 C 978.009 391.475 975.331 389 974.873 389 C 974.415 389 971.669 390.804 968.77 393.008 C 961.173 398.786 954.206 401.162 943.5 401.629 C 936.628 401.928 933.199 401.588 929 400.188 Z M 955.686 385.999 C 958.989 384.348 962.496 382.11 963.478 381.025 C 965.217 379.103 965.053 378.822 957.215 370.276 C 952.788 365.449 947.159 359.548 944.705 357.161 L 940.244 352.823 936.872 354.56 C 930.876 357.648 927.146 361.068 925.05 365.396 C 921.799 372.112 922.614 378.757 927.317 383.877 C 930.672 387.531 934.839 388.918 942.59 388.961 C 948.516 388.994 950.667 388.507 955.686 385.999 Z M 950.973 332.219 C 958.296 327.242 961.328 322.694 960.671 317.672 C 960.046 312.903 957.946 310.527 952.527 308.457 C 949.105 307.15 947.522 307.052 944.222 307.94 C 941.833 308.584 939.081 310.303 937.573 312.096 C 932.953 317.586 934.537 325.535 941.789 333.25 C 943.211 334.762 944.627 335.986 944.937 335.969 C 945.247 335.953 947.963 334.265 950.973 332.219 Z"/><path class="logo-letters" fill-rule="evenodd" d="M 690.389 400.512 C 683.762 399.07 677.409 396.165 672.184 392.187 C 667.009 388.246 661.141 379.252 658.714 371.537 C 656.593 364.796 656.51 363.117 656.729 331.604 C 656.855 313.511 657.086 298.58 657.243 298.424 C 657.399 298.267 661.346 298.038 666.014 297.914 L 674.5 297.689 675 332.095 L 675.5 366.5 678.328 372.258 C 683.078 381.932 690.656 386 703.929 386 C 710.196 386 712.568 385.521 716.832 383.397 C 722.808 380.419 726.315 376.307 729.074 369.048 C 730.834 364.416 731 361.138 731 331.048 C 731 312.937 731.337 297.967 731.75 297.783 C 732.163 297.599 736.212 297.606 740.75 297.8 L 749 298.152 749 330.527 C 749 350.392 748.571 364.949 747.89 368.201 C 746.312 375.741 740.418 386.486 735.599 390.611 C 724.291 400.292 706.893 404.102 690.389 400.512 Z M 821.131 400.459 C 811.926 398.462 803.332 394.089 796.728 388.043 C 790.23 382.094 790.177 382.55 798.156 375.869 L 803.017 371.8 808.974 377.315 C 816.772 384.535 823.229 387 834.341 387 C 841.241 387 843.471 386.57 847.831 384.397 C 850.965 382.835 853.645 380.654 854.528 378.946 C 856.615 374.911 856.393 368.361 854.059 365.083 C 851.681 361.744 847.091 359.685 836 356.983 C 825.109 354.329 815.567 351.25 810.5 348.754 C 805.252 346.17 800.307 341.435 797.827 336.622 C 793.296 327.828 794.841 315.051 801.354 307.441 C 814.315 292.3 846.115 290.964 864.143 304.802 C 873.432 311.933 873.485 312.176 867 317.905 L 861.5 322.764 856.994 318.993 C 849.501 312.723 844.654 310.707 835.844 310.197 C 830.044 309.861 826.829 310.175 823.653 311.388 C 818.159 313.487 814.076 317.742 813.381 322.094 C 812.648 326.685 816.15 331.807 822.021 334.73 C 824.484 335.957 832.35 338.557 839.5 340.508 C 846.65 342.459 854.898 345.218 857.829 346.64 C 863.788 349.53 869.126 354.41 871.633 359.258 C 874.138 364.102 874.595 374.691 872.564 380.809 C 867.334 396.554 844.079 405.438 821.131 400.459 Z M 1488 401.047 C 1472.944 398.191 1460.488 390.744 1452.409 379.769 C 1446.928 372.323 1444.047 364.572 1442.998 354.44 C 1440.856 333.771 1449.007 315.83 1465.406 305.125 C 1474.792 298.998 1484.091 295.966 1495.5 295.315 C 1513.281 294.3 1529.031 300.04 1540.917 311.866 C 1553.943 324.827 1558.81 342.452 1554.46 360.907 C 1550.23 378.852 1535.533 393.976 1517 399.453 C 1510.507 401.372 1494.384 402.259 1488 401.047 Z M 1516.696 382.491 C 1528.097 376.871 1534.773 367.533 1536.894 354.24 C 1539.521 337.769 1531.006 321.022 1516.411 313.957 C 1509.615 310.667 1500.226 309.384 1492.56 310.697 C 1479.854 312.873 1470.147 319.893 1464.787 330.782 C 1461.674 337.105 1461.5 338.041 1461.5 348.479 C 1461.5 358.297 1461.788 360.113 1464.135 365.12 C 1467.667 372.653 1472.739 378.049 1479.849 381.839 C 1487.833 386.094 1492.092 387.008 1501.5 386.484 C 1508.101 386.117 1510.758 385.419 1516.696 382.491 Z M 550.458 398.75 C 550.195 398.062 550.097 375 550.24 347.5 L 550.5 297.5 556 297.187 C 559.025 297.015 562.962 297.148 564.75 297.483 L 568 298.091 568 319.045 L 568 340 597 340 L 626 340 626 319.073 L 626 298.147 634.588 297.823 C 639.311 297.646 643.361 297.688 643.588 297.917 C 643.815 298.146 644 321.226 644 349.206 L 644 400.078 635.25 399.789 L 626.5 399.5 626.231 377.338 L 625.962 355.175 609.731 354.838 C 600.804 354.652 587.763 354.658 580.75 354.85 L 568 355.201 568 376.964 L 568 398.728 563.36 399.364 C 556.075 400.363 550.983 400.12 550.458 398.75 Z M 764.63 399.211 C 764.362 398.776 764.335 375.714 764.57 347.961 L 764.998 297.5 773.249 297.5 L 781.5 297.5 781.759 348.75 L 782.018 400 773.568 400 C 768.921 400 764.898 399.645 764.63 399.211 Z M 1028 398.949 C 1028 398.371 1030.51 392.408 1033.577 385.699 C 1038.995 373.848 1043.743 363.253 1063.243 319.5 L 1072.602 298.5 1081.39 298 C 1086.69 297.698 1090.472 297.897 1090.921 298.5 C 1091.33 299.05 1094.175 305.35 1097.243 312.5 C 1100.311 319.65 1106.289 333.375 1110.527 343 C 1121.798 368.599 1135 399.128 1135 399.595 C 1135 399.818 1131.039 400 1126.197 400 L 1117.395 400 1112.414 388.75 L 1107.434 377.5 1080.963 377.234 L 1054.492 376.968 1050.094 387.234 C 1047.675 392.88 1045.259 398.062 1044.726 398.75 C 1043.503 400.325 1028 400.509 1028 398.949 Z M 1099.707 360.75 C 1098.615 356.074 1081.541 318.06 1080.849 318.763 C 1079.704 319.929 1062 360.259 1062 361.702 C 1062 362.721 1066.114 363 1081.117 363 L 1100.233 363 1099.707 360.75 Z M 1138 399.173 C 1138 398.675 1139.974 394.045 1142.386 388.884 C 1148.454 375.904 1158.762 352.953 1171.531 324 C 1177.473 310.525 1182.765 298.938 1183.29 298.25 C 1184.427 296.762 1195.677 296.546 1199.349 297.943 C 1200.713 298.461 1202.154 299.911 1202.552 301.164 C 1203.266 303.412 1215.128 330.657 1234.884 375.42 C 1240.448 388.026 1245 398.731 1245 399.209 C 1245 399.687 1241.072 399.948 1236.27 399.789 L 1227.54 399.5 1222.52 388.287 L 1217.5 377.074 1191.362 377.037 L 1165.224 377 1160.286 388.25 L 1155.347 399.5 1146.673 399.789 C 1141.903 399.948 1138 399.671 1138 399.173 Z M 1210.249 362.417 C 1210.57 362.097 1209.028 357.934 1206.823 353.167 C 1204.618 348.4 1200.635 339.225 1197.972 332.778 C 1195.309 326.33 1192.72 320.322 1192.219 319.426 C 1191.514 318.167 1190.338 320.037 1187.046 327.648 C 1184.703 333.067 1180.359 342.966 1177.393 349.647 C 1174.427 356.327 1172 362.065 1172 362.397 C 1172 363.172 1209.475 363.192 1210.249 362.417 Z M 1250 348.54 L 1250 297 1257.309 297 C 1261.655 297 1265.252 297.507 1266.182 298.25 C 1267.784 299.531 1290.5 328.655 1311 355.712 C 1317.325 364.06 1322.838 370.915 1323.25 370.945 C 1323.662 370.975 1324 354.575 1324 334.5 L 1324 298 1332.5 298 L 1341 298 1341 349 L 1341 400 1333.004 400 L 1325.008 400 1313.711 385.75 C 1307.499 377.913 1294.592 361.262 1285.03 348.75 C 1275.468 336.238 1267.297 326 1266.872 326 C 1266.446 326 1266.189 342.538 1266.299 362.75 L 1266.5 399.5 1258.25 399.79 L 1250 400.081 1250 348.54 Z M 1352.241 348.838 L 1352.5 297.5 1374.5 297.208 C 1401.552 296.849 1410.235 297.831 1419 302.244 C 1423.928 304.725 1426.272 306.67 1428.693 310.286 C 1432.545 316.04 1433.697 322.467 1432.11 329.343 C 1430.735 335.299 1427.323 340.096 1421.915 343.675 L 1417.992 346.271 1423.005 348.594 C 1428.627 351.198 1432.296 354.722 1435.103 360.21 C 1436.496 362.935 1436.993 365.989 1436.972 371.71 C 1436.95 377.825 1436.45 380.468 1434.647 384 C 1431.891 389.398 1426.13 394.016 1418.282 397.117 C 1412.804 399.281 1410.911 399.422 1382.241 399.789 L 1351.982 400.176 1352.241 348.838 Z M 1411.735 383.215 C 1417.414 380.211 1419.388 376.944 1419.45 370.447 C 1419.503 364.79 1417.735 361.384 1412.849 357.736 C 1409.529 355.258 1393.143 353.739 1379.25 354.622 L 1369 355.273 1369 369.97 C 1369 378.053 1369.338 385.006 1369.75 385.421 C 1370.162 385.836 1378.825 386.013 1389 385.815 C 1405.841 385.488 1407.88 385.255 1411.735 383.215 Z M 1407.368 337.58 C 1412.949 334.81 1415.202 330.732 1414.725 324.265 C 1414.296 318.468 1412.633 316.003 1407.508 313.571 C 1404.889 312.328 1400.523 312 1386.599 312 L 1369 312 1369 325.333 C 1369 332.667 1369.328 338.995 1369.73 339.396 C 1370.131 339.798 1377.894 339.985 1386.98 339.813 C 1400.84 339.55 1404.123 339.191 1407.368 337.58 Z M 1563.241 348.855 L 1563.5 297.5 1583 297.198 C 1593.725 297.032 1606.699 297.378 1611.832 297.967 C 1629.757 300.024 1644.164 307.998 1652.077 320.24 C 1657.015 327.881 1658.995 334.223 1659.714 344.708 C 1661.458 370.145 1647.973 389.548 1623 397.534 C 1618.49 398.976 1612.593 399.375 1590.241 399.752 L 1562.982 400.21 1563.241 348.855 Z M 1612.201 384.891 C 1619.537 383.356 1628.518 378.396 1632.062 373.922 C 1641.71 361.74 1643.502 343.875 1636.473 329.96 C 1633.633 324.339 1626.369 317.522 1620.176 314.665 C 1616.078 312.776 1613.366 312.467 1598.25 312.172 L 1581 311.835 1581 348.251 C 1581 368.279 1581.3 384.967 1581.667 385.333 C 1582.763 386.43 1606.487 386.087 1612.201 384.891 Z"/></svg></a>
+    </div>
 
-        <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menu openen">
-            <svg class="bar-open" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M3 6.5 H21 M3 12 H21 M3 17.5 H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-            <svg class="bar-close" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M5.5 5.5 L18.5 18.5 M18.5 5.5 L5.5 18.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-        </button>
+    <button class="navtoggle" id="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
 
-        <nav class="mainnav" id="mainnav" aria-label="Hoofdmenu">
-            <a href="https://huisenaanbod.nl">Huizen</a>
-            <a href="spanje.html" aria-current="page">Magazine</a>
-            <a href="">Begeleiding</a>
-            <a href="">Over ons</a>
-            <a href="">Voor aanbieders</a>
-            <a href="">Contact</a>
-        </nav>
+    <nav class="mainnav" id="mainnav" aria-label="Hoofdmenu">
+        <a href="https://huisenaanbod.nl">Kijken &amp; Kopen</a>
+        <a href="spanje.html" aria-current="page">Weten &amp; Wonen</a>
+        <a href="">Jij &amp; Jezelf</a>
+        <a href="">Ik &amp; Wij</a>
+        <a href="https://www.huisenaanbod.nl/nl/Adverteren_bij_HUISenAANBOD/">Adverteren</a>
+    </nav>
 
-        <div class="account">
-            <div class="langpick">
-                <button class="lang" id="langbutton" aria-haspopup="true" aria-expanded="false" aria-controls="langmenu" aria-label="Taal wijzigen, huidige taal Nederlands">NL
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true">
-                        <path d="M1 1 L6 6 L11 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <ul class="langmenu" id="langmenu" role="menu" aria-labelledby="langbutton" hidden>
-                    <li role="none"><a role="menuitem" href="" hreflang="nl" aria-current="true">Nederlands<span class="code">NL</span></a></li>
-                    <li role="none"><a role="menuitem" href="" hreflang="en">English<span class="code">EN</span></a></li>
-                    <li role="none"><a role="menuitem" href="" hreflang="de">Deutsch<span class="code">DE</span></a></li>
-                    <li role="none"><a role="menuitem" href="" hreflang="fr">Français<span class="code">FR</span></a></li>
-                    <li role="none"><a role="menuitem" href="" hreflang="es">Español<span class="code">ES</span></a></li>
-                </ul>
-            </div>
-            <div class="account-rule"></div>
-            <a class="signin" href="" aria-label="Inloggen">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <circle cx="12" cy="8.2" r="3.9" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M4.4 20c1.5-3.9 4.4-5.9 7.6-5.9s6.1 2 7.6 5.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <div class="account">
+        <div class="langpick">
+            <button class="lang" id="langbutton" aria-haspopup="true" aria-expanded="false" aria-controls="langmenu" aria-label="Taal wijzigen, huidige taal Nederlands"><span class="lang-current"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#fff"/><rect width="3" height=".667" fill="#AE1C28"/></svg></span>
+                <svg class="chev" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true">
+                    <path d="M1 1 L6 6 L11 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span class="signin-label">Inloggen</span>
-            </a>
+            </button>
+            <ul class="langmenu" id="langmenu" role="menu" aria-labelledby="langbutton" hidden>
+                <li role="none"><a role="menuitem" href="" hreflang="nl" lang="nl" aria-current="true"><span class="lang-name">Nederlands</span><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#fff"/><rect width="3" height=".667" fill="#AE1C28"/></svg></a></li>
+                <li role="none"><a role="menuitem" href="" hreflang="en" lang="en"><span class="lang-name">English</span><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#012169"/><path d="M0 0L3 2M3 0L0 2" stroke="#fff" stroke-width=".4"/><path d="M0 0L3 2M3 0L0 2" stroke="#C8102E" stroke-width=".16"/><path d="M1.5 0V2M0 1H3" stroke="#fff" stroke-width=".6"/><path d="M1.5 0V2M0 1H3" stroke="#C8102E" stroke-width=".36"/></svg></a></li>
+                <li role="none"><a role="menuitem" href="" hreflang="de" lang="de"><span class="lang-name">Deutsch</span><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#FFCE00"/><rect width="3" height="1.333" fill="#DD0000"/><rect width="3" height=".667" fill="#000"/></svg></a></li>
+                <li role="none"><a role="menuitem" href="" hreflang="fr" lang="fr"><span class="lang-name">Français</span><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002654"/></svg></a></li>
+                <li role="none"><a role="menuitem" href="" hreflang="es" lang="es"><span class="lang-name">Español</span><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#AA151B"/><rect y=".5" width="3" height="1" fill="#F1BF00"/></svg></a></li>
+            </ul>
         </div>
-    </header>
+        <div class="account-rule"></div>
+        <a class="signin" href="" aria-label="Inloggen">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="8.2" r="3.9" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4.4 20c1.5-3.9 4.4-5.9 7.6-5.9s6.1 2 7.6 5.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="signin-label">Inloggen</span>
+        </a>
+    </div>
+</header>
 
-</div>
 
 <main class="mag" id="magazine">
 
     <!-- Intro -->
     <section class="mag-intro">
         <div class="mag-wrap">
-            <nav class="crumbs" aria-label="Kruimelpad">
-                <a href="../index.html">Home</a><span aria-hidden="true">›</span>
-                <a href="../index.html">Magazine</a><span aria-hidden="true">›</span>
-                <span aria-current="page">Spanje</span>
-            </nav>
+            <div class="intro-top">
+                <nav class="crumbs" aria-label="Kruimelpad">
+                    <a href="../index.html">Home</a><span aria-hidden="true">›</span>
+                    <a href="spanje.html">Weten &amp; Wonen</a><span aria-hidden="true">›</span>
+                    <span aria-current="page">Spanje</span>
+                </nav>
+                <a class="switch-country" href="../index.html"><span class="switch-text">Ander land kiezen</span> <span aria-hidden="true">→</span></a>
+            </div>
             <div class="intro-row">
                 <div class="intro-text">
-                    <div class="intro-label">
-                        <svg viewBox="0 0 56 55" aria-hidden="true">
-                            <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#2EA1D9" stroke="#2EA1D9" stroke-width="1.6" stroke-linejoin="round"/>
-                            <path d="M28 24.6 C23.4 21.6 18.2 20.9 13.6 21.9 V42.9 C18.2 41.9 23.4 42.6 28 45.6 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
-                            <path d="M28 24.6 C32.6 21.6 37.8 20.9 42.4 21.9 V42.9 C37.8 41.9 32.6 42.6 28 45.6 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
-                        </svg>
-                        <p class="eyebrow">Magazine · Spanje</p>
-                    </div>
-                    <h1>Huis kopen in Spanje</h1>
+                    <p class="slogan-b"><span class="slogan-part">Tussen Droom en Besluit</span> <span class="slogan-part"><small>· Sinds 1993</small></span></p>
+                    <h1>Huis kopen in <span class="keep">Spanje<svg class="h1-mark" viewBox="376 267 136 134" aria-hidden="true"><path d="M 378 355.347 L 378 311.923 393.75 301.643 C 437.123 273.335 444.237 268.881 445.324 269.353 C 445.971 269.633 460.9 279.456 478.5 291.182 L 510.5 312.5 510.5 355.5 L 510.5 398.5 444.25 398.636 L 378 398.772 378 355.347 Z" fill="#1596C8"/></svg></span></h1>
                     <span class="blue-rule" aria-hidden="true"></span>
-                    <p class="intro-lead">Als Nederlander mag je zonder beperkingen een huis in Spanje kopen. Je hebt een NIE-nummer nodig, rekent op ongeveer 10 tot 14 procent kosten koper en de koop wordt afgerond met een notariële akte. In onze artikelen lees je per onderwerp hoe het werkt.</p>
-                    <p class="intro-shortcut">Ben je al verder en wil je meteen woningen zien? Ga dan direct naar ons aanbod van <a href="https://www.huisenaanbod.nl/nl/Huizen-in-Spanje-te-koop/">ruim 15.000 huizen te koop in Spanje</a>, van appartementen aan de Costa Blanca tot villa’s aan de Costa del Sol.</p>
+                    <p class="intro-lead">Een huis kopen in Spanje begint meestal met een droom: meer zon, de zee om de hoek of een rustige plek om te overwinteren. Om van die droom een goed besluit te maken, helpt het om te weten hoe de Spaanse woningmarkt werkt.</p>
+                    <p class="byline">Door Redactie HUISenAANBOD · Bijgewerkt op 12 oktober 2026</p>
                 </div>
-                <a class="switch-country" href="../index.html">Ander land kiezen <span aria-hidden="true">→</span></a>
+
+                <aside class="intro-aside" aria-labelledby="asideTitle">
+                    <p class="aside-label" id="asideTitle">Meteen woningen zien?</p>
+                    <p class="aside-text">Ben je al verder? Bekijk ons aanbod van ruim 15.000 huizen te koop in Spanje, van appartementen aan de Costa Blanca tot villa’s aan de Costa del Sol.</p>
+                    <a class="aside-btn" href="https://www.huisenaanbod.nl/nl/Huizen-in-Spanje-te-koop/">Bekijk 15.000+ huizen <span aria-hidden="true">→</span></a>
+                </aside>
+
+                <div class="intro-more">
+                    <div class="more-text" id="meer-tekst">
+                        <h2 id="wie-mag-kopen">Wie mag een huis kopen in Spanje?</h2>
+                        <p>Als Nederlander mag je zonder beperkingen een woning in Spanje kopen. Je hebt wel een NIE-nummer nodig: het Spaanse identificatienummer voor buitenlanders. Zonder NIE kun je geen koopakte tekenen en geen Spaanse bankrekening openen. Vraag het daarom vroeg aan, via het Spaanse consulaat of een advocaat in Spanje.</p>
+                        <h2 id="koopproces">Hoe verloopt de koop?</h2>
+                        <p>Na een bezichtiging doe je een bod. Wordt dat geaccepteerd, dan volgt vaak een reserveringscontract met een kleine aanbetaling. Je advocaat controleert wie de eigenaar is, of er schulden op rusten en of de woning legaal is gebouwd. Daarna teken je het koopcontract, meestal met een aanbetaling van ongeveer tien procent. Bij de notaris teken je de akte en krijg je de sleutels. Reken op twee tot zes maanden en op 10 tot 14 procent kosten koper. In de artikelen hieronder lees je per onderwerp de details.</p>
+                    </div>
+                    <button class="readmore-btn" id="readMore" type="button" aria-expanded="true" aria-controls="meer-tekst" hidden>Minder tonen</button>
+                </div>
             </div>
         </div>
     </section>
@@ -210,8 +209,8 @@
         <div class="mag-wrap">
             <div class="section-head">
                 <div>
-                    <p class="eyebrow">In The Picture</p>
-                    <h2 class="section-title" id="pictureTitle">Uitgelicht aanbod in Spanje</h2>
+                    <p class="eyebrow eyebrow-orange">In The Picture</p>
+                    <h2 class="section-title" id="pictureTitle">Uitgelicht</h2>
                 </div>
             </div>
             <div class="listings-grid">
@@ -255,7 +254,7 @@
                     </div>
                 </a>
             </div>
-            <a class="more-link" href="https://www.huisenaanbod.nl/index.php?p=search&amp;sLand=Spanje&amp;Koophuur=K">Bekijk alle huizen te koop in Spanje <span aria-hidden="true">→</span></a>
+            <a class="more-link more-link-orange" href="https://www.huisenaanbod.nl/nl/Huizen-in-Spanje-te-koop/"><span class="link-text">Naar alle Spaanse huizen</span> <span aria-hidden="true">→</span></a>
         </div>
     </section>
 
@@ -284,7 +283,7 @@
                         <li><a href="https://www.huisenaanbod.nl/index.php?p=search&amp;sLand=Spanje&amp;sProv=Andalusie&amp;loc=ES:ANDMSO;">Huizen te koop in Málaga</a></li>
                     </ul>
                 </div>
-                <a class="popular-all" href="https://www.huisenaanbod.nl/nl/Huizen-in-Spanje-te-koop/">Bekijk alle regio’s in Spanje <span aria-hidden="true">→</span></a>
+                <a class="popular-all" href="https://www.huisenaanbod.nl/nl/Huizen-in-Spanje-te-koop/"><span class="link-text">Bekijk alle regio’s in Spanje</span> <span aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>

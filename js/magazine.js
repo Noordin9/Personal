@@ -43,3 +43,34 @@
     document.getElementById('regionPrev').addEventListener('click', function () { slide(-1); });
     document.getElementById('regionNext').addEventListener('click', function () { slide(1); });
 })();
+
+/* Hoofdtekst: Lees verder / Minder tonen. De volledige tekst staat in de HTML;
+   zonder JavaScript is alles zichtbaar. */
+(function () {
+    var btn = document.getElementById('readMore');
+    var more = document.getElementById('meer-tekst');
+    if (!btn || !more) { return; }
+    function setOpen(open) {
+        more.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', String(open));
+        btn.textContent = open ? 'Minder tonen' : 'Lees verder';
+    }
+    function targetInside() {
+        var id = decodeURIComponent(location.hash.slice(1));
+        var el = id ? document.getElementById(id) : null;
+        return el && more.contains(el) ? el : null;
+    }
+    btn.hidden = false;
+    var start = targetInside();
+    setOpen(!!start);
+    if (start) { start.scrollIntoView(); }
+    btn.addEventListener('click', function () {
+        var open = !more.classList.contains('is-open');
+        setOpen(open);
+        if (!open) { btn.scrollIntoView({ block: 'nearest' }); }
+    });
+    window.addEventListener('hashchange', function () {
+        var el = targetInside();
+        if (el) { setOpen(true); el.scrollIntoView(); }
+    });
+})();
