@@ -193,13 +193,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <!-- Header variant A: bovenbalk (de H1 is hier al de slogan) -->
-<div class="topbar"><p><span class="slogan-part"><small>Sinds 1993</small></span></p></div>
+<!--<div class="topbar"><p><span class="slogan-part"><small>Sinds 1993</small></span></p></div>-->
 
 <header class="masthead">
     <div class="brand">
@@ -212,8 +213,8 @@
         <a href="https://huisenaanbod.nl">Kijken &amp; Kopen</a>
         <a href="magazine/spanje.html">Weten &amp; Wonen</a>
         <a href="">Jij &amp; Jezelf</a>
-        <a href="">Ik &amp; Wij</a>
-        <a href="https://www.huisenaanbod.nl/nl/Adverteren_bij_HUISenAANBOD/">Adverteren</a>
+        <a href="">Wij &amp; Ons verhaal</a>
+        <a class="Adverteren" href="https://www.huisenaanbod.nl/nl/Adverteren_bij_HUISenAANBOD/">Adverteren</a>
     </nav>
 
     <div class="account">
@@ -248,33 +249,34 @@
     <section class="hero">
         <img class="hero-art" src="assets/landschap.jpg" alt="Kustlandschap met dorpen, een stad aan de horizon en drie rivieren die naar de drie onderdelen van HUISenAANBOD stromen">
 
-        <svg class="hero-pins" viewBox="0 0 1536 448" fill="none" shape-rendering="geometricPrecision" aria-hidden="true">
-            <g transform="translate(891 80) scale(0.76)">
-                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>
-                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>
-            </g>
-            <g transform="translate(1052 148) scale(0.76)">
-                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>
-                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>
-            </g>
-            <g transform="translate(1070 52) scale(0.76)">
-                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>
-                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>
-            </g>
-            <g transform="translate(1242 101) scale(0.76)">
-                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>
-                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>
-            </g>
-        </svg>
+<!--        <svg class="hero-pins" viewBox="0 0 1536 448" fill="none" shape-rendering="geometricPrecision" aria-hidden="true">-->
+<!--            <g transform="translate(891 80) scale(0.76)">-->
+<!--                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>-->
+<!--                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>-->
+<!--            </g>-->
+<!--            <g transform="translate(1052 148) scale(0.76)">-->
+<!--                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>-->
+<!--                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>-->
+<!--            </g>-->
+<!--            <g transform="translate(1070 52) scale(0.76)">-->
+<!--                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>-->
+<!--                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>-->
+<!--            </g>-->
+<!--            <g transform="translate(1242 101) scale(0.76)">-->
+<!--                <path d="M0 0 C0 0 11 -15.7 11 -22.5 A11 11 0 1 0 -11 -22.5 C-11 -15.7 0 0 0 0 Z" fill="#EC7404"/>-->
+<!--                <path d="M0 -30.9 L6.3 -25.2 H4.5 V-19.2 H-4.5 V-25.2 H-6.3 Z" fill="#fff"/>-->
+<!--            </g>-->
+<!--        </svg>-->
 
         <div class="hero-copy">
             <p class="slogan-b"><span class="slogan-part"><small>Sinds 1993</small></span></p>
-            <h1>Tussen droom<br> en <span class="keep-together">besluit<svg class="roof-inline" viewBox="0 0 24 20" aria-hidden="true"><path d="M12 0 L24 11 H19 V20 H5 V11 H0 Z" fill="#EC7404"/></svg></span></h1>
+            <h1>Tussen droom<br> en <span class="keep-together">besluit<svg class="roof-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 10 40 L 50 10 L 90 40 L 90 90 L 10 90 Z" fill="#EC7404"/></svg></span></h1>
             <p>
-                Droom je van een ander huis, een andere plek<br>
-                of een ander leven? HUISenAANBOD helpt je<br>
-                ontdekken wat bij je past, je plannen verder te<br>
-                brengen en het huis te vinden dat daarbij aansluit.
+                Droom je van een ander huis, een andere plek of een<br>
+                ander leven? Bij HUIS & AANBOD kun je buitenlands<br>
+                vastgoed bekijken, praktische zaken uitzoeken en<br>
+                ontdekken wat bij jou past. Je kiest zelf waar je begint.<br>
+                Zo vind je jouw weg tussen droom en besluit.
             </p>
         </div>
     </section>
@@ -283,119 +285,114 @@
 
         <a class="pillar p-huizen" href="">
             <img class="pillar-art" src="assets/kaart-huizen.jpg" alt="">
-            <svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
-                <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#EC7404" stroke="#EC7404" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M15.6 45.2 V29.6 L28 18.8 L40.4 29.6 V45.2" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-                <path d="M15.6 45.2 H24.6 M31.4 45.2 H40.4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-                <path d="M24.6 45.2 V37.2 a3.4 3.4 0 0 1 6.8 0 V45.2" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-            </svg>
-            <h2>Huizen</h2>
+            <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 10 40 L 50 10 L 90 40 L 90 90 L 10 90 Z" fill="#EC7404"/></svg>
+            <h2>Kijken &amp; Kopen</h2>
             <span class="pillar-rule"></span>
-            <p>Actueel woningaanbod in meer dan<br> 60 landen. Kopen of huren, van <br>appartement tot landhuis.</p>
-            <span class="pillar-cta">Bekijk woningen
+            <p>Vastgoed van makelaars én particulieren, in verschillende landen en regio's. Bekijk en vergelijk direct het aanbod voor jouw woonwensen, plannen of onderneming.</p>
+            <span class="pillar-cta">Dit wil ik bekijken
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12 H20" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M14 6 L20 12 L14 18" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
         </a>
 
         <a class="pillar p-magazine" href="magazine/spanje.html">
             <img class="pillar-art" src="assets/kaart-magazine.jpg" alt="">
-            <svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
-                <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#1596C8" stroke="#1596C8" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M28 24.6 C23.4 21.6 18.2 20.9 13.6 21.9 V42.9 C18.2 41.9 23.4 42.6 28 45.6 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M28 24.6 C32.6 21.6 37.8 20.9 42.4 21.9 V42.9 C37.8 41.9 32.6 42.6 28 45.6 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
-                <g stroke="#fff" stroke-width="1.5" stroke-linecap="round">
-                    <path d="M17.4 27.4 L24.2 28.6 M17.4 31.6 L24.2 32.6 M17.4 35.8 L24.2 36.6 M17.4 40 L24.2 40.6"/>
-                    <path d="M38.6 27.4 L31.8 28.6 M38.6 31.6 L31.8 32.6 M38.6 35.8 L31.8 36.6 M38.6 40 L31.8 40.6"/>
-                </g>
-            </svg>
-            <h2>Magazine</h2>
+            <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 10 40 L 50 10 L 90 40 L 90 90 L 10 90 Z" fill="#1596C8"/></svg>
+            <h2>Weten &amp; Wonen</h2>
             <span class="pillar-rule"></span>
-            <p>Inspirerende verhalen, ervaringen, <br>bestemmingen en praktische informatie <br>over wonen en leven in binnen- en <br>buitenland.</p>
-            <span class="pillar-cta">Ga naar het Magazine
+            <p>Er komt veel kijken bij de aankoop van vastgoed in het buitenland. Waar kun je beter rekening mee houden? En hoe hebben landgenoten het aankoopproces ervaren?</p>
+            <span class="pillar-cta">Dit wil ik weten
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12 H20" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M14 6 L20 12 L14 18" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
         </a>
 
         <a class="pillar p-begeleiding" href="">
             <img class="pillar-art" src="assets/kaart-begeleiding.jpg" alt="">
-            <svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
-                <path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#76B547" stroke="#76B547" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M13.4 44.6 C15.8 39 17.4 34.6 21.3 34.8 C25.2 35 26.8 39.2 30.7 39.3 C34.7 39.4 36.6 31.2 39.8 25.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M35.6 26.6 L40.3 23.6 L42.9 28.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h2>Begeleiding</h2>
+            <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 10 40 L 50 10 L 90 40 L 90 90 L 10 90 Z" fill="#76B547"/></svg>
+            <h2>Jij &amp; Jezelf</h2>
             <span class="pillar-rule"></span>
-            <p>Coaching, persoonlijke begeleiding en <br>praktische tools voor als je droomt van <br>anders wonen of leven, maar nog niet<br> precies weet hoe.</p>
-            <span class="pillar-cta">Ontdek de begeleiding
+            <p>Wat trekt je aan in een huis in het buitenland? Wat hoop je daar te vinden? Verken de verlangens en twijfels achter je plannen. Ontdek wat je werkelijk beweegt.</p>
+            <span class="pillar-cta">Dit wil ik ontdekken
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12 H20" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M14 6 L20 12 L14 18" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
         </a>
 
     </div>
 
-    <footer class="promise">
+<!--    <footer class="promise">-->
 
-        <div class="promise-lead">
-            <p>Al meer dan 30 jaar verbinden we mensen <br>met hun droomplek en nieuwe leven.</p>
-        </div>
+<!--        <div class="promise-lead">-->
+<!--            <p>Al meer dan 30 jaar verbinden we mensen met hun droomplek en nieuwe leven.</p>-->
+<!--        </div>-->
 
-        <div class="promise-item">
-            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="16" r="12.4" stroke="#EC7404" stroke-width="1.7"/>
-                <ellipse cx="16" cy="16" rx="5.3" ry="12.4" stroke="#EC7404" stroke-width="1.7"/>
-                <path d="M4.2 11.4 H27.8 M4.2 20.6 H27.8 M16 3.6 V28.4" stroke="#EC7404" stroke-width="1.7"/>
-            </svg>
-            <b>Wereldwijd</b>
-            <span>woningaanbod</span>
-        </div>
+<!--        <div class="promise-item">-->
+<!--            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">-->
+<!--                <circle cx="16" cy="16" r="12.4" stroke="#EC7404" stroke-width="1.7"/>-->
+<!--                <ellipse cx="16" cy="16" rx="5.3" ry="12.4" stroke="#EC7404" stroke-width="1.7"/>-->
+<!--                <path d="M4.2 11.4 H27.8 M4.2 20.6 H27.8 M16 3.6 V28.4" stroke="#EC7404" stroke-width="1.7"/>-->
+<!--            </svg>-->
+<!--            <b>Wereldwijd</b>-->
+<!--            <span>woningaanbod</span>-->
+<!--        </div>-->
 
-        <div class="promise-item">
-            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="9.6" r="4.3" stroke="#EC7404" stroke-width="1.7"/>
-                <path d="M9.2 22.6c0-3.9 3-6.6 6.8-6.6s6.8 2.7 6.8 6.6" stroke="#EC7404" stroke-width="1.7" stroke-linecap="round"/>
-                <circle cx="6.2" cy="13.4" r="3" stroke="#EC7404" stroke-width="1.6"/>
-                <path d="M1.6 23c0-3.1 2-5.2 4.6-5.2" stroke="#EC7404" stroke-width="1.6" stroke-linecap="round"/>
-                <circle cx="25.8" cy="13.4" r="3" stroke="#EC7404" stroke-width="1.6"/>
-                <path d="M30.4 23c0-3.1-2-5.2-4.6-5.2" stroke="#EC7404" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-            <b>Duizenden</b>
-            <span>tevreden klanten</span>
-        </div>
+<!--        <div class="promise-item">-->
+<!--            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">-->
+<!--                <circle cx="16" cy="9.6" r="4.3" stroke="#EC7404" stroke-width="1.7"/>-->
+<!--                <path d="M9.2 22.6c0-3.9 3-6.6 6.8-6.6s6.8 2.7 6.8 6.6" stroke="#EC7404" stroke-width="1.7" stroke-linecap="round"/>-->
+<!--                <circle cx="6.2" cy="13.4" r="3" stroke="#EC7404" stroke-width="1.6"/>-->
+<!--                <path d="M1.6 23c0-3.1 2-5.2 4.6-5.2" stroke="#EC7404" stroke-width="1.6" stroke-linecap="round"/>-->
+<!--                <circle cx="25.8" cy="13.4" r="3" stroke="#EC7404" stroke-width="1.6"/>-->
+<!--                <path d="M30.4 23c0-3.1-2-5.2-4.6-5.2" stroke="#EC7404" stroke-width="1.6" stroke-linecap="round"/>-->
+<!--            </svg>-->
+<!--            <b>Duizenden</b>-->
+<!--            <span>tevreden klanten</span>-->
+<!--        </div>-->
 
-        <div class="promise-item">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <g stroke="#EC7404" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
-                    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
-                    <path d="m21 3 1 11h-2"/>
-                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
-                    <path d="M3 4h8"/>
-                </g>
-            </svg>
-            <b>Samen met lokale</b>
-            <span>partners</span>
-        </div>
+<!--        <div class="promise-item">-->
+<!--            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">-->
+<!--                <g stroke="#EC7404" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">-->
+<!--                    <path d="m11 17 2 2a1 1 0 1 0 3-3"/>-->
+<!--                    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>-->
+<!--                    <path d="m21 3 1 11h-2"/>-->
+<!--                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>-->
+<!--                    <path d="M3 4h8"/>-->
+<!--                </g>-->
+<!--            </svg>-->
+<!--            <b>Samen met lokale</b>-->
+<!--            <span>partners</span>-->
+<!--        </div>-->
 
-        <div class="promise-item">
-            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path d="M16 2.8 L27.4 7.2 V16 c0 6.6 -4.7 11 -11.4 13.2 C9.3 27 4.6 22.6 4.6 16 V7.2 Z" stroke="#EC7404" stroke-width="1.7" stroke-linejoin="round"/>
-                <path d="M11 16.2 L14.7 19.9 L21.4 12.4" stroke="#EC7404" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <b>Betrouwbaar</b>
-            <span>en onafhankelijk</span>
-        </div>
+<!--        <div class="promise-item">-->
+<!--            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">-->
+<!--                <path d="M16 2.8 L27.4 7.2 V16 c0 6.6 -4.7 11 -11.4 13.2 C9.3 27 4.6 22.6 4.6 16 V7.2 Z" stroke="#EC7404" stroke-width="1.7" stroke-linejoin="round"/>-->
+<!--                <path d="M11 16.2 L14.7 19.9 L21.4 12.4" stroke="#EC7404" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--            </svg>-->
+<!--            <b>Betrouwbaar</b>-->
+<!--            <span>en onafhankelijk</span>-->
+<!--        </div>-->
 
-        <div class="promise-sign">
-            <p>Ervaring die <br>je verder brengt.</p>
-            <svg class="promise-swoosh" viewBox="0 0 160 19" fill="none" aria-hidden="true">
-                <path d="M3 5.5 C26 17.5 96 19.5 157 3" stroke="#EC7404" stroke-width="2.6" stroke-linecap="round"/>
-            </svg>
-        </div>
+<!--        <div class="promise-sign">-->
+<!--            <p>Ervaring die <br>je verder brengt.</p>-->
+<!--            <svg class="promise-swoosh" viewBox="0 0 160 19" fill="none" aria-hidden="true">-->
+<!--                <path d="M3 5.5 C26 17.5 96 19.5 157 3" stroke="#EC7404" stroke-width="2.6" stroke-linecap="round"/>-->
+<!--            </svg>-->
+<!--        </div>-->
 
-    </footer>
+<!--    </footer>-->
 
 </div>
 
-</body>
+<footer class="site-footer site-footer-orange">
+    <div class="footer-inner">
+        <nav class="footer-nav" aria-label="Footer">
+            <a href="index.html">Home</a>
+            <a href="https://www.huisenaanbod.nl/nl/contact">Contact</a>
+            <a href="https://www.huisenaanbod.nl/nl/algemene_voorwaarden/">Algemene voorwaarden</a>
+            <a href="https://www.huisenaanbod.nl/nl/Adverteren_bij_HUISenAANBOD/">Adverteren</a>
+        </nav>
+    </div>
+    <p class="footer-copy">© 1993–2026 HUISenAANBOD.nl</p>
+</footer>
+
 <script src="js/app.js"></script>
+</body>
 </html>

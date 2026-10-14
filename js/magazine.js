@@ -1,47 +1,39 @@
-/* Magazine page: article filters, "show more" and the region carousel. */
+/* Artikelen op de landenpagina: filteren per onderwerp, maximaal 6 kaarten zichtbaar.
+   "Meer artikelen tonen" is een gewone link naar de artikelpagina. */
 (function () {
-    var PAGE = 6;
-    var limit = PAGE;
-    var active = 'Alles';
-    var cards = Array.prototype.slice.call(document.querySelectorAll('.grid .card'));
+    var LIMIT = 6;
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.grid .card[data-cat]'));
     var filters = Array.prototype.slice.call(document.querySelectorAll('.filter'));
-    var count = document.getElementById('articleCount');
-    var moreWrap = document.getElementById('moreWrap');
-    var moreButton = document.getElementById('moreButton');
-
-    function applyFilter() {
-        var matching = cards.filter(function (card) {
-            return active === 'Alles' || card.getAttribute('data-cat') === active;
+    if (!cards.length || !filters.length) { return; }
+    function apply(cat) {
+        var shown = 0;
+        cards.forEach(function (card) {
+            var match = cat === 'Alles' || card.getAttribute('data-cat') === cat;
+            card.hidden = !match || shown >= LIMIT;
+            if (match && shown < LIMIT) { shown++; }
         });
-        cards.forEach(function (card) { card.hidden = true; });
-        matching.forEach(function (card, i) { card.hidden = i >= limit; });
-        count.textContent = matching.length + (matching.length === 1 ? ' artikel' : ' artikelen');
-        moreWrap.hidden = matching.length <= limit;
     }
-
     filters.forEach(function (button) {
         button.addEventListener('click', function () {
-            active = button.getAttribute('data-filter');
-            limit = PAGE;
             filters.forEach(function (b) { b.setAttribute('aria-pressed', String(b === button)); });
-            applyFilter();
+            apply(button.getAttribute('data-filter'));
         });
     });
+    apply('Alles');
+})();
 
-    moreButton.addEventListener('click', function () {
-        limit += PAGE;
-        applyFilter();
-    });
-
-    applyFilter();
-
+/* Regio's: handmatig bladeren met de pijlen, geen automatische carrousel. */
+(function () {
     var track = document.getElementById('regionTrack');
+    var prev = document.getElementById('regionPrev');
+    var next = document.getElementById('regionNext');
+    if (!track || !prev || !next) { return; }
     function slide(dir) {
         var amount = Math.max(280, track.clientWidth * 0.8) * dir;
         track.scrollBy({ left: amount, behavior: 'smooth' });
     }
-    document.getElementById('regionPrev').addEventListener('click', function () { slide(-1); });
-    document.getElementById('regionNext').addEventListener('click', function () { slide(1); });
+    prev.addEventListener('click', function () { slide(-1); });
+    next.addEventListener('click', function () { slide(1); });
 })();
 
 /* Hoofdtekst: Lees verder / Minder tonen. De volledige tekst staat in de HTML;

@@ -78,6 +78,8 @@
         var b = e.target.closest('button');
         if (b) { setVariant(b.getAttribute('data-variant')); }
     });
+    /* Header A is gekozen. De schakelaar blijft bewaard voor een toekomstige licht/donker-knop:
     document.body.appendChild(bar);
     setVariant(root.getAttribute('data-header') === 'b' ? 'b' : 'a');
+    */
 })();

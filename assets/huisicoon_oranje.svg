@@ -1,0 +1,6 @@
+<svg class="pillar-icon" viewBox="0 0 56 55" aria-hidden="true">
+<path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#EC7404" stroke="#EC7404" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M15.6 45.2 V29.6 L28 18.8 L40.4 29.6 V45.2" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M15.6 45.2 H24.6 M31.4 45.2 H40.4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+<path d="M24.6 45.2 V37.2 a3.4 3.4 0 0 1 6.8 0 V45.2" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

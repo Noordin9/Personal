@@ -394,22 +394,16 @@
 :root{
     --fit: 0.9;
     --u: calc(100vw / 1536 * var(--fit));
-    /* sectiekleuren (blauwdruk 1.1): hoofdkleur alleen voor logo en grafiek,
-       donkere tint voor tekstlinks, actieve navigatie en knoppen met witte tekst */
-    --orange:#EC7404;      --orange-dark:#A94E00; --orange-light:#FDE6D2; --orange-edge:#F7F0E8;
-    --blue:#1596C8;        --blue-dark:#0B6F98;   --blue-light:#DFF1F8;   --blue-edge:#EEF4F7;
-    --green:#76B547;       --green-dark:#4C7D2C;  --green-light:#E7F2DE;  --green-edge:#F0F5EC;
-    --orange-logo:#EC7404;
+    /* Kleuren en lettertypes komen uit tokens.css (centrale design tokens).
+       Hieronder alleen de korte namen die in dit bestand worden gebruikt. */
+    --orange:var(--kk-main);  --orange-dark:var(--kk-dark); --orange-light:var(--kk-light); --orange-edge:var(--kk-edge);
+    --blue:var(--ww-main);    --blue-dark:var(--ww-dark);   --blue-light:var(--ww-light);   --blue-edge:var(--ww-edge);
+    --green:var(--jj-main);   --green-dark:var(--jj-dark);  --green-light:var(--jj-light);  --green-edge:var(--jj-edge);
+    --orange-logo:var(--kk-main);
 
-    --ink:#2A393F;         /* woordlogodonker: tekst, koppen, inactieve menulinks */
-    --base:#FAF9F6;        /* gebroken wit */
-    --body:#2A393F;
-    --muted:#55646A;
+    --body:var(--ink);
+    --muted:#55646A;          /* rustige metadata, ruim 6:1 op #FAF9F6 */
     --hairline:#E3E0D9;
-    --sec-dark:var(--ink); /* donkere tint van de actieve sectie (algemeen: #2A393F) */
-
-    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
-    --sans:'Source Sans 3',-apple-system,'Segoe UI',Arial,sans-serif;
     --pin-fade: 0.65;
 }
 
@@ -512,10 +506,15 @@ img{display:block;}
     gap:calc(44 * var(--u));
     margin-inline:auto;
     padding-inline:calc(32 * var(--u));
-    font-size:calc(17 * var(--u));
+    font-size:clamp(16px, calc(17 * var(--u)), 17px);
     font-weight:500;
     color:var(--ink);
 }
+
+.Adverteren {
+    color:var(--orange);
+}
+
 .mainnav a{padding:calc(6 * var(--u)) 0;border-bottom:calc(2 * var(--u)) solid transparent;}
 .mainnav a:hover{border-bottom-color:rgba(42,57,63,.35);}
 .mainnav a[aria-current="page"]{color:var(--sec-dark);border-bottom-color:var(--sec-dark);}
@@ -525,7 +524,7 @@ img{display:block;}
     align-items:center;
     gap:calc(16 * var(--u));
     margin-left:0;
-    font-size:calc(17 * var(--u));
+    font-size:clamp(16px, calc(17 * var(--u)), 17px);
     color:var(--ink);
 }
 .langpick{position:relative;}
@@ -605,13 +604,13 @@ img{display:block;}
 .hero-copy{
     position:absolute;
     left:calc(45 * var(--u));
-    bottom:calc(85 * var(--u));
+    bottom:calc(90 * var(--u));
     z-index:2;
 }
 
 .hero-copy h1{
-    font-size:calc(85 * var(--u));
-    line-height:calc(82 * var(--u));
+    font-size:clamp(56px, calc(85 * var(--u)), 64px);
+    line-height:1.02;
     letter-spacing:calc(-0.5 * var(--u));
     white-space:nowrap;
 }
@@ -625,8 +624,8 @@ img{display:block;}
 
 .hero-copy p{
     margin-top:calc(28 * var(--u));
-    font-size:calc(20 * var(--u));
-    line-height:calc(31 * var(--u));
+    font-size:clamp(18px, calc(22 * var(--u)), 21px);
+    line-height:1.5;
     color:var(--body);
 }
 
@@ -676,7 +675,8 @@ img{display:block;}
 }
 
 .pillar h2{
-    left:0;right:0;
+    left:0;
+    right:0;
     top:calc(96 * var(--u));
     font-size:calc(43 * var(--u));
     line-height:1.1;
@@ -711,8 +711,8 @@ img{display:block;}
     padding:0 calc(26 * var(--u));
     border-radius:calc(10 * var(--u));
     color:#fff;
-    font-size:calc(19 * var(--u));
-    font-weight:700;
+    font-size:clamp(16px, calc(19 * var(--u)), 18px);
+    font-weight:600;
     white-space:nowrap;
     transition:filter .18s ease;
 }
@@ -820,8 +820,8 @@ img{display:block;}
 /* ---------- logo ---------- */
 .wordmark{display:block;line-height:0;}
 .wordmark .logo{display:block;height:calc(40 * var(--u));width:auto;}
-.logo-house,.logo-amp{fill:#EC7404;}
-.logo-letters{fill:#2A393F;}
+.logo-house,.logo-amp{fill:var(--kk-main);}
+.logo-letters{fill:var(--ink);}
 @media (max-width:860px), (max-aspect-ratio:27/20){
     .wordmark .logo{height:clamp(18px,4vw,28px);}
 }
@@ -879,7 +879,7 @@ img{display:block;}
     .founded span{font-size:12px;}
     .founded strong{font-size:19px;}
 
-    .navtoggle{display:flex;order:3;margin-left:12px;padding:0 12px;font-size:15px;}
+    .navtoggle{display:flex;order:3;margin-left:12px;padding:0 12px;font-size:16px;}
     .masthead{padding-inline:20px;}
 
     .mainnav{
@@ -904,7 +904,7 @@ img{display:block;}
     .mainnav a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px;}
     .mainnav a:hover{background:#F7F4EF;}
 
-    .account{order:2;margin-left:auto;gap:14px;font-size:15px;}
+    .account{order:2;margin-left:auto;gap:14px;font-size:16px;}
     .langmenu{
         left:auto;right:0;transform:none;
         top:calc(100% + 10px);
@@ -932,7 +932,7 @@ img{display:block;}
         text-align:center;
     }
     .hero-copy h1{
-        font-size:clamp(31px,5.2vw,46px);
+        font-size:clamp(38px,6vw,46px);
         line-height:1.06;
         letter-spacing:-0.4px;
         white-space:normal;
@@ -940,8 +940,8 @@ img{display:block;}
     .hero-copy h1 .roof-inline{width:0.3em;margin-left:0.1em;}
     .hero-copy p{
         margin:16px auto 0;
-        font-size:16.5px;
-        line-height:1.6;
+        font-size:18px;
+        line-height:1.55;
         max-width:46ch;
     }
     .hero-copy br{display:none;}
@@ -992,7 +992,7 @@ img{display:block;}
         height:46px;
         padding:0 18px;
         gap:9px;
-        font-size:15px;
+        font-size:16px;
         border-radius:9px;
         white-space:normal;
         text-align:center;
@@ -1037,10 +1037,10 @@ img{display:block;}
     .masthead{padding:14px 14px;gap:10px;}
     .brand-rule,.founded{display:none;}
     .navtoggle{width:auto;height:44px;margin-left:8px;}
-    .account{gap:12px;font-size:14px;}
+    .account{gap:12px;font-size:16px;}
 
     .hero-copy{padding:26px 16px 4px;}
-    .hero-copy p{font-size:16px;}
+    .hero-copy p{font-size:18px;}
 
     .pillars{
         grid-template-columns:1fr;
@@ -1083,7 +1083,7 @@ img{display:block;}
     padding:7px clamp(24px, 3.5vw, 56px);
     font:400 16px/1.35 var(--sans);
 }
-.topbar small,.slogan-b small{font-size:14px;}
+.topbar small{font-family:var(--serif);font-style:italic;font-size:15px;}
 .slogan-part{display:inline-block;}
 .slogan-b{font:400 16px/1.35 var(--sans);color:var(--ink);}
 .hero-copy .slogan-b{margin:0 0 calc(14 * var(--u));font-size:16px;line-height:1.35;}
@@ -1107,3 +1107,37 @@ html:not([data-header="b"]) .slogan-b{display:none;}
     background:transparent;color:var(--base);font:600 14px/1 var(--sans);cursor:pointer;
 }
 .proto-switch button[aria-pressed="true"]{background:var(--base);color:var(--ink);}
+
+
+/* ============================================================
+   FOOTER (blauwdruk H10): #2A393F met tekst en links in #FAF9F6,
+   bedrijfs- en contactgegevens, Sinds 1993 bescheiden erbij.
+   ============================================================ */
+
+.site-footer{background:var(--footer);color:var(--base);font-family:var(--sans);font-size:15px;line-height:1.5;}
+.footer-inner{max-width:1240px;margin:0 auto;padding:36px 24px 22px;display:flex;justify-content:center;align-items:center;gap:24px 48px;flex-wrap:wrap;}
+.footer-company{display:flex;flex-direction:column;gap:6px;text-align:center;}
+.footer-brand{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.2;color:var(--base);}
+.footer-since{white-space:nowrap;}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:0 32px;}
+.site-footer .footer-nav a{
+    display:inline-flex;align-items:center;min-height:44px;
+    color:var(--base);text-decoration:underline;text-decoration-color:rgba(250,249,246,.45);text-underline-offset:3px;
+}
+.site-footer .footer-nav a:hover{text-decoration-color:var(--base);}
+.site-footer :focus-visible{outline:3px solid var(--base);outline-offset:3px;border-radius:4px;}
+.footer-copy{margin:0 max(24px, calc((100% - 1192px) / 2));padding:14px 0 26px;text-align:center;border-top:1px solid rgba(250,249,246,.16);font-size:14px;color:rgba(250,249,246,.75);}
+@media (max-width:640px){
+    .footer-inner{flex-direction:column;align-items:center;padding:30px 20px 16px;}
+    .footer-nav{flex-direction:column;align-items:center;}
+    .footer-copy{margin-inline:20px;}
+}
+
+/* alleen voor schermlezers */
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
+/* footer op de homepage in de hoofdkleur van Kijken & Kopen, met lichte tekst */
+.site-footer-orange{background:var(--kk-main);color:#fff;}
+.site-footer-orange .footer-nav a{color:#fff;text-decoration-color:rgba(255,255,255,.6);}
+.site-footer-orange .footer-nav a:hover{text-decoration-color:#fff;}
+.site-footer-orange .footer-copy{color:#fff;border-top-color:rgba(255,255,255,.35);}
+.site-footer-orange :focus-visible{outline-color:#fff;}

@@ -1,0 +1,47 @@
+/* ============================================================
+   HUISenAANBOD · DESIGN TOKENS (webstijl blauwdruk 1.1, hoofdstuk 12)
+   De enige plek waar kleuren, lettertypes en de tekstbreedte staan.
+   style.css en magazine.css verwijzen hiernaar.
+   ============================================================ */
+
+:root{
+    /* --- Kijken & Kopen --- */
+    --kk-main:#EC7404;   /* hoofdkleur: logo en grafische accenten */
+    --kk-dark:#A94E00;   /* donkere tint: tekstlinks, actieve navigatie, knoppen met witte tekst */
+    --kk-light:#FDE6D2;  /* licht vlak: afzonderlijke inhoudsblokken */
+    --kk-edge:#F7F0E8;   /* extra lichte zijrand op brede schermen */
+
+    /* --- Weten & Wonen --- */
+    --ww-main:#1596C8;
+    --ww-dark:#0B6F98;
+    --ww-light:#DFF1F8;
+    --ww-edge:#EEF4F7;
+
+    /* --- Jij & Jezelf --- */
+    --jj-main:#76B547;
+    --jj-dark:#4C7D2C;
+    --jj-light:#E7F2DE;
+    --jj-edge:#F0F5EC;
+
+    /* --- basis --- */
+    --ink:#2A393F;       /* woordlogodonker: woordlogo, body, koppen, inactieve menulinks, donkere vlakken */
+    --base:#FAF9F6;      /* gebroken wit: middenvlak en navigatiebalk */
+    --white:#FFFFFF;     /* tekst op donkere knoppen en de sloganbalk */
+    --footer:#2A393F;    /* footer, met tekst en links in --base */
+
+    /* --- typografie --- */
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;  /* paginakoppen en kaarttitels */
+    --sans:'Source Sans 3',-apple-system,'Segoe UI',Arial,sans-serif; /* tekst, navigatie, knoppen, labels */
+    --measure:760px;     /* leesbreedte 720–780 px */
+
+    /* --- actieve sectie: standaard de algemene pagina --- */
+    --sec-main:var(--kk-main);
+    --sec-dark:var(--ink);
+    --sec-light:#F1EEE8;
+    --sec-edge:var(--base);
+}
+
+/* Zet data-section op <body>; dezelfde onderdelen kleuren dan mee met de sectie. */
+[data-section="kijken"]{--sec-main:var(--kk-main);--sec-dark:var(--kk-dark);--sec-light:var(--kk-light);--sec-edge:var(--kk-edge);}
+[data-section="weten"]{--sec-main:var(--ww-main);--sec-dark:var(--ww-dark);--sec-light:var(--ww-light);--sec-edge:var(--ww-edge);}
+[data-section="jij"]{--sec-main:var(--jj-main);--sec-dark:var(--jj-dark);--sec-light:var(--jj-light);--sec-edge:var(--jj-edge);}
