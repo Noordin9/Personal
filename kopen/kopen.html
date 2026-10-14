@@ -13,8 +13,15 @@
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/magazine.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#ec7630">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
 </head>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+  }
+</script>
 <body class="page-magazine" data-section="weten">
 
 <!-- Same header as the landing page -->
