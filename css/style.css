@@ -1145,7 +1145,6 @@ html:not([data-header="b"]) .slogan-b{display:none;}
 /* ---------- hero: tekst naar links en een zachte waas erachter ---------- */
 @media (min-width:861px) and (min-aspect-ratio:27/20){
 
-    .hero-copy{left:calc(10 * var(--u));}
 
     .hero-copy::before{
         content:"";
