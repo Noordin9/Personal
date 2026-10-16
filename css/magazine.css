@@ -318,7 +318,7 @@ html.js .more-text:not(.is-open){display:none;}
 .article-img{aspect-ratio:2 / 1;max-height:520px;width:100%;border-radius:18px;background:#DCEFFA center/cover no-repeat;}
 .article-figure figcaption{margin-top:10px;font-size:14px;color:var(--muted);}
 .article-body{padding-block:8px 24px;}
-.prose{max-width:var(--measure);font-size:18px;line-height:1.65;color:var(--body);}
+.prose{max-width:900px;font-size:20px;line-height:1.65;color:var(--body);}
 .prose p,.prose ul{margin:0 0 1em;}
 .prose ul{padding-left:1.2em;}
 .prose li{margin-bottom:.35em;}
