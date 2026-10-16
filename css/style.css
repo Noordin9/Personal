@@ -511,8 +511,16 @@ img{display:block;}
     color:var(--ink);
 }
 
-.Adverteren {
-    color:var(--orange);
+.kijken {
+    color: var(--orange);
+}
+
+.weten {
+    color: var(--blue);
+}
+
+.jezelf {
+    color: var(--green);
 }
 
 .mainnav a{padding:calc(6 * var(--u)) 0;border-bottom:calc(2 * var(--u)) solid transparent;}
@@ -1136,7 +1144,7 @@ html:not([data-header="b"]) .slogan-b{display:none;}
 /* alleen voor schermlezers */
 .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
 /* footer op de homepage in de hoofdkleur van Kijken & Kopen, met lichte tekst */
-.site-footer-orange{background:var(--kk-main);color:#fff;}
+.site-footer-orange{background:#353535;color:#fff;}
 .site-footer-orange .footer-nav a{color:#fff;text-decoration-color:rgba(255,255,255,.6);}
 .site-footer-orange .footer-nav a:hover{text-decoration-color:#fff;}
 .site-footer-orange .footer-copy{color:#fff;border-top-color:rgba(255,255,255,.35);}
@@ -1157,4 +1165,33 @@ html:not([data-header="b"]) .slogan-b{display:none;}
         pointer-events:none;
     }
     .hero-art{height:auto;aspect-ratio:2170 / 725;}
-    .pillars{grid-template-columns:445fr 52fr 437fr 52fr 497fr;width:96.5495%;}}
+    .pillars{grid-template-columns:445fr 52fr 437fr 52fr 497fr;width:96.5495%;}
+}
+
+/* ---------- Adverteren als knop in het hoofdmenu ---------- */
+.mainnav a.Adverteren{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    padding:0 calc(20 * var(--u));
+    color:var(--orange-dark);
+    font-weight:600;
+    border:1.5px solid var(--orange-dark);
+    border-radius:calc(10 * var(--u));
+    transition:background-color .18s ease, color .18s ease;
+}
+.mainnav a.Adverteren:hover{
+    background:var(--orange-dark);
+    border-color:var(--orange-dark);
+    color:#fff;
+}
+@media (max-width:860px), (max-aspect-ratio:27/20){
+    .mainnav a.Adverteren{justify-content:center;margin-top:6px;border-radius:8px;}
+}
+
+
+@media (max-width:640px){
+    .footer-inner{flex-direction:row;padding:14px 16px 2px;}
+    .footer-nav{flex-direction:row;gap:0 20px;}
+    .footer-copy{margin-inline:16px;padding:6px 0 16px;}
+}

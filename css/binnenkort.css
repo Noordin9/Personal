@@ -1,0 +1,98 @@
+/* ============================================================
+   JIJ & JEZELF · binnenkort-pagina
+   Bouwt voort op tokens.css en style.css; groene sectiekleuren.
+   ============================================================ */
+
+.page-soon .logo-house,.page-soon .logo-amp{fill:var(--jj-main);}
+
+.soon{flex:1;display:flex;}
+.soon-hero{
+    flex:1;
+    display:flex;
+    background:
+            linear-gradient(to bottom, rgba(240,245,236,0) 55%, rgba(240,245,236,.6) 100%),
+            var(--jj-edge) url(../assets/kaart-begeleiding2.png) center bottom / cover no-repeat;
+    border-top:1px solid var(--jj-light);
+}
+.soon-wrap{
+    width:100%;
+    max-width:820px;
+    margin:0 auto;
+    padding:64px 24px 88px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.soon-icon{width:64px;height:63px;margin-bottom:18px;}
+.soon-eyebrow{
+    margin:0 0 10px;
+    padding:5px 12px;
+    border-radius:999px;
+    background:#fff;
+    border:1px solid var(--jj-light);
+    font:700 13px/1 var(--sans);
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--jj-dark);
+}
+.soon h1{
+    font-size:clamp(36px, 1.6rem + 2.4vw, 58px);
+    line-height:1.06;
+    letter-spacing:-.01em;
+    text-wrap:balance;
+}
+.soon-rule{display:block;width:48px;height:3px;margin:20px 0 22px;border-radius:2px;background:var(--jj-main);}
+.soon-lead{max-width:60ch;font-size:clamp(18px, 1rem + .3vw, 20px);line-height:1.6;color:var(--body);}
+
+.soon-sub{
+    margin:44px 0 16px;
+    font-family:var(--sans);
+    font-size:13.5px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+.soon-list{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+    width:100%;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:left;
+}
+.soon-list li{
+    padding:20px 22px 22px;
+    background:#fff;
+    border:1px solid var(--jj-light);
+    border-top:3px solid var(--jj-main);
+    border-radius:14px;
+}
+.soon-list h3{font-size:21px;line-height:1.2;margin-bottom:6px;}
+.soon-list p{font-size:15.5px;line-height:1.5;color:var(--body);}
+
+.soon-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:36px;}
+.soon-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    min-height:50px;padding:0 24px;
+    border-radius:10px;
+    font:600 17px/1 var(--sans);
+    text-decoration:none;
+    transition:background-color .18s ease, color .18s ease, filter .18s ease;
+}
+.soon-btn-primary{background:var(--jj-dark);color:#fff;border:1.5px solid var(--jj-dark);}
+.soon-btn-primary:hover{filter:brightness(1.12);}
+.soon-btn-ghost{background:#fff;color:var(--jj-dark);border:1.5px solid var(--jj-dark);}
+.soon-btn-ghost:hover{background:var(--jj-dark);color:#fff;}
+.soon :focus-visible{outline:3px solid var(--jj-dark);outline-offset:3px;}
+
+@media (max-width:760px){
+    .soon-wrap{padding:44px 20px 64px;}
+    .soon-list{grid-template-columns:1fr;gap:12px;}
+    .soon-btn{width:100%;justify-content:center;}
+}
+@media (prefers-reduced-motion:reduce){ .soon-btn{transition:none;} }
