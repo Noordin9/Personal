@@ -1123,7 +1123,7 @@ html:not([data-header="b"]) .slogan-b{display:none;}
    ============================================================ */
 
 .site-footer{background:var(--footer);color:var(--base);font-family:var(--sans);font-size:15px;line-height:1.5;}
-.footer-inner{max-width:1240px;margin:0 auto;padding:36px 24px 22px;display:flex;justify-content:center;align-items:center;gap:24px 48px;flex-wrap:wrap;}
+.footer-inner{max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;justify-content:center;align-items:center;gap:24px 48px;flex-wrap:wrap;}
 .footer-company{display:flex;flex-direction:column;gap:6px;text-align:center;}
 .footer-brand{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.2;color:var(--base);}
 .footer-since{white-space:nowrap;}
@@ -1165,7 +1165,7 @@ html:not([data-header="b"]) .slogan-b{display:none;}
         pointer-events:none;
     }
     .hero-art{height:auto;aspect-ratio:2170 / 725;}
-    .pillars{grid-template-columns:447fr 47.5fr 447fr 54.5fr 447fr;margin-left:2.6693%;width:93.945%;}
+    .pillars{grid-template-columns:447fr 47.5fr 446fr 41fr 447fr;margin-left:2.6693%;width:93.001%;}
     .pillar-art{inset:-2px 0 0 0;height:calc(100% + 2px);}
 }
 
@@ -1205,7 +1205,7 @@ html:not([data-header="b"]) .slogan-b{display:none;}
 .site-footer-orange .footer-since{
     position:absolute;
     left:calc((100% - 1536 * var(--u)) / 2);
-    top:58px;              /* midden van de linkregel: 36px bovenruimte + halve linkhoogte (22px) */
+    top:50%;              /* midden van de linkregel: 36px bovenruimte + halve linkhoogte (22px) */
     transform:translateY(-50%);
     margin:0;
     font-family:var(--serif);
