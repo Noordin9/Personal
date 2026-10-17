@@ -96,3 +96,10 @@
     .soon-btn{width:100%;justify-content:center;}
 }
 @media (prefers-reduced-motion:reduce){ .soon-btn{transition:none;} }
+
+.footer-copy {
+    background:var(--base);
+    color:var(--muted);
+    width: 100%;
+    margin: 0;
+}

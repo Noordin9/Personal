@@ -1195,3 +1195,61 @@ html:not([data-header="b"]) .slogan-b{display:none;}
     .footer-nav{flex-direction:row;gap:0 20px;}
     .footer-copy{margin-inline:16px;padding:6px 0 16px;}
 }
+
+/* ---------- homepage-footer: Sinds 1993 links, uitgelijnd met de hero; links blijven in het midden ---------- */
+.site-footer-orange .footer-inner{
+    position:relative;
+    max-width:none;
+}
+.site-footer-orange .footer-since{
+    position:absolute;
+    left:calc((100% - 1536 * var(--u)) / 2);
+    top:58px;              /* midden van de linkregel: 36px bovenruimte + halve linkhoogte (22px) */
+    transform:translateY(-50%);
+    margin:0;
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:19px;
+    color:#fff;
+}
+.site-footer-orange .footer-copy{
+    margin:0;
+    padding:12px 20px;
+    background:var(--base);
+    color:var(--muted);
+    border-top:0;
+}
+@media (max-width:860px), (max-aspect-ratio:27/20){
+    .site-footer-orange .footer-since{position:static;transform:none;width:100%;text-align:center;}
+}
+
+/* ---------- iets grotere tekst: menu, hero en kaarten ---------- */
+@media (min-width:861px) and (min-aspect-ratio:27/20){
+    /* menulinks (niet de Adverteren-knop) */
+    .mainnav{font-size:clamp(17px, calc(19 * var(--u)), 18.5px);}
+    .mainnav a.Adverteren{font-size:clamp(16px, calc(17 * var(--u)), 17px);}
+
+    /* hero-tekst: groter en iets zwaarder */
+    .hero-copy p{font-size:clamp(19px, calc(23 * var(--u)), 22px);font-weight:500;line-height:1.5;}
+
+    /* kaarttekst: groter; tekst iets hoger en knop iets lager zodat er vijf regels passen */
+    .pillar p{top:calc(172 * var(--u));font-size:calc(18.5 * var(--u));line-height:calc(25.5 * var(--u));}
+    .pillar-cta{top:calc(293 * var(--u));}
+}
+@media (max-width:860px), (max-aspect-ratio:27/20){
+    .hero-copy p{font-weight:500;}
+    .pillar p{font-size:16px;}
+}
+
+/* huisje als punt achter de H1: onderkant op de basislijn van de letters */
+.hero-copy h1 .roof-inline{vertical-align:-0.037em;}
+
+/* huisje als punt achter de H1: iets kleiner */
+.hero-copy h1 .roof-inline{
+    width:calc(25 * var(--u));
+    margin-left:calc(12 * var(--u));
+    vertical-align:-0.03em;
+}
+@media (max-width:860px), (max-aspect-ratio:27/20){
+    .hero-copy h1 .roof-inline{width:0.25em;margin-left:0.09em;}
+}

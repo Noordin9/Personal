@@ -373,3 +373,17 @@ html.js .more-text:not(.is-open){display:none;}
     .card,.listing{transition:none;}
     .card:hover,.listing:hover{transform:none;}
 }
+/* huisje als punt achter de H1: zelfde formaat als op de homepage, onderkant op de basislijn */
+.h1-mark{
+    width:.29em;
+    height:.29em;
+    margin-left:.19em;
+    vertical-align:-.005em;
+}
+
+.footer-copy {
+    background:var(--base);
+    color:var(--muted);
+    width: 100%;
+    margin: 0;
+}
