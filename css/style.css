@@ -1165,7 +1165,8 @@ html:not([data-header="b"]) .slogan-b{display:none;}
         pointer-events:none;
     }
     .hero-art{height:auto;aspect-ratio:2170 / 725;}
-    .pillars{grid-template-columns:445fr 52fr 437fr 52fr 497fr;width:96.5495%;}
+    .pillars{grid-template-columns:447fr 47.5fr 447fr 54.5fr 447fr;margin-left:2.6693%;width:93.945%;}
+    .pillar-art{inset:-2px 0 0 0;height:calc(100% + 2px);}
 }
 
 /* ---------- Adverteren als knop in het hoofdmenu ---------- */

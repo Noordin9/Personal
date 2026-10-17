@@ -11,7 +11,7 @@
     display:flex;
     background:
             linear-gradient(to bottom, rgba(240,245,236,0) 55%, rgba(240,245,236,.6) 100%),
-            var(--jj-edge) url(../assets/kaart-begeleiding2.png) center bottom / cover no-repeat;
+            var(--jj-edge) url(../assets/kaart-begeleiding3.png) center bottom / cover no-repeat;
     border-top:1px solid var(--jj-light);
 }
 .soon-wrap{
@@ -87,7 +87,7 @@
 .soon-btn-primary{background:var(--jj-dark);color:#fff;border:1.5px solid var(--jj-dark);}
 .soon-btn-primary:hover{filter:brightness(1.12);}
 .soon-btn-ghost{background:#fff;color:var(--jj-dark);border:1.5px solid var(--jj-dark);}
-.soon-btn-ghost:hover{background:var(--jj-dark);color:#fff;}
+.soon-btn-ghost:hover{background:var(--blue-dark);color:#fff;}
 .soon :focus-visible{outline:3px solid var(--jj-dark);outline-offset:3px;}
 
 @media (max-width:760px){
