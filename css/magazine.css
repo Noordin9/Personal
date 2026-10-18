@@ -1,35 +1,21 @@
 /* ============================================================
-   MAGAZINE · SPANJE
-   Loaded on magazine/spanje.html after style.css. Uses the tokens from
-   style.css (--orange, --blue, --ink, --body, --muted, --hairline)
-   and adds a few of its own for the magazine page.
+   MAGAZINE · Weten & Wonen
+   Voor start.html, spanje.html, de artikeloverzichten en artikel.html.
+   Wordt na style.css geladen en gebruikt de kleuren uit tokens.css.
    ============================================================ */
 
-/* Kijken & Kopen-tinten (blauwdruk): hoofdkleur voor accenten, donkere tint voor tekst en vlakken met witte tekst */
 :root{
     /* korte namen voor dit bestand; de waarden staan in tokens.css */
     --orange-main:var(--kk-main);
     --orange-ink:var(--kk-dark);
-    --orange-light:var(--kk-light);
     --blue-ink:var(--ww-dark);
     --blue-soft:var(--ww-edge);
-    --blue-light:var(--ww-light);
     --blue-deep:#085A7C;   /* hovertint van --ww-dark */
-    --orange-deep:var(--orange-deep); /* hovertint van --kk-dark */
     --blue-line:#CBE4EF;
     --card-line:#E3E0D9;
 }
 
-/* ---------- header on the magazine page ---------- */
-
-/* Here the stage only holds the header, so it should not
-   stretch to fill the window like on the landing page. */
-.page-magazine .stage{flex:none;padding-bottom:0;overflow:visible;}
-/* Weten & Wonen: donkere tint voor bovenbalk en actieve navigatie, hoofdkleur in het logo */
-/* de sectie komt van data-section="weten" op <body> (tokens.css) */
-.page-magazine .logo-house,.page-magazine .logo-amp{fill:var(--sec-main);}
-
-/* ---------- magazine base ---------- */
+/* ---------- basis ---------- */
 
 .mag{
     border-top:1px solid var(--hairline);
@@ -76,7 +62,7 @@
     justify-content:space-between;
     column-gap:56px;
 }
-.intro-text{grid-area:text;}
+.intro-text{grid-area:text;display:flex;flex-direction:column;gap:12px;min-width:0;}
 .intro-more{grid-area:more;display:flex;flex-direction:column;gap:12px;padding-top:6px;}
 .intro-aside{
     grid-area:aside;align-self:start;margin-top:6px;
@@ -94,16 +80,13 @@
     transition:background-color .15s ease;
 }
 .mag a.aside-btn:hover{background:var(--orange-ink);color:#fff;}
-.intro-text{display:flex;flex-direction:column;gap:12px;min-width:0;}
-.intro-label{display:flex;align-items:center;gap:10px;}
-.intro-label svg{width:40px;height:39px;flex:none;}
 .mag-intro h1 .keep{white-space:nowrap;}
-.h1-mark{display:inline-block;width:.2em;height:.2em;margin-left:.07em;vertical-align:baseline;}
+/* huisje als punt achter de H1: zelfde formaat als op de homepage, onderkant op de basislijn */
+.h1-mark{display:inline-block;width:.29em;height:.29em;margin-left:.19em;vertical-align:-.005em;}
 .mag-intro h1{font-size:clamp(38px,1.6rem + 2.6vw,62px);font-weight:600;line-height:1.04;letter-spacing:-.01em;}
 .blue-rule{display:block;width:48px;height:3px;border-radius:2px;background:var(--blue);}
 .intro-lead{font-size:clamp(18px,1rem + .35vw,21px);line-height:1.5;}
 .byline{font-size:15px;line-height:1.4;color:var(--muted);}
-.mag-intro .slogan-b{color:var(--ink);}
 .mag .switch-country{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;text-decoration:none;}
 .switch-text{text-decoration:underline;text-underline-offset:3px;}
 
@@ -188,8 +171,7 @@ html.js .more-text:not(.is-open){display:none;}
 .more{display:flex;justify-content:center;margin-top:32px;}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px;}
 .grid .thumb{aspect-ratio:16/10;max-width:100%;}
-.end-link{display:flex;justify-content:flex-end;margin-top:24px;}
-.mag .end-link a,.mag .back-link a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:17px;font-weight:600;text-decoration:none;}
+.mag .back-link a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:17px;font-weight:600;text-decoration:none;}
 .back-link{margin-top:28px;}
 .count{margin:-6px 0 18px;font-size:14.5px;color:var(--muted);font-variant-numeric:tabular-nums;}
 
@@ -203,21 +185,10 @@ html.js .more-text:not(.is-open){display:none;}
 .mag .pager a{color:var(--sec-dark);text-decoration:underline;text-underline-offset:4px;}
 .pager [aria-current="page"]{background:var(--sec-dark);color:#fff;}
 
-/* actieve navigatielaag direct na de breadcrumbs (4.03) */
-.subnav{border-bottom:1px solid var(--blue-line);}
-.subnav ul{display:flex;flex-wrap:wrap;gap:0 28px;margin:0;padding:0;list-style:none;}
-.mag .subnav a{
-    display:inline-flex;align-items:center;min-height:44px;
-    color:var(--ink);font-size:16.5px;text-decoration:none;
-    border-bottom:2px solid transparent;
-}
-.mag .subnav a:hover{border-bottom-color:rgba(42,57,63,.35);}
-.mag .subnav a[aria-current="page"]{color:var(--sec-dark);font-weight:600;border-bottom-color:var(--sec-dark);}
-
 /* categorie- en archiefpagina's: kortere paginakop */
 .mag-intro-sub .intro-text{max-width:var(--measure);margin-top:10px;}
 
-/* buttons in the style of the home page pillars */
+/* knop in de stijl van de kaartknoppen op de homepage */
 .btn{
     display:inline-flex;align-items:center;gap:12px;
     min-height:52px;padding:0 24px;
@@ -226,13 +197,9 @@ html.js .more-text:not(.is-open){display:none;}
     cursor:pointer;text-decoration:none;
     transition:background-color .15s ease;
 }
-.btn svg{width:20px;height:20px;flex:none;}
 .btn-blue{background:var(--blue-ink);color:#fff;}
 .btn-blue:hover{background:var(--blue-deep);}
 .mag a.btn-blue,.mag a.btn-blue:hover{color:#fff;}
-.mag a.btn-ink,.btn-ink{background:var(--ink);color:#fff;}
-.btn-ink:hover{background:#1E3341;}
-.mag a.btn-ink:hover{color:#fff;}
 
 /* ---------- regions carousel ---------- */
 
@@ -289,10 +256,10 @@ html.js .more-text:not(.is-open){display:none;}
 
 .mag a.more-link-orange{color:var(--orange-ink);}
 .mag a.more-link-orange .link-text{text-decoration-color:var(--orange-main);}
-.mag a.more-link-orange:hover{color:var(--orange-deep);}
+.mag a.more-link-orange:hover{color:var(--ink);}
 .more-link{display:flex;align-items:center;gap:8px;width:fit-content;min-height:44px;margin:16px 0 0 auto;font-weight:600;font-size:17px;text-decoration:none;}
 /* alleen de tekst onderstreept, het pijltje niet */
-.more-link .link-text,.end-link .link-text,.back-link .link-text{text-decoration:underline;text-underline-offset:4px;}
+.more-link .link-text,.back-link .link-text{text-decoration:underline;text-underline-offset:4px;}
 
 /* ---------- populaire zoekopdrachten (linkbalk boven de footer) ---------- */
 
@@ -308,7 +275,7 @@ html.js .more-text:not(.is-open){display:none;}
     display:inline-flex;align-items:center;gap:8px;padding-block:2px;
     color:var(--orange-ink);font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap;
 }
-.mag .popular-all:hover{color:var(--orange-deep);}
+.mag .popular-all:hover{color:var(--ink);}
 .popular-all .link-text{text-decoration:underline;text-underline-offset:3px;}
 .mag .popular :focus-visible{outline-color:var(--orange-ink);}
 
@@ -350,14 +317,12 @@ html.js .more-text:not(.is-open){display:none;}
     .feat{grid-template-columns:minmax(0,1fr);}
     .feat-side{display:none;}
     .grid{grid-template-columns:repeat(2,minmax(0,1fr));}
-    .end-link{justify-content:flex-start;}
     .listings-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
     .popular-cols{grid-template-columns:repeat(2,minmax(0,1fr));}
     .mag .popular-all{justify-self:start;min-height:44px;}
 }
 @media (max-width:640px){
     .mag-wrap{padding-inline:20px;}
-    .subnav ul{gap:0 20px;}
     .more-text{font-size:17px;}
     .mag .more-text h2{font-size:22px;}
     .mag-section{padding-block:44px;}
@@ -366,24 +331,10 @@ html.js .more-text:not(.is-open){display:none;}
     .grid{grid-template-columns:minmax(0,1fr);}
     .listings-grid{grid-template-columns:minmax(0,1fr);}
     .popular-cols{grid-template-columns:minmax(0,1fr);}
-    .mag .popular-all{justify-self:start;}
 }
 
 @media (prefers-reduced-motion:reduce){
     .card,.listing{transition:none;}
     .card:hover,.listing:hover{transform:none;}
 }
-/* huisje als punt achter de H1: zelfde formaat als op de homepage, onderkant op de basislijn */
-.h1-mark{
-    width:.29em;
-    height:.29em;
-    margin-left:.19em;
-    vertical-align:-.005em;
-}
 
-.footer-copy {
-    background:var(--base);
-    color:var(--muted);
-    width: 100%;
-    margin: 0;
-}

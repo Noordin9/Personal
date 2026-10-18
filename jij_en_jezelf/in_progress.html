@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jij &amp; Jezelf: binnenkort — HUISenAANBOD</title>
+    <meta name="robots" content="noindex">
     <meta name="description" content="Jij &amp; Jezelf is in de maak: coaching, persoonlijke begeleiding en praktische tools voor wie droomt van anders wonen of leven.">
-    <link rel="icon" href="../assets/icon.jpeg">
-    <script>/* prototype: headervariant A/B vóór het tekenen toepassen */try{var h=new URLSearchParams(location.search).get('header')||localStorage.getItem('ha-header');if(h==='a'||h==='b')document.documentElement.setAttribute('data-header',h);}catch(e){}</script>
+    <link rel="icon" href="../assets/android-chrome-192x192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -29,9 +29,9 @@
     <button class="navtoggle" id="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
 
     <nav class="mainnav" id="mainnav" aria-label="Hoofdmenu">
-        <a href="https://huisenaanbod.nl">Kijken &amp; Kopen</a>
-        <a href="../weten_en_wonen/start.html">Weten &amp; Wonen</a>
-        <a href="in_progress.html" aria-current="page">Jij &amp; Jezelf</a>
+        <a class="kijken" href="https://huisenaanbod.nl">Kijken &amp; Kopen</a>
+        <a class="weten" href="../weten_en_wonen/start.html">Weten &amp; Wonen</a>
+        <a class="jezelf" href="in_progress.html" aria-current="page">Jij &amp; Jezelf</a>
         <a href="">Ik &amp; Wij</a>
         <a class="Adverteren" href="https://www.huisenaanbod.nl/nl/Adverteren_bij_HUISenAANBOD/">Adverteren</a>
     </nav>
@@ -68,29 +68,28 @@
         <div class="soon-wrap">
             <svg class="soon-icon" viewBox="0 0 56 55" aria-hidden="true"><path d="M28 1 L55 25.6 H49.5 V49.3 a4.6 4.6 0 0 1 -4.6 4.6 H11.1 a4.6 4.6 0 0 1 -4.6 -4.6 V25.6 H1 Z" fill="#76B547"/></svg>
             <p class="soon-eyebrow">Binnenkort</p>
-            <h1 id="soonTitle">Jij &amp; Jezelf is in de maak</h1>
+            <h1 id="soonTitle">Wat hoop je daar te vinden?</h1>
             <span class="soon-rule" aria-hidden="true"></span>
-            <p class="soon-lead">Hier komt een plek om stil te staan bij wat je zoekt in een leven in het buitenland. Wat trekt je aan, wat hoop je daar te vinden en welke twijfels spelen mee? We werken hard aan dit onderdeel en openen het zo snel mogelijk.</p>
 
-            <h2 class="soon-sub">Wat je hier straks vindt</h2>
-            <ul class="soon-list">
-                <li>
-                    <h3>Coaching</h3>
-                    <p>Gesprekken die je helpen ontdekken wat je echt wilt, voordat je een besluit neemt.</p>
-                </li>
-                <li>
-                    <h3>Persoonlijke begeleiding</h3>
-                    <p>Iemand die met je meedenkt, van de eerste droom tot de verhuizing.</p>
-                </li>
-                <li>
-                    <h3>Praktische tools</h3>
-                    <p>Vragenlijsten en checklists om je wensen en twijfels op een rij te zetten.</p>
-                </li>
-            </ul>
+            <div class="soon-intro">
+                <p class="soon-tagline">Een eigen plek in het buitenland.</p>
+                <p>Misschien zie je het huis al helemaal voor je. Misschien begint het vooral met een gevoel. Wat trekt je aan? En wat zou zo’n eigen plek voor jou betekenen?</p>
+                <p>Bij het kopen van een huis in het buitenland komen allerlei praktische vragen kijken. Maar achter die vragen schuilen vaak ook persoonlijke wensen, verwachtingen en twijfels.</p>
+                <p>In Jij &amp; Jezelf verkennen we die andere kant. Met observaties, verrassende invalshoeken en vragen die je uitnodigen om anders naar je plannen te kijken. Soms serieus, soms met een knipoog. En zonder dat overal een antwoord op hoeft te komen.</p>
+            </div>
+
+            <aside class="soon-question" aria-labelledby="questionLabel">
+                <img class="soon-figure" src="../assets/jj-figuur.png" width="480" height="568" alt="">
+                <div class="soon-question-text">
+                    <p class="soon-question-label" id="questionLabel">Even stilstaan</p>
+                    <p class="soon-question-q">Wat zegt jouw droomhuis over wat je belangrijk vindt?<br>
+                        En als niet alles mogelijk is, wat weegt dan het zwaarst?</p>
+                </div>
+            </aside>
 
             <div class="soon-actions">
-                <a class="soon-btn soon-btn-primary" href="../index.html">Terug naar de homepage</a>
-                <a class="soon-btn soon-btn-ghost" href="../weten_en_wonen/start.html">Lees alvast Weten &amp; Wonen <span aria-hidden="true">→</span></a>
+                <a class="soon-btn soon-btn-orange" href="https://huisenaanbod.nl">Bekijk het huizenaanbod <span aria-hidden="true">→</span></a>
+                <a class="soon-btn soon-btn-blue" href="../weten_en_wonen/start.html">Meer over kopen &amp; wonen <span aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>
