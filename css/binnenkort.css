@@ -27,17 +27,16 @@
 }
 
 /* ---------- kop ---------- */
-.soon-icon{width:64px;height:63px;margin-bottom:18px;}
+/* label in een groen kader met witte letters */
 .soon-eyebrow{
-    margin:0 0 14px;
-    padding:5px 12px;
+    margin:0 0 18px;
+    padding:8px 18px;
     border-radius:999px;
-    background:#fff;
-    border:1px solid var(--jj-light);
-    font:700 13px/1 var(--sans);
+    background:var(--jj-dark);
+    font:700 16px/1 var(--sans);
     letter-spacing:.14em;
     text-transform:uppercase;
-    color:var(--jj-dark);
+    color:#fff;
 }
 .soon h1{
     font-size:clamp(36px, 1.6rem + 2.4vw, 58px);
@@ -52,7 +51,7 @@
 .soon-intro p{font-size:clamp(18px, 1rem + .25vw, 19.5px);line-height:1.65;color:var(--body);}
 .soon-intro p + p{margin-top:16px;}
 .soon-intro .soon-tagline{
-    margin-bottom:6px;
+    margin-bottom:10px;
     font-family:var(--serif);
     font-size:clamp(22px, 1.1rem + .5vw, 25px);
     font-weight:600;
@@ -69,16 +68,13 @@
     width:100%;
     max-width:640px;
     margin-top:52px;
-    padding:24px 28px;
     text-align:left;
-    background:rgba(255,255,255,.55);
-    border-radius:18px;
 }
 /* het huisfiguurtje wijst naar de vraag */
 .soon-figure{width:112px;height:auto;}
 .soon-question-label{
-    margin-bottom:6px;
-    font:700 13px/1.2 var(--sans);
+    margin-bottom:8px;
+    font:700 16px/1.2 var(--sans);
     letter-spacing:.14em;
     text-transform:uppercase;
     color:var(--jj-dark);
@@ -86,11 +82,13 @@
 .soon-question-q{
     font-family:var(--serif);
     font-style:italic;
-    font-size:clamp(19px, 1rem + .35vw, 21px);
+    font-size:clamp(20px, 1.05rem + .4vw, 23px);
     line-height:1.45;
     color:var(--ink);
     text-wrap:pretty;
 }
+/* ruimte tussen de twee reflectievragen */
+.soon-question-q + .soon-question-q{margin-top:12px;}
 
 /* ---------- knoppen: zelfde vorm als de kaartknoppen op de homepage ---------- */
 .soon-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:52px;}
@@ -108,16 +106,19 @@
 .soon-btn:hover{filter:brightness(1.12);}
 .soon :focus-visible{outline:3px solid var(--jj-dark);outline-offset:3px;}
 
+/* bedrijfsomschrijving onder de knoppen, bescheiden */
+.soon-note{margin-top:28px;font-size:14px;line-height:1.4;color:var(--muted);}
+
 /* ---------- mobiel: alles onder elkaar, het landschap verder naar de achtergrond ---------- */
 @media (max-width:760px){
     .soon-hero{
         background:
                 linear-gradient(rgba(240,245,236,.72), rgba(240,245,236,.72)),
-                var(--jj-edge) url(../assets/kaart-begeleiding3.png) center bottom / 160% auto no-repeat;
+                #FBFCEF url(../assets/kaart-begeleiding3.png) center bottom / 160% auto no-repeat; /* zelfde kleur als de bovenrand van de illustratie */
     }
     .soon-wrap{padding:44px 20px 72px;}
     .soon-rule{margin:18px 0 24px;}
-    .soon-question{grid-template-columns:72px minmax(0,1fr);gap:16px;margin-top:40px;padding:18px;}
+    .soon-question{grid-template-columns:72px minmax(0,1fr);gap:16px;margin-top:40px;}
     .soon-figure{width:72px;}
     .soon-actions{flex-direction:column;align-items:stretch;width:100%;margin-top:40px;gap:12px;}
     .soon-btn{justify-content:center;}
