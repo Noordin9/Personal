@@ -124,3 +124,10 @@
     .soon-btn{justify-content:center;}
 }
 @media (prefers-reduced-motion:reduce){ .soon-btn{transition:none;} }
+.soon-intro em{padding-right:.06em;}
+.roof-inline{
+    display:inline-block;
+    width:calc(25 * var(--u));
+    margin-left:calc(12 * var(--u));
+    vertical-align:-0.03em;
+}

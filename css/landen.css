@@ -1,123 +1,131 @@
 /* ============================================================
-   WETEN & WONEN · landkeuze (start.html)
+   WETEN & WONEN · homepage (start.html)
    Bouwt voort op tokens.css, style.css en magazine.css.
+   Opbouw: introductie met Novi · algemene informatie · informatie
+   per land · knoppen naar de andere hoofdsecties.
    ============================================================ */
 
-/* ---------- intro met zoekveld ---------- */
-.landen-intro .mag-wrap{padding-block:28px 40px;gap:16px;}
-.landen-intro .intro-lead{max-width:62ch;}
-.country-search{
-    position:relative;
-    max-width:560px;
-    margin-top:8px;
+/* ---------- 1. introductie, met Novi rechts ---------- */
+.landen-intro .mag-wrap{padding-block:28px 44px;gap:16px;}
+.ww-intro-row{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 200px;
+    align-items:center;
+    gap:24px 56px;
 }
-.country-search svg{
-    position:absolute;left:18px;top:50%;transform:translateY(-50%);
-    width:22px;height:22px;color:var(--muted);pointer-events:none;
-}
-.country-search input{
-    width:100%;
-    height:58px;
-    padding:0 20px 0 52px;
-    font:400 18px/1 var(--sans);
-    color:var(--ink);
-    background:#fff;
-    border:1.5px solid var(--blue-line);
-    border-radius:14px;
-    box-shadow:0 1px 2px rgba(42,57,63,.04);
-    transition:border-color .15s ease, box-shadow .15s ease;
-}
-.country-search input::placeholder{color:#7A868B;}
-.country-search input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(21,150,200,.18);}
+.ww-intro-row .intro-text{grid-area:auto;max-width:var(--measure);}
+.ww-intro-copy{display:flex;flex-direction:column;gap:14px;}
+.ww-intro-copy p{font-size:clamp(17.5px,1rem + .2vw,19px);line-height:1.6;color:var(--body);}
+/* Novi wijst naar de tekst */
+.ww-novi{width:200px;height:auto;justify-self:center;}
 
-/* ---------- meest gekozen ---------- */
-.landen-feat{padding-bottom:16px;}
-.feat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
-.country-feat{
-    display:flex;flex-direction:column;gap:10px;
-    padding:24px 26px 26px;
-    background:#fff;
-    border:1px solid var(--card-line);
-    border-radius:18px;
-    text-decoration:none;
-    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+/* ---------- koppen van de secties ---------- */
+.ww-head{display:flex;flex-direction:column;gap:8px;max-width:var(--measure);margin-bottom:24px;}
+.ww-head p{font-size:18px;line-height:1.5;color:var(--body);}
+.mag .ww-label{
+    margin:0 0 14px;
+    font-family:var(--sans);
+    font-size:13.5px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
 }
-.mag a.country-feat{color:var(--ink);}
-.country-feat:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(42,57,63,.12);border-color:var(--blue-line);}
-.cf-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
-.flag-lg{display:block;width:60px;height:40px;border-radius:6px;box-shadow:0 0 0 1px rgba(42,57,63,.14);}
-.cf-count{
-    padding:5px 11px;border-radius:999px;
-    background:var(--blue-soft);color:var(--blue-ink);
-    font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;
-}
-.cf-name{font-family:var(--serif);font-weight:600;font-size:32px;line-height:1.1;}
-.cf-text{font-size:16.5px;line-height:1.5;color:var(--body);}
-.cf-go{margin-top:auto;padding-top:8px;font-size:16.5px;font-weight:600;color:var(--blue-ink);}
-.country-feat:hover .cf-go{text-decoration:underline;text-underline-offset:4px;}
 
-/* ---------- alle landen ---------- */
-.landen-all{padding-top:40px;padding-bottom:48px;}
-.all-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 24px;margin-bottom:8px;}
-.all-head .filters{margin:0;}
-/* alle landen als één compacte wolk van pillen; de regio-pillen filteren */
-.country-cloud{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;padding:0;list-style:none;}
-.country{
+/* ---------- 2. algemene informatie: compacte kaarten ---------- */
+.ww-general{padding-bottom:40px;}
+.ww-cards .thumb{aspect-ratio:16/9;}
+.ww-cards .card-body{padding:16px 20px 20px;gap:6px;}
+.ww-cards h3{font-size:clamp(21px,1.1rem + .35vw,23px);}
+.ww-cards p{font-size:15.5px;}
+.ww-more{display:flex;justify-content:center;margin-top:28px;}
+.mag a.ww-outline-btn{
     display:inline-flex;align-items:center;gap:10px;
-    min-height:48px;padding:0 10px 0 14px;
-    background:#fff;
-    border:1px solid var(--card-line);
-    border-radius:999px;
+    min-height:48px;padding:0 24px;
+    border:1.5px solid var(--blue-ink);border-radius:999px;
+    color:var(--blue-ink);font-size:17px;font-weight:600;text-decoration:none;
+    transition:background-color .15s ease,color .15s ease;
+}
+.mag a.ww-outline-btn:hover{background:var(--blue-ink);color:#fff;}
+
+/* ---------- 3. informatie per land ---------- */
+.ww-countries{background:var(--blue-soft);border-top:1px solid var(--blue-line);}
+
+/* populaire landen: drie kaders met foto en landnaam */
+.country-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-bottom:40px;}
+.country-photo{
+    display:flex;flex-direction:column;overflow:hidden;
+    border:1px solid var(--card-line);border-radius:18px;background:#fff;
     text-decoration:none;
-    transition:border-color .15s ease, background-color .15s ease;
+    transition:transform .2s ease,box-shadow .2s ease;
 }
-.mag a.country{color:var(--ink);}
-.country:hover{border-color:var(--blue);background:var(--blue-soft);}
-.flag-sm{flex:none;display:block;width:27px;height:18px;border-radius:3px;box-shadow:0 0 0 1px rgba(42,57,63,.16);}
-.country-name{font-size:16.5px;font-weight:600;white-space:nowrap;}
-.country-count{min-width:28px;padding:3px 8px;border-radius:999px;background:var(--blue-soft);color:var(--blue-ink);font-size:13px;font-weight:600;text-align:center;font-variant-numeric:tabular-nums;}
-.country:hover .country-count{background:#fff;}
-.no-result{margin-top:20px;font-size:17px;}
-
-/* ---------- nog niet zeker ---------- */
-.unsure{background:var(--jj-edge);border-top:1px solid var(--jj-light);}
-.unsure-inner{display:flex;align-items:center;justify-content:space-between;gap:20px 40px;padding-block:44px;flex-wrap:wrap;}
-.unsure h2{font-size:28px;line-height:1.2;margin-bottom:6px;}
-.unsure p{font-size:17px;color:var(--body);max-width:56ch;}
-.mag a.unsure-btn{
-    display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;
-    border:1.5px solid var(--jj-dark);border-radius:10px;
-    color:var(--jj-dark);font-weight:600;text-decoration:none;
-    transition:background-color .18s ease,color .18s ease;
+.mag a.country-photo{color:var(--ink);}
+.country-photo:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(42,57,63,.12);}
+.cp-img{display:block;aspect-ratio:3/2;max-width:100%;background:#DCEFFA center/cover no-repeat;}
+.cp-name{
+    display:flex;align-items:center;gap:12px;
+    padding:14px 20px 16px;
+    font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.15;
 }
-.mag a.unsure-btn:hover{background:var(--jj-dark);color:#fff;}
-.mag .unsure :focus-visible{outline-color:var(--jj-dark);}
+.cp-name .flag-sm{width:30px;height:20px;}
+.country-photo:hover .cp-name{color:var(--blue-ink);}
 
-/* ---------- smal ---------- */
+/* overige landen: tekstlinks in vaste kolommen, alfabetisch van boven naar beneden */
+.flag-sm{flex:none;display:block;width:24px;height:16px;border-radius:3px;box-shadow:0 0 0 1px rgba(42,57,63,.16);}
+.country-columns{
+    columns:4;
+    column-gap:32px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.country-columns li{break-inside:avoid;}
+.mag .country-columns a{
+    display:flex;align-items:center;gap:12px;
+    min-height:44px;
+    color:var(--ink);font-size:17px;text-decoration:none;
+}
+.mag .country-columns a:hover span{color:var(--blue-ink);text-decoration:underline;text-underline-offset:4px;}
+
+/* ---------- 6. knoppen naar de andere hoofdsecties ---------- */
+.ww-next .mag-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;padding-block:48px 64px;}
+/* beide knoppen even breed, ongeacht de lengte van de tekst */
+.mag a.ww-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    flex:0 1 280px;
+    min-height:52px;padding:0 24px;
+    border-radius:10px;
+    color:#fff;font-size:17px;font-weight:600;line-height:1;text-decoration:none;
+    transition:filter .18s ease;
+}
+.ww-btn-orange{background:var(--orange-dark);}
+.ww-btn-green{background:var(--green-dark);}
+.mag a.ww-btn:hover{color:#fff;filter:brightness(1.12);}
+
+/* ---------- tablet ---------- */
 @media (max-width:900px){
-    .feat-grid{grid-template-columns:1fr;gap:14px;}
-    .country-feat{padding:20px 20px 22px;}
-    .cf-name{font-size:28px;}
-}
-@media (max-width:640px){
-    .all-head{flex-direction:column;flex-wrap:nowrap;align-items:stretch;}
-    /* regio-pillen in één rij die je opzij veegt */
-    .all-head .filters{flex-wrap:nowrap;overflow-x:auto;margin-inline:-20px;padding:2px 20px 6px;scrollbar-width:none;}
-    .all-head .filters::-webkit-scrollbar{display:none;}
-    .all-head .filter{flex:none;}
-    /* meest gekozen compact: vlag, naam en aantal op één regel */
-    .country-feat{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:0 14px;padding:16px 18px;}
-    .country-feat .cf-top{display:contents;}
-    .country-feat .flag-lg{grid-column:1;grid-row:1;width:48px;height:32px;}
-    .country-feat .cf-name{grid-column:2;grid-row:1;font-size:24px;}
-    .country-feat .cf-count{grid-column:3;grid-row:1;}
-    .country-feat .cf-text,.country-feat .cf-go{display:none;}
-    .country-cloud{gap:8px;}
-    .country{min-height:44px;padding:0 12px;gap:8px;}
-    .country-name{font-size:15.5px;}
-    .country-count{display:none;}
-    .unsure h2{font-size:24px;}
+    .ww-intro-row{grid-template-columns:minmax(0,1fr) 150px;gap:20px 32px;}
+    .ww-novi{width:150px;}
+    .country-photos{gap:16px;}
+    .cp-name{font-size:22px;padding:12px 16px 14px;}
+    .country-columns{columns:2;}
 }
 
-/* ---------- algemene artikelen en aanbod ---------- */
-.landen-all + .landen-articles{border-top:1px solid var(--card-line);}
+/* ---------- mobiel ---------- */
+@media (max-width:640px){
+    .ww-intro-row{grid-template-columns:minmax(0,1fr) 72px;align-items:start;gap:12px;}
+    .ww-intro-row .intro-text{display:contents;}
+    .ww-intro-row h1{grid-column:1;grid-row:1;}
+    .ww-intro-row .blue-rule{grid-column:1 / -1;grid-row:2;}
+    .ww-intro-copy{grid-column:1 / -1;grid-row:3;}
+    .ww-novi{grid-column:2;grid-row:1;width:72px;align-self:end;}
+    .country-photos{grid-template-columns:minmax(0,1fr);gap:14px;}
+    .country-columns{columns:1;}
+    .ww-next .mag-wrap{flex-direction:column;align-items:stretch;}
+    .mag a.ww-btn{flex:none;}
+}
+
+@media (prefers-reduced-motion:reduce){
+    .country-photo{transition:none;}
+    .country-photo:hover{transform:none;}
+}
