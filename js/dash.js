@@ -39,6 +39,7 @@ const ads=[
     {id:3282493,sr:"K",ref:"7783593260",c:"DOM",prov:"",city:"Cap Cana",type:"Appartement",price:1156620,views:75,photos:12,img:1,on:true},
     {id:3275100,sr:"K",ref:"17537941",c:"DOM",prov:"",city:"Cap Cana",type:"Appartement",price:879500,views:98,photos:5,img:1,on:true},
     {id:3260421,sr:"K",ref:"16928616",c:"DOM",prov:"",city:"Punta Cana",type:"Appartement",price:202000,views:138,photos:6,img:0,on:false},
+    {id:3260421,sr:"K",ref:"11526475",c:"EL",prov:"Epirus",city:"",type:"Appartement",price:351688,views:19,photos:21,img:0,on:true},
     {id:3237751,sr:"H",ref:"",c:"DOM",prov:"",city:"Sosúa",type:"Villa",price:3500,views:199,photos:6,img:2,on:true}
 ];
 
@@ -62,7 +63,7 @@ function adRow(d){
    </div>
    <div class="m-row">${price}<span class="views">${int(d.views)} <small>weergaven</small></span></div>
    <div class="cell-price">${price}</div><div class="cell-views views">${int(d.views)}</div><div class="cell-status">${sw}</div>
-   <div class="cell-actions"><div class="vis-row"><span>Zichtbaar op de site</span>${sw}</div>${acts}</div>
+   <div class="cell-actions"><div class="vis-row"><span>Zichtbaarheid op de site</span>${sw}</div>${acts}</div>
    ${labelId===d.id?`<div class="label-pick"><span class="q">Label op de advertentie</span>
      <div class="seg" role="group" aria-label="Label kiezen">${[["","Geen label"],["ovv",labName(d,"ovv")],["sold",labName(d,"sold")]].map(([k,t])=>`<button aria-pressed="${(d.lab||"")===k}" data-setlab="${k}" data-id="${d.id}">${t}</button>`).join("")}</div>
      <span style="color:var(--ink-3)">De advertentie blijft online, met het label op de foto.</span>
