@@ -12,7 +12,7 @@
     display:flex;
     background:
             linear-gradient(to bottom, rgba(240,245,236,0) 55%, rgba(240,245,236,.6) 100%),
-            var(--jj-edge) url(../assets/kaart-begeleiding3.png) center bottom / cover no-repeat;
+            var(--jj-edge) url(../assets/background-green.png) center bottom / cover no-repeat;
     border-top:1px solid var(--jj-light);
 }
 .soon-wrap{
@@ -114,7 +114,7 @@
     .soon-hero{
         background:
                 linear-gradient(rgba(240,245,236,.72), rgba(240,245,236,.72)),
-                #FBFCEF url(../assets/kaart-begeleiding3.png) center bottom / 160% auto no-repeat; /* zelfde kleur als de bovenrand van de illustratie */
+                #FBFCEF url(../assets/background-green.png) center bottom / 160% auto no-repeat; /* zelfde kleur als de bovenrand van de illustratie */
     }
     .soon-wrap{padding:44px 20px 72px;}
     .soon-rule{margin:18px 0 24px;}
