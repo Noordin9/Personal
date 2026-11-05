@@ -18,6 +18,10 @@
 .ww-intro-copy p{font-size:clamp(17.5px,1rem + .2vw,19px);line-height:1.6;color:var(--body);}
 /* Novi wijst naar de tekst */
 .ww-novi{width:200px;height:auto;justify-self:center;}
+.mag-intro{ background:
+        linear-gradient(to bottom, rgba(238,244,247,0) 55%, rgba(238,244,247,.6) 100%),
+        var(--blue-soft) url(../assets/background-blue.png) center bottom / cover no-repeat;
+    border-bottom:1px solid var(--blue-line);}
 
 /* ---------- koppen van de secties ---------- */
 .ww-head{display:flex;flex-direction:column;gap:8px;max-width:var(--measure);margin-bottom:24px;}

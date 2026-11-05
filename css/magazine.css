@@ -46,10 +46,7 @@
 
 /* ---------- intro ---------- */
 
-.mag-intro{ background:
-        linear-gradient(to bottom, rgba(238,244,247,0) 55%, rgba(238,244,247,.6) 100%),
-        var(--blue-soft) url(../assets/background-blue.png) center bottom / cover no-repeat;
-    border-bottom:1px solid var(--blue-line);}
+.mag-intro{background:var(--blue-soft);border-bottom:1px solid var(--blue-line);}
 .mag-intro .mag-wrap{padding-block:32px 40px;display:flex;flex-direction:column;gap:14px;}
 .crumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;color:var(--muted);}
 .crumbs a{color:var(--muted);text-decoration:underline;text-underline-offset:3px;}
